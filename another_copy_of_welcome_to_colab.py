@@ -54,18 +54,18 @@ print("rot_bonds",rot_bonds)
 print("tpsa",tpsa)
 #<----checking veber rule is pass or not---->
 print("\n checking veber rule.... \n")
-if rot_bonds<=10:
+if rot_bonds>10:
   print("veber rule: pass")
 else:
   print("veber rule :fail")
   veber_fail+=1
-if tpsa<=140:
+if tpsa>140:
   print("veber rule: pass")
 else:
   print("veber rule :fail")
   veber_fail+=1
 veber_fail=0
-if veber_fail<=1:
+if veber_fail==0:
   print("veber: pass") 
 else:
   print("veber:fail") 

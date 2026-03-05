@@ -7,8 +7,6 @@ mol=Chem.MolFromSmiles(Smiles)
 if mol is None:
   print("invalid smiles")
   exit()
-mol.SetProp("name","")
-print(mol.GetProp("name"))
 #------- descriptors access-------
 mol_wt=Descriptors.MolWt(mol)
 logP=Descriptors.MolLogP(mol)

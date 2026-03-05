@@ -17,7 +17,6 @@ print("mol_wt: ",mol_wt)
 print("LogP: ",logP)
 print("H_Acceptors: ",H_Acceptors)
 print("H_Donors",H_Donors)
-Print("\n checking Lipsinki rule.... \n") 
 fail_count= 0
 if(mol_wt<=500):
     print("this molecule passes the molecular weight lipsinki rule")
@@ -39,6 +38,8 @@ if(H_Donors<=5):
 else:
       print("H_Donors: fails")
       fail_count+=1
+
+print("\n checking Lipsinki rule.... \n")
 if fail_count<=1:
       print("lipsinki pass")
 else:

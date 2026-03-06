@@ -2,11 +2,14 @@ from rdkit import Chem
 from rdkit.Chem import Draw
 from rdkit.Chem import Descriptors
 import pandas as pd
-Smiles= input("enter your smiles formulla:")
-mol=Chem.MolFromSmiles(Smiles)
+df=pd.read_csv("PubChem_compound_CID__ouUHalf9MkEFb7p2OA7zUWjn94dDA2X8H9l-sATIbLEE0VA.csv")
+SmilesList=df["SMILES"]
+results=[]
+for Smiles in SmilesList:
+    mol=Chem.MolFromSmiles(Smiles)
 if mol is None:
-  print("invalid smiles")
-  exit()
+    print("invalid smiles")
+    exit()
 #<------- descriptors access------->
 mol_wt=Descriptors.MolWt(mol)
 logP=Descriptors.MolLogP(mol)
@@ -54,18 +57,18 @@ print("rot_bonds",rot_bonds)
 print("tpsa",tpsa)
 #<----checking veber rule is pass or not---->
 print("\n checking veber rule.... \n")
-if rot_bonds>10:
-  print("veber rule: pass")
-else:
-  print("veber rule :fail")
-  veber_fail+=1
-if tpsa>140:
-  print("veber rule: pass")
-else:
-  print("veber rule :fail")
-  veber_fail+=1
 veber_fail=0
-if veber_fail==0:
-  print("veber: pass") 
+if rot_bonds<=10:
+  print(" rot_bonds veber rule: pass")
 else:
-  print("veber:fail") 
+  print("rot_bonds veber rule :fail")
+  veber_fail+=1
+if tpsa<=140:
+  print("tpsa veber rule: pass")
+else:
+  print("tpsa veber rule :fail")
+  veber_fail+=1
+if veber_fail==0:
+  print("veber: pass")
+else:
+  print("veber:fail")

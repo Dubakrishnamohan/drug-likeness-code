@@ -77,4 +77,6 @@ print("veber result=",veber_result)
 df=pd.read_csv("df_selected (1).csv")
 df["lipsinki_result"]=lipsinki_result
 df["veber_result"]=veber_result
+df["Lipsinki_fail"] =lipsinki_fail
+df["veber_fail"]=veber_fail
 df.to_csv("updated dataset.csv",index=False)

@@ -1,9 +1,9 @@
-#<-------1.Import Required Libraries------->
+#<-------1. Import Required Libraries------->
 from rdkit import Chem
 from rdkit.Chem import Draw
 from rdkit.Chem import Descriptors
 import pandas as pd
-#<-------2.Load Dataset------->
+#<-------2. Load Dataset------->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
 #<-------3. Initialize Result Storage------->
@@ -11,7 +11,7 @@ lipinski_result[]
 veber_result[]
 lipinski_fail[]
 veber_fail[]
-#<-------4.Process Each Molecule------->
+#<-------4. Process Each Molecule------->
 for Smiles in range(len(df)):
 Smiles=df["SMILES"][i]
 #<-------4.1 Convert Smiles Into Molecules------->
@@ -48,7 +48,6 @@ else:
       print("H_Donors: fails")
       Lipsinki_fail+=1
 
-print("\n checking Lipsinki rule.... \n")
 if Lipsinki_fail<=1:
       lipsinki_result="Pass"
 else:
@@ -75,17 +74,17 @@ if veber_fail==0:
 else:
    veber_result="Fail"
 
-#<-------7.store results------->
+#<-------7. store results------->
 lipsinki_result.append(lipinski_result)
 veber_result.append(veber_result)
 lipsinki_fail.append(lipinski_fail)
 veber_fail.append(veber_fail) 
 print("veber result=",veber_result)
 
-#<-------8.Add Results To Dataset------->
+#<-------8. Add Results To Dataset------->
 df["lipsinki_result"]=lipsinki_result
 df["veber_result"]=veber_result
 df["Lipsinki_fail"] =lipsinki_fail
 df["veber_fail"]=veber_fail
-#<-------9.Save Updated Dataset------->
+#<-------9. Save Updated Dataset------->
 df.to_csv("updated dataset.csv",index=False)

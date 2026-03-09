@@ -1,24 +1,30 @@
+#<-------1.Import Required Libraries------->
 from rdkit import Chem
 from rdkit.Chem import Draw
 from rdkit.Chem import Descriptors
 import pandas as pd
+#<-------2.Load Dataset------->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
-Smiles=df["SMILES"][0]
+#<-------3. Initialize Result Storage------->
+lipinski_result[]
+veber_result[]
+lipinski_fail[]
+veber_fail[]
+#<-------4.Process Each Molecule------->
+for Smiles in range(len(df)):
+Smiles=df["SMILES"][i]
+#<-------4.1 Convert Smiles Into Molecules------->
 mol=Chem.MolFromSmiles(Smiles)
 if mol is None:
   print("invalid smiles")
   exit()
-#<------- descriptors access------->
+#<-------4.2 Calculate Molecular Descriptors ------->
 mol_wt=Descriptors.MolWt(mol)
 logP=Descriptors.MolLogP(mol)
 H_Acceptors=Descriptors.NumHAcceptors(mol)
 H_Donors=Descriptors.NumHDonors(mol)
-#<-------print descriptors------->
-print("mol_wt: ",mol_wt)
-print("LogP: ",logP)
-print("H_Acceptors: ",H_Acceptors)
-print("H_Donors",H_Donors)
+#<-------5. Apply Lipinski Rule Of Five ------->
 
 Lipsinki_fail= 0
 if(mol_wt<=500):
@@ -48,15 +54,10 @@ if Lipsinki_fail<=1:
 else:
       lipsinki_result="Fail"
 
-#<-------VEBER RULE------->
+#<-------6. Apply Veber Rule------->
 rot_bonds=Descriptors.NumRotatableBonds(mol)
 tpsa=Descriptors.TPSA(mol)
 
-#<-------print descriptors------->
-print("rot_bonds",rot_bonds)
-print("tpsa",tpsa)
-#<----checking veber rule is pass or not---->
-print("\n checking veber rule.... \n")
 veber_fail=0
 if rot_bonds<=10:
   print("veber rule: pass")
@@ -72,11 +73,19 @@ else:
 if veber_fail==0:
   veber_result="Pass" 
 else:
-   veber_result="Fail" 
+   veber_result="Fail"
+
+#<-------7.store results------->
+lipsinki_result.append(lipinski_result)
+veber_result.append(veber_result)
+lipsinki_fail.append(lipinski_fail)
+veber_fail.append(veber_fail) 
 print("veber result=",veber_result)
-df=pd.read_csv("df_selected (1).csv")
+
+#<-------8.Add Results To Dataset------->
 df["lipsinki_result"]=lipsinki_result
 df["veber_result"]=veber_result
 df["Lipsinki_fail"] =lipsinki_fail
 df["veber_fail"]=veber_fail
+#<-------9.Save Updated Dataset------->
 df.to_csv("updated dataset.csv",index=False)

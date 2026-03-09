@@ -73,18 +73,26 @@ if veber_fail==0:
   veber_result="Pass" 
 else:
    veber_result="Fail"
+#<-------7. Apply PAINS Filter------->
+if lipinski_result=pass and veber_result=pass:
+				pains_result="check"
+else:
+				pains_result="reject"
 
-#<-------7. store results------->
+#<-------8. store results------->
 lipsinki_result.append(lipinski_result)
 veber_result.append(veber_result)
 lipsinki_fail.append(lipinski_fail)
-veber_fail.append(veber_fail) 
+veber_fail.append(veber_fail)
+pains_result.append(pains_result) 
 print("veber result=",veber_result)
 
-#<-------8. Add Results To Dataset------->
+#<-------9. Add Results To Dataset------->
 df["lipsinki_result"]=lipsinki_result
 df["veber_result"]=veber_result
 df["Lipsinki_fail"] =lipsinki_fail
 df["veber_fail"]=veber_fail
-#<-------9. Save Updated Dataset------->
+df["pains_result"]=pains_result
+
+#<-------10. Save Updated Dataset------->
 df.to_csv("updated dataset.csv",index=False)

@@ -2,7 +2,9 @@ from rdkit import Chem
 from rdkit.Chem import Draw
 from rdkit.Chem import Descriptors
 import pandas as pd
-Smiles= input("enter your smiles formulla:")
+file=input("enter csv file name: ")
+df=pd.read_csv(file)
+Smiles=df["SMILES"][0]
 mol=Chem.MolFromSmiles(Smiles)
 if mol is None:
   print("invalid smiles")
@@ -17,6 +19,7 @@ print("mol_wt: ",mol_wt)
 print("LogP: ",logP)
 print("H_Acceptors: ",H_Acceptors)
 print("H_Donors",H_Donors)
+
 Lipsinki_fail= 0
 if(mol_wt<=500):
     print("lipsinki rule: pass")
@@ -41,9 +44,9 @@ else:
 
 print("\n checking Lipsinki rule.... \n")
 if Lipsinki_fail<=1:
-      print("lipsinki pass")
+      lipsinki_result="Pass"
 else:
-      print("lipsinki fails")
+      lipsinki_result="Fail"
 
 #<-------VEBER RULE------->
 rot_bonds=Descriptors.NumRotatableBonds(mol)
@@ -54,18 +57,24 @@ print("rot_bonds",rot_bonds)
 print("tpsa",tpsa)
 #<----checking veber rule is pass or not---->
 print("\n checking veber rule.... \n")
-if rot_bonds>10:
-  print("veber rule: pass")
-else:
-  print("veber rule :fail")
-  veber_fail+=1
-if tpsa>140:
-  print("veber rule: pass")
-else:
-  print("veber rule :fail")
-  veber_fail+=1
 veber_fail=0
-if veber_fail==0:
-  print("veber: pass") 
+if rot_bonds<=10:
+  print("veber rule: pass")
 else:
-  print("veber:fail") 
+  print("veber rule :fail")
+  veber_fail+=1
+if tpsa<=140:
+  print("veber rule: pass")
+else:
+  print("veber rule :fail")
+  veber_fail+=1
+    
+if veber_fail==0:
+  veber_result="Pass" 
+else:
+   veber_result="Fail" 
+print("veber result=",veber_result)
+df=pd.read_csv("df_selected (1).csv")
+df["lipsinki_result"]=lipsinki_result
+df["veber_result"]=veber_result
+df.to_csv("updated dataset.csv",index=False)

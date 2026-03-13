@@ -6,6 +6,12 @@ import pandas as pd
 #<-------2. Load Dataset------->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
+#<-------3. Initialize Result Storage------->
+      lipinski_results=[]
+      veber_results=[]
+      lipinski_fails=[]
+      veber_fails=[]
+      pains_results=[]
 #<-------4. Process Each Molecule------->
 for i in range(len(df)):
   Smiles=df["SMILES"][i]

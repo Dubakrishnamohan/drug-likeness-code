@@ -1,6 +1,6 @@
 from rdkit import Chem
 from rdkit.Chem import Draw
-from rdkit.Chem import ALLChem
+from rdkit.Chem import AllChem
 from rdkit.Chem import Descriptors
 import pandas as pd
 #<-------2. Load Dataset------->

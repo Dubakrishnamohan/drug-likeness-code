@@ -45,7 +45,7 @@ for i in range(len(df)):
   if(H_Donors>5):
     lipinski_fail+=1
   if lipinski_fail<=1:
-     lipinski_result="pass"
+     lipinski_result="pass" 
   else:
      lipinski_result="fail"
     #<-------6. Apply veber_rule------->

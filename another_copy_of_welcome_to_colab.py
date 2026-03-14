@@ -74,7 +74,7 @@ for i in range(len(df)):
   veber_fails.append(veber_fail)
     #<-------9. Add Results To Dataset------->
 df["mol_wt"]=molwt_list
-df["logP"]=logp_list
+df["logP"]=logP_list
 df["H_Acceptors"]=H_Acceptors_list
 df["H_Donors"]=H_Donors_list
 df["rot_bonds"]=rot_bonds_list

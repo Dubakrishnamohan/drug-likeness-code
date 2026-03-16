@@ -17,11 +17,13 @@ lipinski_results=[]
 veber_results=[]
 lipinski_fails=[]
 veber_fails=[]
+drug_like_results=[]
 #<-------4. Process Each Molecule------->
 for i in range(len(df)):
   Smiles=df.loc[i,"SMILES"]
     #<-------4.1 Convert Smiles Into Molecules------->
   mol=Chem.MolFromSmiles(Smiles)
+
   if mol is None:
      lipinski_results.append("invalid")
      veber_results.append("invalid")
@@ -31,7 +33,8 @@ for i in range(len(df)):
 
     #<-------4.2 Calculate Molecular Descriptors ------->
   mol_wt=Descriptors.MolWt(mol)
-  logP=Descriptors.MolLogP(mol)        H_Acceptors=Descriptors.NumHAcceptors(mol)
+  logP=Descriptors.MolLogP(mol)        
+  H_Acceptors=Descriptors.NumHAcceptors(mol)
   H_Donors=Descriptors.NumHDonors(mol)
     #<-------5. Apply Lipinski Rule Of Five ------->
 
@@ -61,13 +64,17 @@ for i in range(len(df)):
     veber_result="pass" 
   else:
     veber_result="fail"
+  if lipinski_fail==0 and veber_fail==0:
+    drug_like_results.append("Pass")
+  else:
+    drug_like_results.append("fail")  
   #<-------8. store results------->
-  molwt_list.append(molwt_list)
-  logP_list.append(logP_list)
-  H_acceptors.append(H_Acceptors_list)
-  H_Donors.append(H_Donors_list)
-  rot_bonds.append(rot_bonds_list)
-  tpsa.append(tpsa_list)
+  molwt_list.append(mol_wt)
+  logP_list.append(logP)
+  H_Acceptors_list.append(H_Acceptors)
+  H_Donors_list.append(H_Donors)
+  rot_bonds_list.append(rot_bonds)
+  tpsa_list.append(tpsa)
   lipinski_results.append(lipinski_result) 
   veber_results.append(veber_result)
   lipinski_fails.append(lipinski_fail)
@@ -83,6 +90,7 @@ df["lipinski_results"]=lipinski_results
 df["veber_results"]=veber_results
 df["lipinski_fails"] =lipinski_fails
 df["veber_Fails"]=veber_fails
+df["drug_like"]=drug_like_results
       #<-------10. Save Updated Dataset------->
 df.to_csv("drug_analysis_results.csv",index=False)
 print("updated drug analysis dataset saved")

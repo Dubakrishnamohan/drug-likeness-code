@@ -1,0 +1,291 @@
+Compound_CID,Name,SMILES
+3672,"Ibuprofen, (+-)-",CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+163959,Ibuprofen glucuronide,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O
+5338317,"Ibuprofen, Sodium Salt",CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-].[Na+]
+9864669,Ibuprofen arginine,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.C(C[C@@H](C(=O)O)N)CN=C(N)N
+3673,Ibuprofen Piconol,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCC2=CC=CC=N2
+127633,Ibuprofen diethylaminoethyl ester,CCN(CC)CCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+163898,Ibuprofen dimethyl aminoethanol octyl,CCCCCCCC[N+](C)(C)CCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C.[Br-]
+24848049,Diphenhydramine Citrate; Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CN(C)CCOC(C1=CC=CC=C1)C2=CC=CC=C2.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+9841440,Ibuprofen Lysine,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.C(CCN)C[C@@H](C(=O)O)N
+11581230,Acetaminophen; Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CC(=O)NC1=CC=C(C=C1)O
+56841435,Ibuprofen; pseudoephedrine hydrochloride,C[C@@H]([C@H](C1=CC=CC=C1)O)NC.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.Cl
+12225947,rac Ibuprofen-d3,[2H]C([2H])([2H])C(C1=CC=C(C=C1)CC(C)C)C(=O)O
+109101,Ibuprofen methyl ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC
+11445193,Hydrocodone Bitartrate; Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3C(=O)CC4.[C@@H]([C@H](C(=O)O)O)(C(=O)O)O
+114864,"Ibuprofen, (-)-",C[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)O
+23690315,Ibuprofen Sodium,CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-].O.O.[Na+]
+56841655,Famotidine; Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N
+9809664,Chlorpheniramine maleate; ibuprofen; pseudoephedrine hydrochloride,C[C@@H]([C@H](C1=CC=CC=C1)O)NC.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CN(C)CCC(C1=CC=C(C=C1)Cl)C2=CC=CC=N2
+9890190,Ibuprofen Aluminum,CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-].CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-].[OH-].[Al+3]
+18943906,Ibuprofen Ibuprofen Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+23726891,Diethylaminoethyl ibuprofen hydrochloride,CCN(CC)CCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C.Cl
+9936546,Ibuprofen; Oxycodone Hydrochloride,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CN1CC[C@]23[C@@H]4C(=O)CC[C@]2([C@H]1CC5=C3C(=C(C=C5)OC)O4)O
+49849735,Ibuprofen-d3 (sodium),[2H]C([2H])([2H])C(C1=CC=C(C=C1)CC(C)C)C(=O)[O-].[Na+]
+59014967,(R)-(-)-Ibuprofen-d3,[2H]C([2H])([2H])[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)O
+45052535,Ibuprofen (sodium),CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.[Na]
+49849734,"Ibuprofen-13C,d3",[2H][13C]([2H])([2H])C(C1=CC=C(C=C1)CC(C)C)C(=O)O
+59014975,"(+/-)-Ibuprofen-d4 (propionic-2,3,3,3-d4)",[2H]C([2H])([2H])C([2H])(C1=CC=C(C=C1)CC(C)C)C(=O)O
+526504,"Ibuprofen, TBDMS",CC(C)CC1=CC=C(C=C1)C(C)C(=O)O[Si](C)(C)C(C)(C)C
+13175018,Ibuprofen-Polyethylenglycol600,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCCO
+23662458,Ibuprofen potassium,CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-].[K+]
+71749438,Ibuprofen Dimer,CC(C)CC1=CC=C(C=C1)C2(CCC(C3=C2C=C(C=C3)CC(C)C)C(=O)O)C(=O)O
+132489054,"Ibuprofen 1,4-Sorbitan Ester",CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC[C@H]([C@@H]2[C@@H]([C@H](CO2)O)O)O
+19069476,Ibuprofen.Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+9930909,Ibuprofen meglumine,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CNC[C@@H]([C@H]([C@@H]([C@@H](CO)O)O)O)O
+92278485,(R)-Ibuprofen glucuronide,C[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O
+3326923,Ibuprofen(1-),CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-]
+9863332,Ibuprofen DL-lysine,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.C(CCN)CC(C(=O)O)N
+12791155,Ibuprofen isobutanolammonium,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CC(C)(CO)N
+14500271,Ibuprofen Impurity 36,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCC(C)(C)CO
+162640527,Ibuprofen-d3 Acyl-b-D-glucuronide (mixture of diastereomers),[2H]C([2H])([2H])C(C1=CC=C(C=C1)CC(C)C)C(=O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O
+53944194,"Ibuprofen alcohol, (+)-",C[C@@H](CO)C1=CC=C(C=C1)CC(C)C
+53464135,Ibuprofen-CoA,CC(C)CC1=CC=C(C=C1)C(C)C(=O)SCCNC(=O)CCNC(=O)[C@@H](C(C)(C)COP(=O)([O-])OP(=O)([O-])OC[C@@H]2[C@H]([C@H]([C@@H](O2)N3C=NC4=C(N=CN=C43)N)O)OP(=O)([O-])[O-])O
+57347707,rac 2-Hydroxy Ibuprofen-d6,[2H]C([2H])([2H])C(CC1=CC=C(C=C1)C(C)C(=O)O)(C([2H])([2H])[2H])O
+123729141,Sila-ibuprofen,CC(C1=CC=C(C=C1)C[SiH](C)C)C(=O)O
+11745483,"Ibuprofen alcohol, (-)-",C[C@H](CO)C1=CC=C(C=C1)CC(C)C
+9951328,Ibuprofen and pseudoephedrine,C[C@@H]([C@H](C1=CC=CC=C1)O)NC.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+135565807,Ibuprofen arginine [WHO-DD],CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-].C(C[C@@H](C(=O)O)N)C[NH+]=C(N)N
+176474709,Ibuprofen impurity 128,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC(CNC)C2=CC(=CC=C2)O
+176474703,Ibuprofen Impurity 76,CC1=CC=C(C=C1)C(C)C(=O)OCC(C)(C)CCl
+1207292,"(S,S)-N-(1-Phenylethyl) Ibuprofen Amide",C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)N[C@@H](C)C2=CC=CC=C2
+175673423,Ibuprofen Impurity 15,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC2=CC=CC(=C2)[C@H](CNC)O
+175673424,Ibuprofen Impurity T,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O[C@@H](CNC)C2=CC(=CC=C2)O
+162642392,p-Butyl Ibuprofen-d3 Sodium Salt,[2H]C([2H])([2H])C(C1=CC=C(C=C1)CCCC)C(=O)[O-].[Na+]
+86623031,Aminopropanol ibuprofen Hydrochloride,CCC(N)O.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.Cl
+595156,Ibuprofenal,CC(C)CC1=CC=C(C=C1)C(C)C=O
+6919043,(S)-ibuprofen,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)[O-]
+67821806,Ibuprofen hexane,CCCCCC.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+177958,Cholesteryl ibuprofen,C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC=C4[C@@]3(CC[C@@H](C4)OC(=O)C(C)C5=CC=C(C=C5)CC(C)C)C)C
+11076457,Ibuprofen 2-chloroethyl ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCCCl
+86660791,ibuprofen acetone water CO2,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CC(=O)C.C(=O)=O.O
+9812525,Ibuprofen beta-cyclodextrin,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.C([C@@H]1[C@@H]2[C@@H]([C@H]([C@H](O1)O[C@@H]3[C@H](O[C@@H]([C@@H]([C@H]3O)O)O[C@@H]4[C@H](O[C@@H]([C@@H]([C@H]4O)O)O[C@@H]5[C@H](O[C@@H]([C@@H]([C@H]5O)O)O[C@@H]6[C@H](O[C@@H]([C@@H]([C@H]6O)O)O[C@@H]7[C@H](O[C@@H]([C@@H]([C@H]7O)O)O[C@@H]8[C@H](O[C@H](O2)[C@@H]([C@H]8O)O)CO)CO)CO)CO)CO)CO)O)O)O
+9849057,Ibuprofen codeine,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](C=C4)O
+6926382,(R)-Ibuprofen,C[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)[O-]
+15948295,Strontium Ibuprofen Salt,CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-].CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-].[Sr+2]
+16697055,Ibuprofen aluminium salt,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O[Al](OC(=O)C(C)C2=CC=C(C=C2)CC(C)C)OC(=O)C(C)C3=CC=C(C=C3)CC(C)C
+15008340,(S)-ibuprofen N-methyl-D-glucamine salt,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)O.CNC[C@@H]([C@H]([C@@H]([C@@H](CO)O)O)O)O
+134658342,Ibuprofen Impurity 18,CC(C)CC1=CC(=CC=C1)C(=O)C(C)Cl
+86745308,Ibuprofen Sorbitol,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.C([C@H]([C@H]([C@@H]([C@H](CO)O)O)O)O)O
+13175015,Ibuprofen methoxyethyl ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCCOC
+19850539,Ibuprofen Impurity 9,CC1=CC=C(C=C1)S(=O)(=O)OCC(C)(C)CCl
+86623030,Boc-aminopropanol ibuprofen,CCC(C(=O)OC(C)(C)C)(N)O.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+23667612,Water ibuprofen sodium salt,CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-].O.[Na+]
+23717866,(s)-Ibuprofen sodium salt,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)[O-].[Na+]
+21323312,Ibuprofen trifluoroethyl ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCC(F)(F)F
+23352695,Ibuprofen dihydrate,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.O.O
+91723757,"Ibuprofen, heptadecyl ester",CCCCCCCCCCCCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+131719976,(S)-ibuprofen N-octyl-D-glucamine salt,CCCCCCCCNC[C@@H]([C@H]([C@@H]([C@@H](CO)O)O)O)O.C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)O
+131732928,Ibuprofen Strontium Ascorbate,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.C([C@@H]([C@@H]1C(=C(C(=O)O1)[O-])O)O)O.C([C@@H]([C@@H]1C(=C(C(=O)O1)[O-])O)O)O.[Sr+2]
+91723756,"Ibuprofen, tetradecyl ester",CCCCCCCCCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+44610698,(+)-tramadol (S)-ibuprofen,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)O.CN(C)C[C@H]1CCCC[C@@]1(C2=CC(=CC=C2)OC)O
+54252666,(s)-Ibuprofen n-propyl ester,CCCOC(=O)[C@@H](C)C1=CC=C(C=C1)CC(C)C
+131735801,Ibuprofen Ciprofloxacin,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNCC4)F)C(=O)O
+46781933,Ibuprofen Acyl-beta-D-glucuronide,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O[C@@H]2[C@@H]([C@@H]([C@H](C(O2)C(=O)O)O)O)O
+134163452,Ibuprofen acetate,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OOC(=O)C
+163339084,Ibuprofen Impurity X,CC(C)CC1=CC=C(C=C1)C(C)C(=O)N(C)C[C@@H](C2=CC(=CC=C2)O)O
+56841698,Dicyclomine hydrochloride/ibuprofen,CCN(CC)CCOC(=O)C1(CCCCC1)C2CCCCC2.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.Cl
+131747929,Ibuprofen Octylammonium Salt,CCCCCCCC[NH3+].CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-]
+54255593,Ibuprofen-p-nitrophenyl ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC2=CC=C(C=C2)[N+](=O)[O-]
+131718233,S(+)-ibuprofen L-(+)-lactic acid,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)O.C[C@@H](C(=O)O)O
+156600148,Ibuprofen bromobutyl ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCCCCBr
+156600164,Nitroxybutyl-ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)(CCCCO[N+](=O)[O-])C(=O)O
+125390227,(S)-Ibuprofen (S)-Methocarbamol Ester,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)O[C@@H](COC2=CC=CC=C2OC)COC(=O)N
+76968625,Ibuprofen-piconol,C[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)OCC2=CC=CC=N2
+145864111,Benzalkonium Ibuprofenate,CCCCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.CCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-]
+145864119,Procainium Ibuprofen,CC[NH+](CC)CCOC(=O)C1=CC=C(C=C1)N.CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-]
+91723718,"Ibuprofen, tridecyl ester",CCCCCCCCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+91723754,"Ibuprofen, nonyl ester",CCCCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+69294149,Didecyldimethylammonium Ibuprofenate,CCCCCCCCCC[N+](C)(C)CCCCCCCCCC.CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-]
+67107968,"Ibuprofen 4,4'-bipyridine",CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.C1=CN=CC=C1C2=CC=NC=C2
+131740096,Memantine (S)-Ibuprofen,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)O.CC12CC3CC(C1)(CC(C3)(C2)N)C
+86612072,Benzalkonium Ibuprofen,CCCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+89271134,Ibuprofen phenyl ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC2=CC=CC=C2
+86615608,Copper Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.[Cu]
+69821745,Ibuprofen-8-bromooctyl ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCCCCCCCCBr
+91723719,"Ibuprofen, pentadecyl ester",CCCCCCCCCCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+91723755,"Ibuprofen, undecyl ester",CCCCCCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+66895719,Water ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.O
+123299067,(r)-Ibuprofen-phenyl ester,C[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)OC2=CC=CC=C2
+165363571,Ibuprofen-13C3,CC(C)CC1=CC=C(C=C1)[13CH]([13CH3])[13C](=O)O
+136387733,Acyclovir Imidazole Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.C1=CN=CN1.C1=NC2=C(N1COCCO)N=C(NC2=O)N
+146571251,(S)-(+)-Ibuprofen Propylene Glycol Ester,[2H]C([2H])(C([2H])([2H])N)C([2H])([2H])NC(=O)OC(C)(C)C
+91470718,"Ibuprofen, decyl ester",CCCCCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+77994170,Ibuprofen-1-acetoxyethyl ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC(C)OC(=O)C
+139206931,[Cu~2~(Ibuprofenate)~4~(DMF)~2~] . xDMF,C[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)[O-].C[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)[O-].C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)[O-].C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)[O-].CN(C)C=O.CN(C)C=O.[Cu+2].[Cu+2]
+132489055,Ibuprofen impurity 118,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC[C@@H]([C@H]([C@@H]([C@@H](CO)O)O)O)O
+169435165,rac 2-(tert-Butyldimethylsilyloxy) Ibuprofen-d6,[2H]C([2H])([2H])C(CC1=CC=C(C=C1)C(C)C(=O)O)(C([2H])([2H])[2H])O[Si](C)(C)C(C)(C)C
+169435177,Ibuprofen EP Impurity B Sodium,CCCCC1=CC=C(C=C1)C(C)C(=O)[O-].[Na+]
+10041875,Ibuprofen nitroxybutyl ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCCCCO[N+](=O)[O-]
+169439577,Des-2-(4-Isobutyl) 2-(4-(1-Carboxyethyl)-3-ethoxy-2-methyl-3-oxo Ibuprofen,CCOC(=O)C(C)(CC1=CC=C(C=C1)C(C)C(=O)O)C(=O)O
+169442361,rac-Ibuprofen-13C3,CC(C1=CC=C(C=C1)C[13CH]([13CH3])[13CH3])C(=O)O
+169442364,Ibuprofen Sorbitol Ester (Mixture of Diastereomers),CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC[C@H]([C@H]([C@@H]([C@H](CO)O)O)O)O.CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC[C@@H]([C@H]([C@@H]([C@@H](CO)O)O)O)O
+141578778,Ibuprofen methanol,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CO
+176474697,Ibuprofen Impurity 71,CC(C)C1=CC=C(C=C1)C2(OCC(CO2)(C)C)C(C)Cl
+176474701,Ibuprofen Impurity 109,CCCC1=CC=C(C=C1)C(C)C(=O)OCC(C)(C)CCl
+176474705,Ibuprofen Impurity 113,CC(C)C1=CC=C(C=C1)C(C)C(=O)OCC(C)(C)CCl
+176474713,Ibuprofen impurity 137,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O[C@@H](CNC)C2=CC(=CC=C2)O.Cl
+176474717,Ibuprofen impurity 144,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC[C@H]([C@H]([C@@H]([C@H](COC(=O)C(C)C2=CC=C(C=C2)CC(C)C)O)O)O)O
+176474725,Ibuprofen Impurity 70,CCCC1=CC=C(C=C1)C2(OCC(CO2)(C)C)C(C)Cl
+176474699,Ibuprofen Impurity 106,CC(C)CC1=CC(=CC=C1)C(C)C(=O)OCC(C)(C)CCl
+176474707,Ibuprofen impurity 125,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCC(COC(=O)C(C)C2=CC=C(C=C2)CC(C)C)O
+176474711,Ibuprofen impurity 130,CCCOC(=O)C1=CC(=C(C(=C1)OC(=O)C(C)C2=CC=C(C=C2)CC(C)C)O)O
+176474715,Ibuprofen impurity 142,CCC1=CC=C(C=C1)C(C)C(=O)[O-].[Na+]
+131720795,Ibuprofen Ala Tris,C[C@@H](C(=O)O)N.CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.C(C(CO)(CO)N)O
+71772182,"(S,S)-N-(1-Phenylethyl)ibuprofen amide",C[C@@H](C1=CC=C(C=C1)CC(C)C(=O)N[C@@H](C)C2=CC=CC=C2)C(=O)O
+131725383,Ibuprofen (alpha-methyl-4-[2-methylpropyl]-phenylacetic acid) chloride,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CC(C)CC1=CC=C(C=C1)C(C)C(=O)Cl
+176474700,Ibuprofen Impurity 107,CC(C)CC1=CC=CC=C1C(C)C(=O)OCC(C)(C)CCl
+176474704,Ibuprofen Impurity 112,CCC(C)C1=CC=C(C=C1)C(C)C(=O)OCC(C)(C)CCl
+176474708,Ibuprofen Impurity 126,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC[C@@H]([C@@H]([C@H]([C@H](CO)O)O)O)O
+176474712,Ibuprofen impurity 131,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC2=CC=CC(=C2)C(CNC)O
+176474716,Ibuprofen impurity 143,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O[C@@H]2CO[C@H]3[C@@H]2OC[C@@H]3O
+162642668,Hydroxy Ibuprofen-d3,[2H]C([2H])([2H])C(C1=CC=C(C=C1)CC(C)CO)C(=O)O
+176453219,Ibuprofen disodium salt,CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-].CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-].[Na+].[Na+]
+129848245,Ibuprofen thioester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OS
+129318307,"Ibuprofen 2,3-Butylene Glycol Ester",CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC(C)C(C)O
+129852361,n-Amyl ibuprofen,CCCCCC(C)(C1=CC=C(C=C1)CC(C)C)C(=O)O
+9864979,Aspirin-ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CC(=O)OC1=CC=CC=C1C(=O)O
+129852312,"(r,s)-Ibuprofen ethoxyethyl ester",CCOC(C)OC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+171379539,rac 2-(tert-Butyldimethylsilyloxy)-Alpha-desmethyl Ibuprofen-d6 tert-Butyldimethylsily Ester,[2H]C([2H])([2H])C(CC1=CC=C(C=C1)CC(=O)O[Si](C)(C)C(C)(C)C)(C([2H])([2H])[2H])O[Si](C)(C)C(C)(C)C
+71749439,Ibuprofen-d3 Alcohol,[2H]C([2H])([2H])C(CO)C1=CC=C(C=C1)CC(C)C
+71749535,m-Isobutyl Ibuprofen-d3,[2H]C([2H])([2H])C(C1=CC=CC(=C1)CC(C)C)C(=O)O
+69437198,Hydrochloride ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.Cl
+23275413,"Ibuprofen, pentyl ester",CCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+23277209,"Ibuprofen, hexadecyl ester",CCCCCCCCCCCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+23277325,"Ibuprofen, octadecyl ester",CCCCCCCCCCCCCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+177828925,Ibuprofen Impurity 3,CCOOC(=O)[C@@H](C)C1=CC=C(C=C1)CC(C)C
+177829345,(S)-Ibuprofen-d3,[2H]C([2H])C([2H])(C)CC1=CC=C(C=C1)[C@H](C)C(=O)O
+177830305,Ibuprofen Pseudoephedrine Ester,C[C@@H]([C@H](C1=CC=CC=C1)OC(=O)C(C)C2=CC=C(C=C2)CC(C)C)NC.Cl
+23276884,"Ibuprofen, dodecyl ester",CCCCCCCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+23275918,"Ibuprofen, heptyl ester",CCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+57168899,Ibuprofen Impurity 108,CCCCC1=CC=C(C=C1)C(C)C(=O)OCC(C)(C)CCl
+25192998,Phospho-ibuprofen,CCOP(=O)(OCC)OCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+177828924,Ibuprofen Impurity 24,CC(C)CC1=CC=C(C=C1)C2CCC(C3=C2C=C(C=C3)CC(C)C)C(=O)O
+177830304,Ibuprofen Impurity 81,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCC(C2C(C(CO2)O)O)O
+172990349,Ibuprofen Hexaethylene Glycol Ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCCOCCOCCOCCOCCOCCO
+171379540,rac 2-(tert-Butyldimethylsilyloxy)-Alpha-desmethyl Ibuprofen-d6,[2H]C([2H])([2H])C(CC1=CC=C(C=C1)CC(=O)O)(C([2H])([2H])[2H])O[Si](C)(C)C(C)(C)C
+171921287,"(R,S)-Ibuprofen-d4 acyl-beta-D-glucuronide",[2H]C1=C(C(=C(C(=C1CC(C)C)[2H])[2H])C(C)C(=O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O)[2H]
+129628135,Ibuprofen AL,CC(C)CC1=CC=C(C=C1)C(C)(C=O)C(=O)O
+169439578,Des-2-(4-Isobutyl) 3-Ethoxy-2-methyl-3-oxo Ibuprofen,CCOC(=O)C(C)CC1=CC=C(C=C1)C(C)C(=O)O
+176474702,Ibuprofen Impurity 110,CCC1=CC=C(C=C1)C(C)C(=O)OCC(C)(C)CCl
+176474706,Ibuprofen impurity 120,CC(C)CC1=CC(=CC=C1)C(C)C(=O)OC[C@H]([C@@H]2[C@@H]([C@H](CO2)O)O)O
+176474710,Ibuprofen impurity 129,CCCOC(=O)C1=CC(=C(C(=C1)O)OC(=O)C(C)C2=CC=C(C=C2)CC(C)C)O
+176474714,Ibuprofen impurity 140,CC(C(=O)OCC(C)(C)COC(=O)C(C)Cl)Cl
+176474722,Ibuprofen Impurity 72,CCC1(OCC(CO1)(C)C)C2=CC=C(C=C2)CC(C)C
+145864116,Lidocainium Ibuprofenate,CC[NH+](CC)CC(=O)NC1=C(C=CC=C1C)C.CC(C)CC1=CC=C(C=C1)C(C)C(=O)[O-]
+176489222,"1,2 Dihydroxy Ibuprofen",CC(C1=CC=C(C=C1)C(C(C)(C)O)O)C(=O)O
+169442363,(S)-(+)-Ibuprofen 2-(Benzyloxy)propan-1-yl Ester,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)OCC(C)OCC2=CC=CC=C2
+169442415,"Ibuprofen 1,3-Di-O-benzylglyceride",CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC(COCC2=CC=CC=C2)COCC3=CC=CC=C3
+117803626,Ibuprofen hydroxyl ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OO
+138112364,Ibuprofen Impurity 47,CC(C)CC1=CC=C(C=C1)[C@@]2(CCC(C3=C2C=C(C=C3)CC(C)C)C(=O)O)C(=O)O
+155490628,Glucopyranosyloxy-hydroxy-ibuprofen,CC(C)CC1=CC=C(C=C1)C(COC2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)(C(=O)O)O
+171381046,Ibuprofen PEG Ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCCOCCOCCOCCOCCOCCOCCOCCO
+129318916,Ibuprofen impurity 123,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)OCC(CO)O
+177830311,Ibuprofen Impurity 80 (Peg 600),CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCCOC(=O)C(C)C2=CC=C(C=C2)CC(C)C
+129318913,Ibuprofen impurity 121,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)OCC(C)O
+129318917,Ibuprofen impurity 124,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)OC(CO)CO
+129318914,Ibuprofen impurity 122,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)OC(C)CO
+155898926,Oxypropyl ibuprofen,CCC(C(C)(C1=CC=C(C=C1)CC(C)C)C(=O)O)O
+129715309,Ibuprofen iodide,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OI
+39912,Dexibuprofen,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)O
+11499530,2-(4-Isobutyrylphenyl)propionic acid,CC(C)C(=O)C1=CC=C(C=C1)C(C)C(=O)O
+5228577,2-(4-Isobutylphenyl)-2-hydroxypropionic acid,CC(C)CC1=CC=C(C=C1)C(C)(C(=O)O)O
+45117195,2-(4'-(1-Hydroxy-2-methylpropyl)phenyl)propionic acid,CC(C)C(C1=CC=C(C=C1)C(C)C(=O)O)O
+12046192,p-Butylhydratropic acid,CCCCC1=CC=C(C=C1)C(C)C(=O)O
+595160,beta-Methyl-4-(2-methylpropyl)benzeneethanol,CC(C)CC1=CC=C(C=C1)C(C)CO
+9834277,3-(4-Isobutylphenyl)propanoic acid,CC(C)CC1=CC=C(C=C1)CCC(=O)O
+10443535,Hydroxyibuprofen,CC(C1=CC=C(C=C1)CC(C)(C)O)C(=O)O
+10219663,2-(4-Formylphenyl)propionic acid,CC(C1=CC=C(C=C1)C=O)C(=O)O
+527816,2-(4-Ethylphenyl)propionic acid,CCC1=CC=C(C=C1)C(C)C(=O)O
+15009332,"L-Lysine, mono((alphaR)-alpha-methyl-4-(2-methylpropyl)benzeneacetate)",C[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)O.C(CCN)C[C@@H](C(=O)O)N
+11424295,2-(3-(2-Methylpropyl)phenyl)propanoic acid,CC(C)CC1=CC(=CC=C1)C(C)C(=O)O
+250105,2-(4-(2-Methylpropyl)phenyl)ethanol,CC(C)CC1=CC=C(C=C1)CCO
+101072,Ibuprofenamide,CC(C)CC1=CC=C(C=C1)C(C)C(=O)N
+93214,4'-Isobutylacetophenone,CC(C)CC1=CC=C(C=C1)C(=O)C
+11044622,"1,1-Bis(p-isobutylphenyl)ethane",CC(C)CC1=CC=C(C=C1)C(C)C2=CC=C(C=C2)CC(C)C
+562967,2-(4-(1-Methylpropyl)phenyl)propanoic acid,CCC(C)C1=CC=C(C=C1)C(C)C(=O)O
+59014963,Npc217242,[2H]C([2H])([2H])[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)O
+92278491,"beta-D-Glucopyranuronic acid, 1-[(alphaS)-alpha-methyl-4-(2-methylpropyl)benzeneacetate]",C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O
+71588000,"7-(2-Methylpropyl)-1-(4-(2-methylpropyl)phenyl)-1,2,3,4-tetrahydronaphthalene-1,4-dicarboxylic acid",CC(C)CC1=CC=C(C=C1)[C@@]2(CC[C@H](C3=C2C=C(C=C3)CC(C)C)C(=O)O)C(=O)O
+150866,2-(4-Tolyl)propanoic acid,CC1=CC=C(C=C1)C(C)C(=O)O
+595136,2-(4-Isobutylphenyl)-N-(1-phenylethyl)propanamide,CC(C)CC1=CC=C(C=C1)C(C)C(=O)NC(C)C2=CC=CC=C2
+6933487,Methyl (alphaS)-alpha-methyl-4-(2-methylpropyl)benzeneacetate,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)OC
+10444113,Carboxyibuprofen,CC(CC1=CC=C(C=C1)C(C)C(=O)O)C(=O)O
+24798775,Advil Congestion Relief,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O.CNC[C@@H](C1=CC(=CC=C1)O)O.Cl
+5326009,Methyl (alphaR)-alpha-methyl-4-(2-methylpropyl)benzeneacetate,C[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)OC
+129318303,1-(2-Methylpropyl)-4-((3RS)-3-(4-(2-methylpropyl)phenyl)butyl)benzene,CC(C)CC1=CC=C(C=C1)CCC(C)C2=CC=C(C=C2)CC(C)C
+170486,Ethyl alpha-methyl-4-(2-methylpropyl)benzeneacetate,CCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+9819903,Dexibuprofen lysine anhydrous,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)O.C(CCN)C[C@@H](C(=O)O)N
+56665514,Ethyl (alphaR)-alpha-methyl-4-(2-methylpropyl)benzeneacetate,CCOC(=O)[C@H](C)C1=CC=C(C=C1)CC(C)C
+46781932,2-(4-(2-Methylpropyl)(~13~C_6_)phenyl)propanoic acid,CC(C)C[13C]1=[13CH][13CH]=[13C]([13CH]=[13CH]1)C(C)C(=O)O
+1207293,(alphaR)-alpha-Methyl-4-(2-methylpropyl)-N-((1R)-1-phenylethyl)benzeneacetamide,C[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)N[C@H](C)C2=CC=CC=C2
+4464271,2-Methoxyphenyl alpha-methyl-4-(2-methylpropyl)benzeneacetate,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC2=CC=CC=C2OC
+129011620,"(3RS)-1,3-Bis(4-(2-methylpropyl)phenyl)butan-1-one",CC(C)CC1=CC=C(C=C1)C(C)CC(=O)C2=CC=C(C=C2)CC(C)C
+85194,"Methanol, 1-(diethylamino)-",CCN(CC)CO
+9794278,(S)-2-(3-Isobutylphenyl)propanoic acid,C[C@@H](C1=CC=CC(=C1)CC(C)C)C(=O)O
+553218,Trimethylsilyl 2-[4-(2-methylpropyl)phenyl]propanoate,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O[Si](C)(C)C
+71312545,3-Hydroxyibuprofen,CC(CC1=CC=C(C=C1)C(C)C(=O)O)CO
+9552081,Chlorhexidine Gluconate,C1=CC(=CC=C1N/C(=N/C(=NCCCCCCN=C(/N=C(/NC2=CC=C(C=C2)Cl)\N)N)N)/N)Cl.C(O)[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)C(=O)O.C(O)[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)C(=O)O
+11139492,1-Methylethyl alpha-methyl-4-(2-methylpropyl)benzeneacetate,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC(C)C
+11138177,2-(4-Isobutylphenyl)acrylamide,CC(C)CC1=CC=C(C=C1)C(=C)C(=O)N
+14880971,2-(p-Propylphenyl)propionic acid,CCCC1=CC=C(C=C1)C(C)C(=O)O
+58220220,Tetraethyleneglycol Bisibuprofen Ester,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCCOCCOCCOCCOC(=O)C(C)C2=CC=C(C=C2)CC(C)C
+1207294,(2S)-2-[4-(2-methylpropyl)phenyl]-N-[(1R)-1-phenylethyl]propanamide,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)N[C@H](C)C2=CC=CC=C2
+1207291,(2R)-2-[4-(2-methylpropyl)phenyl]-N-[(1S)-1-phenylethyl]propanamide,C[C@H](C1=CC=C(C=C1)CC(C)C)C(=O)N[C@@H](C)C2=CC=CC=C2
+122233334,"3-Hydroxy-2,2-dimethylpropyl 2-chloropropanoate",CC(C(=O)OCC(C)(C)CO)Cl
+11954362,Dexibuprofen Lysine,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)O.C(CCN)C[C@@H](C(=O)O)N.O
+9899945,Butyl 2-[4-(2-methylpropyl)phenyl]propanoate,CCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+171379057,"(1R,2S,5R)-2-isopropyl-5-methylcyclohexyl 2-(4-isobutylphenyl)propanoate",C[C@@H]1CC[C@H]([C@@H](C1)OC(=O)C(C)C2=CC=C(C=C2)CC(C)C)C(C)C
+576929,1-Ethyl-4-isobutylbenzene,CCC1=CC=C(C=C1)CC(C)C
+78109,"Benzaldehyde, 4-(phenylmethoxy)-",C1=CC=C(C=C1)COC2=CC=C(C=C2)C=O
+2775240,2-Chloro-1-(4-(2-methylpropyl)phenyl)-1-propanone,CC(C)CC1=CC=C(C=C1)C(=O)C(C)Cl
+156356,alpha-Methyl-4-(2-methyl-1-propen-1-yl)benzeneacetic acid,CC(C1=CC=C(C=C1)C=C(C)C)C(=O)O
+158270,Octyl 2-[4-(2-methylpropyl)phenyl]propanoate,CCCCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+83407,"1-Propanol, 3-chloro-2,2-dimethyl-",CC(C)(CO)CCl
+38111,4-Isobutylbenzoic acid,CC(C)CC1=CC=C(C=C1)C(=O)O
+9837805,Propyl 2-[4-(2-methylpropyl)phenyl]propanoate,CCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+2849732,N-(4-hydroxyphenyl)-2-(4-isobutylphenyl)propanamide,CC(C)CC1=CC=C(C=C1)C(C)C(=O)NC2=CC=C(C=C2)O
+69338,Isopropyl hydroxyacetate,CC(C)OC(=O)CO
+11710076,2-Methoxy-4-(prop-2-en-1-yl)phenyl 2-[4-(2-methylpropyl)phenyl]propanoate,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC2=C(C=C(C=C2)CC=C)OC
+90057802,"1,3-Dihydroxypropan-2-yl 2-(4-isobutylphenyl)propanoate",CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC(CO)CO
+11739288,4-Acetamidophenyl 2-[4-(2-methylpropyl)phenyl]propanoate,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC2=CC=C(C=C2)NC(=O)C
+4356795,2-Chloro-1-(4-propylphenyl)propan-1-one,CCCC1=CC=C(C=C1)C(=O)C(C)Cl
+3014024,Benzalkonium Chloride,CCCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.[Cl-]
+3331521,2-Chloro-1-(4-ethyl-phenyl)-propan-1-one,CCC1=CC=C(C=C1)C(=O)C(C)Cl
+10609225,(alphaS)-alpha-Methyl-4-(2-methylpropyl)benzeneacetyl chloride,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)Cl
+15920271,"3,4,5-Trihydroxy-6-[2-[4-(2-methylpropyl)phenyl]propanoyloxy]oxane-2-carboxylic acid",CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC2C(C(C(C(O2)C(=O)O)O)O)O
+11321461,2-(4-Isopropylphenyl)propanoic acid,CC(C)C1=CC=C(C=C1)C(C)C(=O)O
+13241439,alpha-Methyl-2-(2-methylpropyl)benzeneacetic Acid,CC(C)CC1=CC=CC=C1C(C)C(=O)O
+13175010,Hexyl 2-[4-(2-methylpropyl)phenyl]propanoate,CCCCCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+13376834,2-Hydroxypropyl 2-(4-Isobutylphenyl)propanoate,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCC(C)O
+21252143,Ethenyl alpha-methyl-4-(2-methylpropyl)benzeneacetate,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC=C
+13175012,2-Ethoxyethyl alpha-methyl-4-(2-methylpropyl)benzeneacetate,CCOCCOC(=O)C(C)C1=CC=C(C=C1)CC(C)C
+13175020,2-Methylpropyl 2-[4-(2-methylpropyl)phenyl]propanoate,CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCC(C)C
+13066570,rac 2-(4-Formylphenyl)propionic Acid Ethyl Ester,CCOC(=O)C(C)C1=CC=C(C=C1)C=O
+13175019,"2,3-Dihydroxypropyl I+--methyl-4-(2-methylpropyl)benzeneacetate",CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCC(CO)O
+28292733,(r)-2-(4-Ethylphenyl)propanoic acid,CCC1=CC=C(C=C1)[C@@H](C)C(=O)O
+53629521,Bismuth Subsalicylate,C1=CC=C(C(=C1)C(=O)[O-])[O-].[OH-].[Bi+3]
+63821918,"6-Isobutyl-3-methyl-2,3-dihydro-1H-inden-1-one",CC1CC(=O)C2=C1C=CC(=C2)CC(C)C
+134658312,2-Chloro-1-[2-(2-methylpropyl)phenyl]-1-propanone,CC(C)CC1=CC=CC=C1C(=O)C(C)Cl
+11401839,alpha-Fluoro-alpha-methyl-4-(2-methylpropyl)benzeneacetic acid,CC(C)CC1=CC=C(C=C1)C(C)(C(=O)O)F
+3632255,2-[4-(2-methylpropyl)phenyl]butanedioic Acid,CC(C)CC1=CC=C(C=C1)C(CC(=O)O)C(=O)O
+4408170,2-(4-butan-2-ylphenyl)acetic Acid,CCC(C)C1=CC=C(C=C1)CC(=O)O
+169443380,N-[3-Methyl-2-phenylbutyl]-2-[4-isobutylphenyl]propionamide (PBA Amide),CC(C)CC1=CC=C(C=C1)C(C)C(=O)NCC(C2=CC=CC=C2)C(C)C
+12325942,Ethyl (alphaS)-alpha-methyl-4-(2-methylpropyl)benzeneacetate,CCOC(=O)[C@@H](C)C1=CC=C(C=C1)CC(C)C
+13732743,"3-Chloro-2,2-dimethylpropyl 2-(4-isobutylphenyl)propanoate",CC(C)CC1=CC=C(C=C1)C(C)C(=O)OCC(C)(C)CCl
+13699425,"2-(1-Chloroethyl)-2-(4-isobutylphenyl)-5,5-dimethyl-1,3-dioxane",CC(C)CC1=CC=C(C=C1)C2(OCC(CO2)(C)C)C(C)Cl
+119,Gamma-Aminobutyric Acid,C(CC(=O)O)CN
+1983,Acetaminophen,CC(=O)NC1=CC=C(C=C1)O
+5754,Cortisol,C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)CO)O)C)O
+5881,Dehydroepiandrosterone,C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CC=C4[C@@]3(CC[C@@H](C4)O)C
+11470,4-Acetylbenzoic Acid,CC(=O)C1=CC=C(C=C1)C(=O)O
+16683040,Motrin-A,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O[Al]OC(=O)C(C)C2=CC=C(C=C2)CC(C)C.O
+121494052,4-(2-Hydroxy-2-methylpropyl)-benzeneacetic Acid-d6,[2H]C([2H])([2H])C(CC1=CC=C(C=C1)CC(=O)O)(C([2H])([2H])[2H])O
+168306877,(2R)-2-[4-(dimethylsilylmethyl)phenyl]propanoic acid,C[C@H](C1=CC=C(C=C1)C[SiH](C)C)C(=O)O
+20227432,1-(4-Butylphenyl)-2-chloropropan-1-one,CCCCC1=CC=C(C=C1)C(=O)C(C)Cl
+57347581,"3-(4-(1-Carboxy(2,2,2-~2~H_3_)ethyl)phenyl)-2-methylpropanoic acid",[2H]C([2H])([2H])C(C1=CC=C(C=C1)CC(C)C(=O)O)C(=O)O
+171394828,(R)-3-Methyl-2-phenylbutyl Dexibuprofen Amide,C[C@@H](C1=CC=C(C=C1)CC(C)C)C(=O)NC[C@@H](C2=CC=CC=C2)C(C)C
+76966002,"(1S,4S)-6-(2-methylpropyl)-4-[4-(2-methylpropyl)phenyl]-2,3-dihydro-1H-naphthalene-1,4-dicarboxylic acid",CC(C)CC1=CC=C(C=C1)[C@]2(CC[C@@H](C3=C2C=C(C=C3)CC(C)C)C(=O)O)C(=O)O
+169442362,"benzyl (2R,3R,4R,5S)-3,4,5-trihydroxy-6-[2-[4-(2-methylpropyl)phenyl]propanoyloxy]oxane-2-carboxylate",CC(C)CC1=CC=C(C=C1)C(C)C(=O)OC2[C@H]([C@@H]([C@H]([C@@H](O2)C(=O)OCC3=CC=CC=C3)O)O)O
+171382414,2-(p-sec-Butylphenyl)propionic Acid-d3,[2H]C([2H])([2H])C(C1=CC=C(C=C1)C(C)CC)C(=O)O
+177830307,"N-((1S,2S)-1-hydroxy-1-phenylpropan-2-yl)-2-(4-isobutylphenyl)-N-methylpropanamide",C[C@@H]([C@H](C1=CC=CC=C1)O)N(C)C(=O)C(C)C2=CC=C(C=C2)CC(C)C

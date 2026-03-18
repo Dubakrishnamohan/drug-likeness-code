@@ -1,0 +1,241 @@
+Compound_CID,Name,SMILES
+2519,Caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+6241,Caffeine Citrate,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+5353365,8-(3-Chlorostyryl)caffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C3=CC(=CC=C3)Cl
+11979818,"Bucetin, caffeine, dibenzoylthiamine, ethenzamide drug combination",CCOC1=CC=C(C=C1)NC(=O)CC(C)O.CCOC1=CC=CC=C1C(=O)N.CC1=NC=C(C(=N1)N)CN(C=O)/C(=C(/CCOC(=O)C2=CC=CC=C2)\SC(=O)C3=CC=CC=C3)/C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+64120,Caffeine benzoate,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C=C1)C(=O)O
+3081207,Acetaminophen; Butalbital; Caffeine,CC(C)CC1(C(=O)NC(=O)NC1=O)CC=C.CC(=O)NC1=CC=C(C=C1)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+145904,Aspirin; caffeine; orphenadrine citrate,CC1=CC=CC=C1C(C2=CC=CC=C2)OCCN(C)C.CC(=O)OC1=CC=CC=C1C(=O)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+56841593,Acetaminophen; Butalbital; Caffeine; Codeine Phosphate,CC(C)CC1(C(=O)NC(=O)NC1=O)CC=C.CC(=O)NC1=CC=C(C=C1)O.CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](C=C4)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+56842252,Aspirin; Butalbital; Caffeine; Codeine Phosphate,CC(C)CC1(C(=O)NC(=O)NC1=O)CC=C.CC(=O)OC1=CC=CC=C1C(=O)O.CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](C=C4)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+56841818,Acetaminophen; caffeine; dihydrocodeine bitartrate,CC(=O)NC1=CC=C(C=C1)O.CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](CC4)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+9871508,Acetaminophen; Aspirin; Caffeine,CC(=O)NC1=CC=C(C=C1)O.CC(=O)OC1=CC=CC=C1C(=O)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+23669229,Sodium caffeine benzoate,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C=C1)C(=O)[O-].[Na+]
+64119,Caffeine Monohydrate,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.O
+71717928,8-(13-Chlorostyryl) caffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C3=CC=C(C=C3)Cl
+166177241,Caffeine sodium iodide,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.[Na+].[I-]
+24847961,Aspirin mixture with Butalbital and Caffeine,CC(C)CC1(C(=O)NC(=O)NC1=O)CC=C.CC(=O)OC1=CC=CC=C1C(=O)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+20055291,Caffeine N-acetyl-L-tryptophan,CC(=O)N[C@@H](CC1=CNC2=CC=CC=C21)C(=O)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+21550,8-(2-(Diethylamino)ethoxy)-caffeine,CCN(CC)CCOC1=NC2=C(N1C)C(=O)N(C(=O)N2C)C
+23675768,Caffeine sodium salicylate,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C(=C1)C(=O)[O-])O.[Na+]
+129859582,Caffeine.benzene.caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=CC=C1
+56841820,Acetaminophen mixture with caffeine and dipyrone,CC1=C(C(=O)N(N1C)C2=CC=CC=C2)N(C)CS(=O)(=O)[O-].CC(=O)NC1=CC=C(C=C1)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.[Na+]
+44579939,"(E,E)-8-(4-Phenylbutadien-1-yl)caffeine",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C=C/C3=CC=CC=C3
+64136,(1-Me-14C)caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)[14CH3]
+52355,"Caffeine, 8-((3,4-dihydro-2H-pyran-2-yl)oxy)-",CN1C2=C(N=C1OC3CCC=CO3)N(C(=O)N(C2=O)C)C
+52357,8-((3-Methylcyclohexyl)oxy)caffeine,CC1CCCC(C1)OC2=NC3=C(N2C)C(=O)N(C(=O)N3C)C
+3027858,8-(3-(Hydroxymercuri)-2-methoxypropoxy)caffeine,CN1C2=C(N=C1OCC(C[Hg])OC)N(C(=O)N(C2=O)C)C.O
+118796830,Au(Caffein-2-Ylidene)2,CN1[C-]=[N+](C2=C1N(C(=O)N(C2=O)C)C)C.CN1[C-]=[N+](C2=C1N(C(=O)N(C2=O)C)C)C.[Au]
+658198,8-(3-Methoxybenzyloxy)caffeine,CN1C2=C(N=C1OCC3=CC(=CC=C3)OC)N(C(=O)N(C2=O)C)C
+21518017,8-[alpha-(5-Bromonicotinoyloxy)-ethyl]-caffeine,CC(C1=NC2=C(N1C)C(=O)N(C(=O)N2C)C)OC(=O)C3=CC(=CN=C3)Br
+46232854,8-[(3-Trifluoromethyl)benzyloxy]caffeine,CN1C2=C(N=C1OCC3=CC(=CC=C3)C(F)(F)F)N(C(=O)N(C2=O)C)C
+156028050,Caffeine 1-naphthylacetate sodium,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C2C(=C1)C=CC=C2CC(=O)[O-].[Na+]
+45280485,Caffeine-D10,[2H]C1=NC2=C(N1C([2H])([2H])[2H])C(=O)N(C(=O)N2C([2H])([2H])[2H])C([2H])([2H])[2H]
+70695388,8-{[(3-Flourophenyl)Sulfanyl]Methyl}Caffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)CSC3=CC=CC(=C3)F
+3703313,Caffeine-8-aldehyde,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)C=O
+764318,"Caffeine, 8-mercapto-",CN1C2=C(NC1=S)N(C(=O)N(C2=O)C)C
+3743430,8-[(3-Phenylpropyl)Amino]Caffeine,CN1C2=C(N=C1NCCCC3=CC=CC=C3)N(C(=O)N(C2=O)C)C
+164577003,Caffeine tartrate,CN1C2=C3N=C1OC(=O)C(C(C(=O)OCN3C(=O)N(C2=O)C)O)O
+53311321,Pterostilbene caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.COC1=CC(=CC(=C1)/C=C/C2=CC=C(C=C2)O)OC
+145705696,Caffeine-d3 (7-methyld-d3),[2H]C([2H])([2H])[N+]1=CN=C2C1C(=O)N(C(=O)N2C)C
+132275987,Caffeine-maleic acid,CN1C=NC2=C1C(=O)N(C(=O)N2C)C/C(=C/C(=O)O)/C(=O)O
+153639142,8-[(1-Aminocyclohexyl) ethynyl]caffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)C#CC3(CCCCC3)N
+28309,"Caffeine, monohydriodide",C[NH+]1C=NC2=C1C(=O)N(C(=O)N2C)C.[I-]
+33183,8-(Decylthio)-caffeine,CCCCCCCCCCSC1=NC2=C(N1C)C(=O)N(C(=O)N2C)C
+52354,8-(Cyclopentyloxy)-caffeine,CN1C2=C(N=C1OC3CCCC3)N(C(=O)N(C2=O)C)C
+52352,8-(Cycloheptyloxy)-caffeine,CN1C2=C(N=C1OC3CCCCCC3)N(C(=O)N(C2=O)C)C
+52359,8-(Nonylthio)-caffeine,CCCCCCCCCSC1=NC2=C(N1C)C(=O)N(C(=O)N2C)C
+52353,8-(Cyclopentylmethyl)-caffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)CC3CCCC3
+21552,8-(p-Aminobenzyl)-caffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)CC3=CC=C(C=C3)N
+139038963,Caffeine 3-hydroxy-2-naphthoic acid,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C2C=C(C(=CC2=C1)C(=O)O)O
+12146090,N-methyl caffeine,CN1CN(C2=C1C(=O)N(C(=O)N2C)C)C
+135393917,Caffeine oleate,CCCCCCCC/C=C\CCCCCCCC(=O)OC1=NC2=C(N1C)C(=O)N(C(=O)N2C)C
+78776769,Phenethyl caffeinate,CN1C=NC2=C1C(=O)N(C(=O)N2C)CC(=O)OCCC3=CC=CC=C3
+625677,8-[1-Cyclohexenylmethyl]caffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)CC3=CCCCC3
+150304,Acetaminophen-Aspirin-Caffeine mixt.,CC(=O)NC1=CC=C(C=C1)O.CC(=O)OC1=CC=CC=C1C(=O)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C(=C1)C(=O)N)O
+23678000,"Chlorogenic acid, monopotassium salt, compd with caffeine (1:1)",CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)[O-])O)OC(=O)C=CC2=CC(=C(C=C2)O)O)O)O.[K+]
+46232851,8-(3-Chlorobenzyloxy)caffeine,CN1C2=C(N=C1OCC3=CC(=CC=C3)Cl)N(C(=O)N(C2=O)C)C
+46232855,8-(3-Methylbenzyloxy)caffeine,CC1=CC(=CC=C1)COC2=NC3=C(N2C)C(=O)N(C(=O)N3C)C
+46232853,8-(3-Fluorobenzyloxy)caffeine,CN1C2=C(N=C1OCC3=CC(=CC=C3)F)N(C(=O)N(C2=O)C)C
+46232852,8-(3-Bromobenzyloxy)caffeine,CN1C2=C(N=C1OCC3=CC(=CC=C3)Br)N(C(=O)N(C2=O)C)C
+131746232,Caffeine TPGS,CC1=C(C(=C(C2=C1OC(CC2)(C)CCCC(C)CCCC(C)CCCC(C)C)C)OC(=O)CCC(=O)OCCO)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+131740271,Caffeine Tannic Acid,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=C(C=C(C(=C1O)O)O)C(=O)OC2=CC(=CC(=C2O)O)C(=O)OC[C@@H]3[C@H]([C@@H]([C@H]([C@@H](O3)OC(=O)C4=CC(=C(C(=C4)OC(=O)C5=CC(=C(C(=C5)O)O)O)O)O)OC(=O)C6=CC(=C(C(=C6)OC(=O)C7=CC(=C(C(=C7)O)O)O)O)O)OC(=O)C8=CC(=C(C(=C8)OC(=O)C9=CC(=C(C(=C9)O)O)O)O)O)OC(=O)C1=CC(=C(C(=C1)OC(=O)C1=CC(=C(C(=C1)O)O)O)O)O
+269348,8-[2-Norbornylmethyloxy]caffeine,CN1C2=C(N=C1OCC3CC4CCC3C4)N(C(=O)N(C2=O)C)C
+267090,8-[3-Cyclohexenyl]caffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)C3CCC=CC3
+235295,"Caffeine, 8-(hydroxymethyl)-",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)CO
+13001305,"Caffeine (2-13C, 99%; 1,3-15N2, 98%+)",CN1C=NC2=C1C(=O)[15N]([13C](=O)[15N]2C)C
+85364151,Caffeine mixture with drotaverine hydrochloride and methamizole sodium,CCOC1=C(C=C(C=C1)/C=C\2/C3=CC(=C(C=C3CCN2)OCC)OCC)OCC.CC1=C(C(=O)N(N1C)C2=CC=CC=C2)N(C)CS(=O)(=O)[O-].CN1C=NC2=C1C(=O)N(C(=O)N2C)C.[Na+].Cl
+86644104,Quercetin caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O
+137187073,Caffeine-5-chlorosalicylic acid,CN1C2=C(N=C1C3=C(C(=CC(=C3)Cl)C(=O)O)O)N(C(=O)N(C2=O)C)C
+57158367,8-(5-Hydroxypentylamino) caffeine,CN1C2=C(N=C1NCCCCCO)N(C(=O)N(C2=O)C)C
+57362268,Caffeine hydrochloride,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.Cl
+44579962,"(E,E)-8-[4-(3-Bromophenyl)butadien-1-yl]caffeine",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C=C/C3=CC(=CC=C3)Br
+57065119,8-(3-Isothiocyanatostyryl)caffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)C=CC3=CC(=CC=C3)N=C=S
+140216965,Caffeine-citric acid,CN1C=NC2=C1C(=O)N(C(=O)N2C)CC(C(=O)O)C(CC(=O)O)(C(=O)O)O
+32715,"Caffeine, 8-((2-(diethylamino)ethyl)thio)-, hydrochloride",CC[NH+](CC)CCSC1=NC2=C(N1C)C(=O)N(C(=O)N2C)C.[Cl-]
+32713,"Caffeine, 8-((2-(dimethylamino)ethyl)thio)-, hydrochloride",CN1C2=C(N=C1SCC[NH+](C)C)N(C(=O)N(C2=O)C)C.[Cl-]
+32717,"Caffeine, 8-((3-(dimethylamino)propyl)thio)-, hydrochloride",CN1C2=C(N=C1SCCC[NH+](C)C)N(C(=O)N(C2=O)C)C.[Cl-]
+60148,"Caffeine, 8-((beta-hydroxy-alpha-methylphenethyl)amino)-",CC(C(C1=CC=CC=C1)O)NC2=NC3=C(N2C)C(=O)N(C(=O)N3C)C
+35697,"Caffeine, 8-morpholino-",CN1C2=C(N=C1N3CCOCC3)N(C(=O)N(C2=O)C)C
+41792,"Caffeine, 8-((2-hydroxyethyl)thio)-",CN1C2=C(N=C1SCCO)N(C(=O)N(C2=O)C)C
+41791,"Caffeine, 8-((2-hydroxyethyl)thio)-, hydrochloride",C[NH+]1C2=C(N=C1SCCO)N(C(=O)N(C2=O)C)C.[Cl-]
+41789,"Caffeine, 8-((3-aminopropyl)thio)-, hydrochloride",C[NH+]1C2=C(N=C1SCCCN)N(C(=O)N(C2=O)C)C.[Cl-]
+43367,8-((2-Hydroxypropyl)amino)caffeine,CC(CNC1=NC2=C(N1C)C(=O)N(C(=O)N2C)C)O
+56858,"Caffeine, 8-((3-hydroxypropyl)amino)-",CN1C2=C(N=C1NCCCO)N(C(=O)N(C2=O)C)C
+21966,Caffeine bromide,C[NH+]1C=NC2=C1C(=O)N(C(=O)N2C)C.[Br-]
+22994,"Caffeine, 8-((2-aminoethyl)thio)-",CN1C2=C(N=C1SCCN)N(C(=O)N(C2=O)C)C
+3033115,"Caffeine, 8-mercapto-, hydrochloride",C[NH+]1C2=C(NC1=S)N(C(=O)N(C2=O)C)C.[Cl-]
+15936155,Caffeine-(trimethyl-13C3),[13CH3]N1C=NC2C1C(=O)N(C(=O)N2[13CH3])[13CH3]
+172432385,Caffeine-acrylamide,CN1C=NC2=C1C(=O)N(C(=O)N2C)CC=CC(=O)N
+125740,Caffeine mixture with ergotamine tartrate,C[C@@]1(C(=O)N2[C@H](C(=O)N3CCCC3C2O1)CC4=CC=CC=C4)NC(=O)[C@H]5CN([C@@H]6CC7=CNC8=CC=CC(=C78)C6=C5)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.[C@H]([C@@H](C(=O)O)O)(C(=O)O)O
+133162,"Dihydrocodeine bitartrate, aspirin and caffeine",CCOC1=CC=C(C=C1)NC(=O)C.CC(CN1C2=CC=CC=C2SC3=CC=CC=C31)N(C)C.CC(=O)OC1=CC=CC=C1C(=O)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.Cl
+69306311,"Caffeine-sodium benzoate, analytical standard",CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C=C1)C(=O)O.[Na]
+6448871,"(E)-8-(2,4-Dimethoxy-3-methylstyryl)caffeine",CC1=C(C=CC(=C1OC)/C=C/C2=NC3=C(N2C)C(=O)N(C(=O)N3C)C)OC
+129637681,Hydrazino-Caffein,CN1C=NC2=C1C(=O)N(C(=O)N2C)CNN
+129648105,Oxalsaures Caffein,CN1C2=C3N=C1OC(=O)C(=O)OCN3C(=O)N(C2=O)C
+129651021,Diethohydroxy caffeine,CN1C(=O)C2=C3NC(=O)N2CCCC4(N3C1=O)CC4
+129724093,Cisplatin caffeine,[CH3-].CN1C=NC(=C1[C-]=O)N(C)[C-]=O.[Pt]
+129734613,Deuteromethyl caffeine,[2H]CCN1C(=O)C2=C(N=CN2C)N(C1=O)C
+129773737,Caffeine.benzene,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=CC=C1
+129718040,Caffeine carbamate,CN1C2=C(N=C1OC(=O)N)N(C(=O)N(C2=O)C)C
+129779077,Caffeine-benzoate sodium,CN1C=NC2=C1C(=O)N(C(=O)N2C)CC3=CC=CC=C3C(=O)[O-].[Na+]
+129720509,Caffeine-caffeic acid,CN1C=NC2=C1C(=O)N(C(=O)N2C)CC3=CC(=C(C=C3/C=C/C(=O)O)O)O
+129734608,Trideuteromethyl caffeine,[2H]C([2H])([2H])CN1C(=O)C2=C(N=CN2C)N(C1=O)C
+139064237,Caffeine:anthranilic acid mono o-xylene,CC1=CC=CC=C1C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C(=C1)C(=O)O)N
+139146205,Niclosamide-caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=C(C=C1[N+](=O)[O-])Cl)NC(=O)C2=C(C=CC(=C2)Cl)O
+139146505,1:1 cocrystal of Temozolomide and Caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C(=O)N2C=NC(=C2N=N1)C(=O)N
+139196297,Caffeine:2-iodo-4nitroaniline,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=C(C=C1[N+](=O)[O-])I)N
+139196301,Caffeine:2-chloro-5nitroaniline,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=C(C=C1[N+](=O)[O-])N)Cl.C1=CC(=C(C=C1[N+](=O)[O-])N)Cl
+139196305,Caffeine:2-fluoro-5-nitrobenzoicacid,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=C(C=C1[N+](=O)[O-])C(=O)O)F
+139196300,Caffeine:4-fluoro-3nitroaniline,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=C(C=C1N)[N+](=O)[O-])F
+139196304,Caffeine:2-fluoro-5nitroaniline,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=C(C=C1[N+](=O)[O-])N)F
+139146636,Caffeine:4-chloro-3nitrobenzoic acid,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=C(C=C1C(=O)O)[N+](=O)[O-])Cl
+139064236,Caffeine:anthranilic acid mono toluene,CC1=CC=CC=C1.CC1=CC=CC=C1.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C(=C1)C(=O)O)N.C1=CC=C(C(=C1)C(=O)O)N
+16745297,"(E)-8-(3,4-Dichlorostyryl)caffeine (4b)",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C3=CC(=C(C=C3)Cl)Cl
+44579960,"(E,E)-8-[4-(3-Chlorophenyl)butadien-1-yl]caffeine",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C=C/C3=CC(=CC=C3)Cl
+44579921,(Z)-8-(3-chlorostyryl)caffeine,CN1C2C(N=C1/C=C/C3=CC(=CC=C3)Cl)N(C(=O)N(C2=O)C)C
+44579961,"(E,E)-8-[4-(3-Fluorophenyl)butadien-1-yl]caffeine",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C=C/C3=CC(=CC=C3)F
+129821903,N-acetyl-caffeine,CC(=O)N1CN(C2=C1N(C(=O)N(C2=O)C)C)C
+129825791,Caffeine maleate,CN1C2=C3N=C1OC(=O)/C=C\C(=O)OCN3C(=O)N(C2=O)C
+129737710,Caffeine pentamidine,CN1C=NC2=C1C(=O)N(C(=O)N2C(C(=N)N)C(=N)N)C(C(=N)N)(C(=N)N)C(=N)N
+129645690,Caffeine ethanol,CCO.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+129848849,Caffeine-trial,CN1C=NC2=C1C(=O)N(C(=O)N2C)C(C=O)(C=O)C=O
+129846080,8-(m-Chlorophenylbutadienyl)caffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)C=CC=CC3=CC(=CC=C3)Cl
+129866249,Caffeine-nicotinamide,CN1C=NC2=C1C(=O)N(C(=O)N2C)CC3=C(C=NC=C3)C(=O)N
+129847520,Caffeine-glutaric acid,CN1C=NC2=C1C(=O)N(C(=O)N2C)CC(CCC(=O)O)C(=O)O
+129880576,(e)-2-(1-Hydroxyl-4-oxocyclohexyl) ethyl caffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)CCC3(CCC(=O)CC3)O
+129704871,Caffein citrate,CN1C2=C3N=C1OC(=O)CC4(CC(=O)OC(N3C(=O)N(C2=O)C)OC4=O)O
+129660695,Caffeine hydrochloride dihydrate,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.O.O.Cl
+129781079,Caffeine phosphate,CN1C2=C3N=C1OP4(=O)OC(N3C(=O)N(C2=O)C)O4
+139196298,Caffeine:4-iodo-3nitroaniline,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=C(C=C1N)[N+](=O)[O-])I
+139196302,Caffeine:4nitroaniline,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=CC=C1N)[N+](=O)[O-]
+139199478,Vanillic acid (bis) caffeine co-crystal,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.COC1=C(C=CC(=C1)C(=O)O)O
+139064235,Caffeine:anthranilic acid hemibromobenzene,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C=C1)Br.C1=CC=C(C(=C1)C(=O)O)N.C1=CC=C(C(=C1)C(=O)O)N
+139064239,Caffeine:anthranilic acid monohydrate,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C(=C1)C(=O)O)N.C1=CC=C(C(=C1)C(=O)O)N.O.O
+139178750,5-Fluorocytosine caffeine cocrystal,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=NC(=O)NC(=C1F)N.C1=NC(=O)NC(=C1F)N
+139179854,Caffeine-D-tartaric acid 1/1,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.[C@H]([C@@H](C(=O)O)O)(C(=O)O)O
+139038962,Caffeine 1-hydroxy-2-naphthoic acid,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C2C(=C1)C=CC(=C2O)C(=O)O
+139064234,Caffeine:anthranilic acid hemichlorobenzene,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C=C1)Cl.C1=CC=C(C(=C1)C(=O)O)N.C1=CC=C(C(=C1)C(=O)O)N
+139064238,Caffeine:anthranilic acid sesqui p-xylene,CC1=CC=C(C=C1)C.CC1=CC=C(C=C1)C.CC1=CC=C(C=C1)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C(=C1)C(=O)O)N.C1=CC=C(C(=C1)C(=O)O)N
+139088526,Gallic Acid Tris-Caffeine hexahydrate,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=C(C=C(C(=C1O)O)O)C(=O)O.O.O.O.O.O.O
+139196299,Caffeine:4-chloro-3nitroaniline,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=C(C=C1N)[N+](=O)[O-])Cl
+139196303,"Caffeine:2,4dinitrobenzoicacid",CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=C(C=C1[N+](=O)[O-])[N+](=O)[O-])C(=O)O.C1=CC(=C(C=C1[N+](=O)[O-])[N+](=O)[O-])C(=O)O
+139196307,MOnohydrate of caffeine-4HBA (1:1),CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC(=CC=C1C(=O)O)O.O
+139144351,"Caffeine:3,5-pyrazoledicarboxylic acid",CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=C(NN=C1C(=O)O)C(=O)O
+139144451,Caffeine:octafluoroadipic acid 2/1,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C(=O)(C(C(C(C(C(=O)O)(F)F)(F)F)(F)F)(F)F)O
+139204591,Zonisamide:Caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C2C(=C1)C(=NO2)CS(=O)(=O)N
+64128,8-Caffeine-propionamide,CN1C(=NC2=C1C(=O)NC(=O)N2C)CCC(=O)N
+25434,Caffeine:Theophylline cocrystal,CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN1C2=C(C(=O)N(C1=O)C)NC=N2
+22995,"Caffeine, 8-((2-aminoethyl)thio)-, hydrochloride",C[NH+]1C2=C(N=C1SCCN)N(C(=O)N(C2=O)C)C.[Cl-]
+444035,Migrenin,CC1=CC(=O)N(N1C)C2=CC=CC=C2.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C(C(=O)O)C(CC(=O)O)(C(=O)O)O
+9561571,"Acetaldehyde, dichloro-, (1,3,7-trimethyl-8-xanthinyl)hydrazone",CN1C2=C(N=C1N/N=C/C(Cl)Cl)N(C(=O)N(C2=O)C)C
+10241810,"1,3,7-Tris((13C)methyl)-3,7-dihydro-1H-purine-2,6-dione",[13CH3]N1C=NC2=C1C(=O)N(C(=O)N2[13CH3])[13CH3]
+1326,Isocaffeine,CN1C=NC2=C1N(C(=O)N(C2=O)C)C
+82070,"6-Amino-5-formamido-1,3-dimethyluracil",CN1C(=C(C(=O)N(C1=O)C)NC=O)N
+13001304,"1,3,7-Tris((~2~H_3_)methyl)-3,7-dihydro-1H-purine-2,6-dione",[2H]C([2H])([2H])N1C=NC2=C1C(=O)N(C(=O)N2C([2H])([2H])[2H])C([2H])([2H])[2H]
+4687,Paraxanthine,CN1C=NC2=C1C(=O)N(C(=O)N2)C
+129318600,Caffeidine Nitrate,CNC1=C(N(C=N1)C)C(=O)NC.[N+](=O)(O)[O-]
+159880,Caffeidine,CNC1=C(N(C=N1)C)C(=O)NC
+936,Nicotinamide,C1=CC(=CN=C1)C(=O)N
+24208736,"1,7-Dimethyl-3-(~13~C)methyl-3,7-dihydro-1H-purine-2,6-dione",CN1C=NC2=C1C(=O)N(C(=O)N2[13CH3])C
+171371250,"2-(1,3-dimethyl-2,6,8-trioxo-9H-purin-7-yl)acetic acid",CN1C2=C(C(=O)N(C1=O)C)N(C(=O)N2)CC(=O)O
+5429,Theobromine,CN1C=NC2=C1C(=O)NC(=O)N2C
+52358,"1,3,7-Trimethyl-8-((4-methylcyclohexyl)oxy)-3,7-dihydro-1H-purine-2,6-dione",CC1CCC(CC1)OC2=NC3=C(N2C)C(=O)N(C(=O)N3C)C
+24666,"Benzoic acid, 2-(acetyloxy)-, mixt. with 3,7-dihydro-1,3,7-trimethyl-1H-purine-2,6-dione and N-(4-ethoxyphenyl)acetamide",CCOC1=CC=C(C=C1)NC(=O)C.CC(=O)OC1=CC=CC=C1C(=O)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+56972151,8-(3-Chlorostyryl)caf-feine,CN1C(=NC2=C1N(C(=O)N(C2=O)C)C)/C=C/C3=CC(=CC=C3)Cl
+9570805,"Benzaldehyde, p-(2-(diethylamino)ethoxy)-, (1,3,7-trimethyl-8-xanthinyl)hydrazonehydrochloride",CC[NH+](CC)CCOC1=CC=C(C=C1)/C=N/NC2=NC3C(N2C)C(=O)N(C(=O)N3C)C.[Cl-]
+9561307,8-(o-Chlorobenzylidene)hydrazinocaffeine,CN1C2=C(N=C1N/N=C/C3=CC=CC=C3Cl)N(C(=O)N(C2=O)C)C
+13001300,"3,7-Dihydro-1,3-dimethyl-7-(methyl-d3)-1H-purine-2,6-dione",[2H]C([2H])([2H])N1C=NC2=C1C(=O)N(C(=O)N2C)C
+79437,"1,3,7-Trimethyluric acid",CN1C2=C(NC1=O)N(C(=O)N(C2=O)C)C
+91268,"1H-Purine-2,6-dione, 3,9-dihydro-1,3-dimethyl-, hydrate (1:1)",CN1C2=C(C(=O)N(C1=O)C)NC=N2.O
+94929,8-Methylthiocaffeine,CN1C2=C(N=C1SC)N(C(=O)N(C2=O)C)C
+5492657,Propain,CC(=O)NC1=CC=C(C=C1)O.CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](C=C4)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN(C)CCOC(C1=CC=CC=C1)C2=CC=CC=C2.OP(=O)(O)O.Cl
+5380637,8-Prop-1-enylcaffeine,C/C=C/C1=NC2=C(N1C)C(=O)N(C(=O)N2C)C
+64121,"Benzoic acid, 2-hydroxy-, compd. with 3,7-dihydro-1,3,7-trimethyl-1H-purine-2,6-dione (1:1)",CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1=CC=C(C(=C1)C(=O)O)O
+21031,8-Chlorocaffeine,CN1C2=C(N=C1Cl)N(C(=O)N(C2=O)C)C
+22780,"3,7-Dihydro-8-((2-hydroxyethyl)amino)-1,3,7-trimethyl-1H-purine-2,6-dione",CN1C2=C(N=C1NCCO)N(C(=O)N(C2=O)C)C
+44147053,"Morphinan-6-ol, 7,8-didehydro-4,5-epoxy-3-methoxy-17-methyl-, (5alpha,6alpha)-, mixt. with 3,7-dihydro-1,3,7-trimethyl-1H-purine-2,6-dione, N-(4-ethoxyphenyl)acetamide and N-(4-hydroxyphenyl)acetamide",CCOC1=CC=C(C=C1)NC(=O)C.CC(=O)NC1=CC=C(C=C1)O.CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](C=C4)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+126542,Caffeidine acid,CNC(=O)N(C)C1=C(N(C=N1)C)C(=O)O
+2153,Theophylline,CN1C2=C(C(=O)N(C1=O)C)NC=N2
+56998,G100,CN1C2=C(N=C1NCCCOC)N(C(=O)N(C2=O)C)C
+35685,Cafaminol,CN1C2=C(N=C1N(C)CCO)N(C(=O)N(C2=O)C)C
+64124,8-Ethylthiocaffeine,CCSC1=NC2=C(N1C)C(=O)N(C(=O)N2C)C
+52356,"3,7-Dihydro-1,3,7-trimethyl-8-((3-methylbutyl)thio)-1H-purine-2,6-dione",CC(C)CCSC1=NC2=C(N1C)C(=O)N(C(=O)N2C)C
+64127,"8-Bromo-3,7-dihydro-1,3,7-trimethyl-1H-purine-2,6-dione",CN1C2=C(N=C1Br)N(C(=O)N(C2=O)C)C
+22181,"3,7-Dihydro-1,3,7-trimethyl-1H-purine-2,6-dione monohydrochloride",C[NH+]1C=NC2=C1C(=O)N(C(=O)N2C)C.[Cl-]
+21551,8-Benzylcaffeine,CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)CC3=CC=CC=C3
+177923955,CID 177923955,CC(=CCC1=NC2=C(N1C)C(=O)N(C(=O)N2C)C)C
+23645361,"2-[(E)-2-(3-chlorophenyl)ethenyl]-3,5,7-trimethyl-3H,4H,5H,6H,7H-imidazo[4,5-c]pyridine-4,6-dione",CC1C2=C(C(=O)N(C1=O)C)N(C(=N2)/C=C/C3=CC(=CC=C3)Cl)C
+146012678,"1H-Imidazole-5-carboxamide, N,1-dimethyl-4-(methylamino)-, hydrochloride (1:1)",CNC1=C(N(C=N1)C)C(=O)NC.Cl
+11019926,"Sodium 3,7-dimethyl-2-oxo-3,7-dihydro-2H-purin-6-olate",CN1C=NC2=C1C(=O)[N-]C(=O)N2C.[Na+]
+71563049,9-Deaza-CSC,CN1C(=CC2=C1C(=O)N(C(=O)N2C)C)/C=C/C3=CC=C(C=C3)Cl
+6474386,"(1S,3R,4R,5R)-3-[(E)-3-(3,4-dihydroxyphenyl)prop-2-enoyl]oxy-1,4,5-trihydroxy-cyclohexanecarboxylic acid; 1,3,7-trimethylpurine-2,6-dione",CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O
+176478304,Pentoxifylline Impurity 9,CNC1=C(N(C=N1)C)C(=O)N(C)C(=O)O
+15872156,Methylliberine,CN1C2=C(N=C(N(C2=O)C)OC)N(C1=O)C
+137348305,"bis(1,3,7,9-tetramethyl-2,6-dioxo-2,3,6,7-tetrahydro-1H-purin-9-ium-8-yl)gold(1+)",CN1[C-]=[N+](C2=C1C(=O)N(C(=O)N2C)C)C.CN1[C-]=[N+](C2=C1C(=O)N(C(=O)N2C)C)C.[Au+3]
+69975280,Synalgos DC,CC(=O)OC1=CC=CC=C1C(=O)O.CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](CC4)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+202236,"Aminopyrine mixture with chlorpromazine, caffeine and phenacetin",CCOC1=CC=C(C=C1)NC(=O)C.CC1=C(C(=O)N(N1C)C2=CC=CC=C2)N(C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl
+225249,"1H-Purine-2,6-dione, 8,8'-(1,5-pentanediyl)bis(3,7-dihydro-1,3,7-trimethyl-",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)CCCCCC3=NC4=C(N3C)C(=O)N(C(=O)N4C)C
+228632,Mls000737995,CN1C2=C(N=C1N3CCCCC3)N(C(=O)N(C2=O)C)C
+13001298,"3,7-Dimethyl-1-(trideuteriomethyl)purine-2,6-dione",[2H]C([2H])([2H])N1C(=O)C2=C(N=CN2C)N(C1=O)C
+86278612,"3,7-Dihydro-1,3,7-trimethyl-1H-purine-2,6-dione, hydroiodide, sodium salt",CN1C=NC2=C1C(=O)N(C(=O)N2C)C.[Na+].I
+11988032,"Caffeine mixture with camylofin, ergotamine, mecloxamine and propyphenazone",CCN(CC)CCNC(C1=CC=CC=C1)C(=O)OCCC(C)C.CC1=C(C(=O)N(N1C)C2=CC=CC=C2)N(C)C.CC(CN(C)C)OC(C)(C1=CC=CC=C1)C2=CC=C(C=C2)Cl.C[C@@]1(C(=O)N2[C@H](C(=O)N3CCC[C@H]3[C@@]2(O1)O)CC4=CC=CC=C4)NC(=O)[C@H]5CN([C@@H]6CC7=CNC8=CC=CC(=C78)C6=C5)C.C[C@@]1(C(=O)N2[C@H](C(=O)N3CCC[C@H]3[C@@]2(O1)O)CC4=CC=CC=C4)NC(=O)[C@H]5CN([C@@H]6CC7=CNC8=CC=CC(=C78)C6=C5)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C(C(=O)O)C(CC(=O)O)(C(=O)O)O.[C@@H]([C@H](C(=O)[O-])O)(C(=O)[O-])O.Cl.Cl
+57351081,"1H-Purine-2,6-dione, 3,7-dihydro-1,3,7-trimethyl-, hydrobromide (1:1)",CN1C=NC2=C1C(=O)N(C(=O)N2C)C.Br
+5492530,"Acetaminophen mixture with caffeine, codeine phosphate and doxylamine succinate",CC(=O)NC1=CC=C(C=C1)O.CC(C1=CC=CC=C1)(C2=CC=CC=N2)OCCN(C)C.CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](C=C4)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.C(CC(=O)O)C(=O)O.OP(=O)(O)O
+5492635,"Aspirin mixture with caffeine, codeine, phenacetin and phenobarbital",CCC1(C(=O)NC(=O)NC1=O)C2=CC=CC=C2.CCOC1=CC=C(C=C1)NC(=O)C.CC(=O)OC1=CC=CC=C1C(=O)O.CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](C=C4)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.OP(=O)(O)O
+56843206,Alnagon,CCC1(C(=O)NC(=O)NC1=O)C2=CC=CC=C2.CC(=O)OC1=CC=CC=C1C(=O)O.CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](C=C4)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+343657,"1,3,7-trimethyl-8-[(2-phenylethyl)amino]-3,7-dihydro-1H-purine-2,6-dione",CN1C2=C(N=C1NCCC3=CC=CC=C3)N(C(=O)N(C2=O)C)C
+427849,"1,3,7-Trimethylxanthine, TMS",CN1C=NC2C1C(=O)N(C(=O)N2C)C
+157897,Acetaminophen mixture with caffeine and guaifenesin,CC(=O)NC1=CC=C(C=C1)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.COC1=CC=CC=C1OCC(CO)O
+157430,Cofplaton,[H+].[H+].CN1C2=C(N=C1OCCCN(C)C)N(C(=O)N(C2=O)C)C.CN1C2=C(N=C1OCCCN(C)C)N(C(=O)N(C2=O)C)C.[Cl-].[Cl-].[Cl-].[Cl-].[Cl-].[Cl-].[Pt+4]
+3043686,"1-(1,3,7-Trimethyl-2,6-dioxo-2,3,6,7-tetrahydro-1H-purin-8-yl)ethyl 2,4-dimethylpyridine-3-carboxylate",CC1=C(C(=NC=C1)C)C(=O)OC(C)C2=NC3=C(N2C)C(=O)N(C(=O)N3C)C
+165692,"Caffeine mixture with phenacetin, propyphenazone and pyrithyldione",CCC1(C(=O)C=CNC1=O)CC.CCOC1=CC=C(C=C1)NC(=O)C.CC1=C(C(=O)N(N1C)C2=CC=CC=C2)C(C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+3052767,"1H-Purine-2,6-dione, 3,4,5,9-tetrahydro-1,3-dimethyl-",CN1C2C(C(=O)N(C1=O)C)NC=N2
+174272,Acetaminophen mixture with caffeine and codeine phosphate,CC(=O)NC1=CC=C(C=C1)O.CN1CC[C@]23[C@@H]4C1CC5=C2C(=C(C=C5)OC)O[C@H]3[C@H](C=C4)O.CN1C=NC2=C1C(=O)N(C(=O)N2C)C.[O-]P(=O)([O-])[O-]
+3033923,8-Mercaptoisocaffeine,CN1C2=C(C(=O)N(C(=O)N2C)C)NC1=S
+3043685,"1-(1,3,7-Trimethyl-2,6-dioxo-2,3,6,7-tetrahydro-1H-purin-8-yl)ethyl pyridine-3-carboxylate",CC(C1=NC2=C(N1C)C(=O)N(C(=O)N2C)C)OC(=O)C3=CN=CC=C3
+115374,Fencamine,CC(CC1=CC=CC=C1)N(C)CCNC2=NC3=C(N2C)C(=O)N(C(=O)N3C)C
+133294,Proksifein,CN1C2=C(N=C1OCCCN(C)C)N(C(=O)N(C2=O)C)C
+118395,"1,9-Dimethylxanthine",CN1C=NC2=C1NC(=O)N(C2=O)C
+133327,Elsinore pill,C[C@@H]([C@@H](C1=CC=CC=C1)O)NC.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+6448749,"1H-Purine-2,6-dione, 3,7-dihydro-8-(2-(2,3-dimethoxyphenyl)ethenyl)-1,3,7-trimethyl-, (E)-",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C3=C(C(=CC=C3)OC)OC
+6448869,"1H-Purine-2,6-dione, 3,7-dihydro-8-(2-(2,4-dimethoxyphenyl)ethenyl)-1,3,7-trimethyl-, (E)-",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C3=C(C=C(C=C3)OC)OC
+6448897,"1H-Purine-2,6-dione, 3,7-dihydro-8-(2-(3-bromo-4-methoxyphenyl)ethenyl)-1,3,7-trimethyl-, (E)-",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C3=CC(=C(C=C3)OC)Br
+6445882,"3,7-dihydro-1,3,7-trimethyl-8-((1E)-2-(3,4,5-trimethoxyphenyl)ethenyl)-1H-Purine-2,6-dione",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C3=CC(=C(C(=C3)OC)OC)OC
+6448866,KF 21213,CC1=C(C=CC(=C1C)OC)/C=C/C2=NC3=C(N2C)C(=O)N(C(=O)N3C)C
+6448978,"1H-Purine-2,6-dione, 3,7-dihydro-8-(2-(2,5-dimethyl-4-methoxyphenyl)ethenyl)-1,3,7-trimethyl-,(E)-",CC1=CC(=C(C=C1OC)C)/C=C/C2=NC3=C(N2C)C(=O)N(C(=O)N3C)C
+6448751,"1H-Purine-2,6-dione, 3,7-dihydro-8-(2-(2,3,4-trimethoxyphenyl)ethenyl)-1,3,7-trimethyl-, (E)-",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C3=C(C(=C(C=C3)OC)OC)OC
+6448867,"1H-Purine-2,6-dione, 3,7-dihydro-8-(2-(1,3-benzodioxol-5-yl)ethenyl)-1,3,7-trimethyl-, (E)-",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C3=CC4=C(C=C3)OCO4
+6448891,"1H-Purine-2,6-dione, 3,7-dihydro-8-(2-(2-chloro-3,4-dimethoxyphenyl)ethenyl)-1,3,7-trimethyl-,(E)-",CN1C(=NC2=C1C(=O)N(C(=O)N2C)C)/C=C/C3=C(C(=C(C=C3)OC)OC)Cl
+702,Ethanol,CCO
+1983,Acetaminophen,CC(=O)NC1=CC=C(C=C1)O
+11286,"3,7-Dihydro-8-methoxy-1,3,7-trimethyl-1H-purine-2,6-dione",CN1C2=C(N=C1OC)N(C(=O)N(C2=O)C)C
+11347,"8-Ethoxy-3,7-dihydro-1,3,7-trimethyl-1H-purine-2,6-dione",CCOC1=NC2=C(N1C)C(=O)N(C(=O)N2C)C
+54877,Isopropylantipyrine mixed with ethenzamide and caffeine monohydrate (3:5:1),CCOC1=CC=CC=C1C(=O)N.CC1=C(C(=O)N(N1C)C2=CC=CC=C2)C(C)C.CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+64125,8-Allyloxycaffeine,CN1C2=C(N=C1OCC=C)N(C(=O)N(C2=O)C)C
+64129,"8-Amino-3,7-dihydro-1,3,7-trimethyl-1H-purine-2,6-dione",CN1C2=C(N=C1N)N(C(=O)N(C2=O)C)C
+64137,"1H-Purine-2,6-dione, 3,7-dihydro-8-((phenylmethyl)amino)-1,3,7-trimethyl-",CN1C2=C(N=C1NCC3=CC=CC=C3)N(C(=O)N(C2=O)C)C
+64115,"3,7-Dihydro-1,3,7,8-tetramethyl-1H-purine-2,6-dione",CC1=NC2=C(N1C)C(=O)N(C(=O)N2C)C
+69550,Acefylline,CN1C2=C(C(=O)N(C1=O)C)N(C=N2)CC(=O)O
+25768,"1,3,6,7-Tetrahydro-1,3,7-trimethyl-6-thioxo-2H-purin-2-one",CN1C=NC2=C1C(=S)N(C(=O)N2C)C
+22375,"3,7-Dimethylxanthine-1-methanecarboxylic acid",CN1C=NC2=C1C(=O)N(C(=O)N2C)CC(=O)O

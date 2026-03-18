@@ -1,6 +1,6 @@
 from rdkit import Chem
 from rdkit.Chem import Draw
-from rdkit.Chem import AllChem
+from rdkit.Chem import rdFingerprintGenerator
 from rdkit.Chem import Descriptors
 import pandas as pd
 #<-------2. Load Dataset------->
@@ -18,18 +18,22 @@ veber_results=[]
 lipinski_fails=[]
 veber_fails=[]
 drug_like_results=[]
+fingerprints=[]
+fingerprint_Bits=[]
 #<-------4. Process Each Molecule------->
 for i in range(len(df)):
   Smiles=df.loc[i,"SMILES"]
     #<-------4.1 Convert Smiles Into Molecules------->
   mol=Chem.MolFromSmiles(Smiles)
-
+ 
   if mol is None:
      lipinski_results.append("invalid")
      veber_results.append("invalid")
      lipinski_fails.append(None)
      veber_fails.append(None)
      continue
+  morgan_fp=rdFingerprintGenerator.GetMorganGenerator(radius=2,fpSize=2048)
+  fp=morgan_fp.GetFingerprint(mol)   
 
     #<-------4.2 Calculate Molecular Descriptors ------->
   mol_wt=Descriptors.MolWt(mol)
@@ -79,6 +83,8 @@ for i in range(len(df)):
   veber_results.append(veber_result)
   lipinski_fails.append(lipinski_fail)
   veber_fails.append(veber_fail)
+  fingerprints.append(fp)
+  fingerprint_Bits.append(fp.ToBitString())
     #<-------9. Add Results To Dataset------->
 df["mol_wt"]=molwt_list
 df["logP"]=logP_list
@@ -91,6 +97,8 @@ df["veber_results"]=veber_results
 df["lipinski_fails"] =lipinski_fails
 df["veber_Fails"]=veber_fails
 df["drug_like"]=drug_like_results
+df["fingerprints"]=fingerprints
+df["fingerprint_Bits"]=df["fingerprints"].apply(lambda x:x.ToBitString()if x is not None else None)
       #<-------10. Save Updated Dataset------->
 df.to_csv("drug_analysis_results.csv",index=False)
 print("updated drug analysis dataset saved")

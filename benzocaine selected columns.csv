@@ -1,0 +1,39 @@
+Compound_CID,Name,SMILES
+2337,Benzocaine,CCOC(=O)C1=CC=C(C=C1)N
+10214462,Benzocaine Hydrochloride,CCOC(=O)C1=CC=C(C=C1)N.Cl
+71313692,Benzocaine-13C6,CCOC(=O)[13C]1=[13CH][13CH]=[13C]([13CH]=[13CH]1)N
+12762945,Benzocaine N-glucoside,CCOC(=O)C1=CC=C(C=C1)NC2C(C(C(C(O2)CO)O)O)O
+4403890,Benzocaine Impurity 5,CCCCCCCC(=O)NC1=CC=C(C=C1)C(=O)OCC
+139025633,Benzocaine N-Glucoside (alpha/beta mixture),CCOC(=O)C1=CC=C(C=C1)N[C@@H]2[C@H]([C@H]([C@@H](C(O2)CO)O)O)O
+71313693,Benzocaine N-D-Fructoside,CCOC(=O)C1=CC=C(C=C1)N[C@]2(C([C@H]([C@H](O2)CO)O)O)CO
+578539,Benzocaine Acetylsalicylamide,CCOC(=O)C1=CC=C(C=C1)NC(=O)C2=CC=CC=C2OC(=O)C
+69399545,Benzocaine/menthol,CCOC(=O)C1=CC=C(C=C1)N.CC1CCC(C(C1)O)C(C)C
+4125658,Benzocaine Methanethiosulfonate,CS(=O)(=O)SCCOC(=O)C1=CC=C(C=C1)N
+171035246,Benzocaine fructoside,CCOC(=O)C1=CC=C(C=C1)N[C@]2(C(C(C(O2)CO)O)O)CO
+129627397,Benzocaine glucoside,CCOC(=O)C1=CC=C(C=C1)N[C@H]2C(C([C@@H](C(O2)CO)O)O)O
+45038201,Ethyl 4-amino(~2~H_4_)benzoate,[2H]C1=C(C(=C(C(=C1C(=O)OCC)[2H])[2H])N)[2H]
+71313694,N-(4-(Ethoxycarbonyl)phenyl)-beta-D-threo-hexopyranosylamine,CCOC(=O)C1=CC=C(C=C1)N[C@H]2C([C@H]([C@@H](C(O2)CO)O)O)O
+42950,"Benzoic acid, 4-((trimethylsilyl)amino)-, ethyl ester",CCOC(=O)C1=CC=C(C=C1)N[Si](C)(C)C
+220420,Ethyl-4-acetamidobenzoate,CCOC(=O)C1=CC=C(C=C1)NC(=O)C
+21439,2-Aminobenzyl alcohol,C1=CC=C(C(=C1)CO)N
+80293,3-Aminobenzyl alcohol,C1=CC(=CC(=C1)N)CO
+3080942,Almagel,CCOC(=O)C1=CC=C(C=C1)N.[OH-].[OH-].[OH-].[OH-].[OH-].[Mg+2].[Al+3]
+3014024,Benzalkonium Chloride,CCCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.[Cl-]
+3031802,Tetrakis(p-(ethoxycarbonyl)anilino)silane,CCOC(=O)C1=CC=C(C=C1)N[Si](NC2=CC=C(C=C2)C(=O)OCC)(NC3=CC=C(C=C3)C(=O)OCC)NC4=CC=C(C=C4)C(=O)OCC
+15313881,Ethyl 4-(methylnitrosoamino)benzoate,CCOC(=O)C1=CC=C(C=C1)N(C)N=O
+53629521,Bismuth Subsalicylate,C1=CC=C(C(=C1)C(=O)[O-])[O-].[OH-].[Bi+3]
+71307271,"Ethyl 4-(((2R,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)tetrahydro-2H-pyran-2-yl)amino)benzoate",CCOC(=O)C1=CC=C(C=C1)N[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O
+69331,4-Aminobenzyl alcohol,C1=CC(=CC=C1CO)N
+223909,Ethyl 4-formamidobenzoate,CCOC(=O)C1=CC=C(C=C1)NC=O
+131869360,Ethyl-d5 4-aminobenzoate,[2H]C([2H])([2H])C([2H])([2H])OC(=O)C1=CC=C(C=C1)N
+131750190,Cetacaine,CCCCCCCCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.CCCCCCCCCCCCCCCC[N+](C)(C)CC.CCCCCCCC[N+](C)(C)CC1=CC=CC=C1.CCCCNC1=CC=C(C=C1)C(=O)OCCN(C)C.CCCCOC(=O)C1=CC=C(C=C1)N.CCOC(=O)C1=CC=C(C=C1)N.Cl.[Br-]
+173924,Auralgan,CCOC(=O)C1=CC=C(C=C1)N.CC1=CC(=O)N(N1C)C2=CC=CC=C2
+173549,Almagel A-neo,CCOC(=O)C1=CC=C(C=C1)N.C([C@H]([C@H]([C@@H]([C@H](CO)O)O)O)O)O.[OH-].[OH-].[OH-].[OH-].[OH-].[Mg+2].[Al+3]
+183908,Anesthesine oxalate,CCOC(=O)C1=CC=C(C=C1)N.C(=O)(C(=O)O)O
+183907,Anesthesine succinate,CCOC(=O)C1=CC=C(C=C1)N.C(CC(=O)O)C(=O)O
+978,4-Aminobenzoic Acid,C1=CC(=CC=C1C(=O)O)N
+6108,4-Nitrobenzoic Acid,C1=CC(=CC=C1C(=O)O)[N+](=O)[O-]
+6877,Ethyl 2-aminobenzoate,CCOC(=O)C1=CC=CC=C1N
+7457,Ethyl 4-nitrobenzoate,CCOC(=O)C1=CC=C(C=C1)[N+](=O)[O-]
+11400,Ethyl 3-aminobenzoate,CCOC(=O)C1=CC(=CC=C1)N
+12082,Methyl 4-aminobenzoate,COC(=O)C1=CC=C(C=C1)N

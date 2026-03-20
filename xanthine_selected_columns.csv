@@ -1,0 +1,139 @@
+,Compound_CID,Name,SMILES
+0,1188,Xanthine,C1=NC2=C(N1)C(=O)NC(=O)N2
+1,162797,1-Propyl-3-methyl-7-(5-hydroxyhexyl)xanthine,CCCN1C(=O)C2=C(N=CN2CCCCC(C)O)N(C1=O)C
+2,10852325,"1,3-Dimethyl-7-(7-hydroxyoctyl)xanthine",CC(CCCCCCN1C=NC2=C1C(=O)N(C(=O)N2C)C)O
+3,130895,"N1,N3-bis(pentafluorobenzyl)-N7-(2-(pentafluorobenzyloxy)ethyl)xanthine",C1=CC(=C(C(=C1C(N2C3=C(C(=O)N(C2=O)C(C4=C(C(=C(C=C4)F)F)F)(F)F)N(C=N3)CCOC(C5=C(C(=C(C=C5)F)F)F)(F)F)(F)F)F)F)F
+4,3082963,"1,3-Dipropyl-8-(2-aminoethylaminothiocarbonyl-(4-aminophenyl)(aminothiocarbonyl-(2-aminoethylaminocarbonyl-(4-methoxy(phenyl)))))xanthine",CCCN1C2=C(C(=O)N(C1=O)CCC)NC(=N2)C3=CC=C(C=C3)OCC(=O)NCCNC(=O)SNC4=CC=C(C=C4)NC(=O)SNCCN
+5,92411,"1,3-Dipropyl-8-(2-amino-4-chlorophenyl)xanthine",CCCN1C2=C(C(=O)N(C1=O)CCC)NC(=N2)C3=C(C=C(C=C3)Cl)N
+6,3017468,7-Benzyl-3-(2-methylpropyl)xanthine,CC(C)CN1C2=C(C(=O)NC1=O)N(C=N2)CC3=CC=CC=C3
+7,129777854,"1,3-Dimethyl-7-(5-ethylcarboxypentyl)xanthine",CCC(CCCCN1C=NC2=C1C(=O)N(C(=O)N2C)C)C(=O)O
+8,131735652,1-[(4-Methylquinazolin-2-yl)methyl]-3-methyl-7-(2-butin-1-yl)-8-(3(R)-4-methylphthalimidopiperidine-yl)-xanthine,CC#CCN1C2=C(N=C1N3CCC[C@H](C3)N4C(=O)C5=C(C4=O)C=C(C=C5)C)N(C(=O)N(C2=O)CC6=NC7=CC=CC=C7C(=N6)C)C
+9,131674207,Xanthine-13C15N2,C1=NC2=C(N1)C(=O)[15NH][13C](=O)[15NH]2
+10,135610069,"2-[5-(1,3-Dipropyl-xanthin-8-yl)-1-methylpyrazol-3-vloxy]acetic acid",CCCN1C2=C(C(=O)N(C1=O)CCC)NC(=N2)C3=CC(=NN3C)OCC(=O)O
+11,5697,Xanthine amine congener,CCCN1C2=C(C(=O)N(C1=O)CCC)NC(=N2)C3=CC=C(C=C3)OCC(=O)NCCN
+12,136377664,"2-[5-(1,3-Diisobutyl-xanthin-8-yl)-1-methyl-pyrazol-3-yl)oxyacetic acid",CC(C)CN1C2=C(C(=O)N(C1=O)CC(C)C)NC(=N2)C3=CC(=NN3C)OCC(=O)O
+13,46946658,"7-[2-[4-(2-chlorophenyl)piperazinyl]ethyl]-1,3-dimethyl-xanthine HCl",CN1C2=C(C(=O)N(C1=O)C)N(C=N2)CCN3CCN(CC3)C4=CC=CC=C4Cl.Cl
+14,16078995,1-Propyl-8-(4-sulfophenyl)xanthine Potassium Salt,CCCN1C(=O)C2=C(NC1=O)N=C(N2)C3=CC=C(C=C3)S(=O)(=O)[O-].[K+]
+15,16220115,Xanthine sodium salt,C1=NC2=C(N1)C(=O)NC(=O)N2.[Na]
+16,10221927,"1,3-Di-cyclohexylmethyl-8-nitro xanthine",C1CCC(CC1)CN2C3=C(C(=O)N(C2=O)CC4CCCCC4)NC(=N3)[N+](=O)[O-]
+17,14403145,"Xanthine, monosodium salt",C1=NC2=C([N-]1)C(=O)NC(=O)N2.[Na+]
+18,137313642,"Xanthine monosodium salt, monohydrate",C1=NC2=NC(=O)NC(=C2N1)[O-].O.[Na+]
+19,96609,8-(Ethylthio)-xanthine,CCSC1=NC2=C(N1)C(=O)NC(=O)N2
+20,71356,Cipamfylline,C1CC1CN2C3=C(C(=O)N(C2=O)CC4CC4)NC(=N3)N
+21,14795475,"1,3-Dipropyl-8-(1,4-benzodioxan-6-vl)xanthine",CCCN1C2=C(C(=O)N(C1=O)CCC)NC(=N2)C3=CC4=C(C=C3)OCCO4
+22,208042,"Xanthine, 3-(2-hydroxyethyl)-",C1=NC2=C(N1)C(=O)NC(=O)N2CCO
+23,21467223,"1-Propyl-3-benzyl-8-(1,4benzodioxan-6-yl)xanthine",CCCN1C(=O)C2=C(N=C(N2)C3=CC4=C(C=C3)OCCO4)N(C1=O)CC5=CC=CC=C5
+24,66754191,1-[(1H-benzoimidazol-2-yl)methyl]-3-methyl-7-(2-butyn-1-yl)-8-[3-(tert.-butyloxy-carbonylamino)-piperidin-1-yl]-xanthine,CC#CCN1C2=C(N=C1N3CCCC(C3)NC(=O)OC(C)(C)C)N(C(=O)N(C2=O)CC4=NC5=CC=CC=C5N4)C
+25,66754643,1-[(2-Cyano-benzofuran-3-yl)methyl]-3-methyl-7-(2-butyn-1-yl)-8-[3-(tert-butyloxycarbonylamino)-piperidin-1-yl]-xanthine,CC#CCN1C2=C(N=C1N3CCCC(C3)NC(=O)OC(C)(C)C)N(C(=O)N(C2=O)CC4=C(OC5=CC=CC=C54)C#N)C
+26,66753750,1-(2-{2-[(Ethoxycarbonyl)methoxy]-phenyl}-2-oxo-ethyl)-3-methyl-7-(3-methyl-2-buten-1-yl)-8-[3-(tert.-butyloxycarbonylamino)-piperidin-1-yl]-xanthine,CCOC(=O)COC1=CC=CC=C1C(=O)CN2C(=O)C3=C(N=C(N3CC=C(C)C)N4CCCC(C4)NC(=O)OC(C)(C)C)N(C2=O)C
+27,28329,Etamiphyllin,CCN(CC)CCN1C=NC2=C1C(=O)N(C(=O)N2C)C
+28,11647687,1-[(3-cyano-pyridin-2-yl)methyl]-3-methyl-7-(2-butyn-1-yl)-8-[(R)-3-amino-piperidin-1-yl]-xanthine,CC#CCN1C2=C(N=C1N3CCC[C@H](C3)N)N(C(=O)N(C2=O)CC4=C(C=CC=N4)C#N)C
+29,12807387,"1,3-Dimethyl-7-(5-hexenyl)xanthine",CN1C2=C(C(=O)N(C1=O)C)N(C=N2)CCCCC=C
+30,135610068,"2-[5-(1,3-Diallyl-xanthin-8-yl)-1-methyl-pyrazol-3-yl)oxyacetic acid",CN1C(=CC(=N1)OCC(=O)O)C2=NC3=C(N2)C(=O)N(C(=O)N3CC=C)CC=C
+31,15291303,"1,3-Dicyclopropylmethyl xanthine",C1CC1CN2C3=C(C(=O)N(C2=O)CC4CC4)NC=N3
+32,15291302,"1,3-Di-cyclopropylmethyl-8-bromo xanthine",C1CC1CN2C3=C(C(=O)N(C2=O)CC4CC4)NC(=N3)Br
+33,86585572,(R)-1-(5-acetoxyhexyl)-7-benzyl-3-methyl 8-(N-(trifluoroacetoxy)aminomethyl)xanthine,C[C@H](CCCCN1C(=O)C2=C(N=C(N2CC3=CC=CC=C3)CNOC(=O)C(F)(F)F)N(C1=O)C)OC(=O)C
+34,68601191,(Indolizin-2-yl)methyl-3-methyl-7-(2-butyn-1-yl)-8-bromo-xanthine,CC#CCN1C2=C(N=C1Br)N(C(=O)N(C2=O)CC3=CN4C=CC=CC4=C3)C
+35,9966057,"1,3-Di-n-butyl-8-chloro Xanthine",CCCCN1C2=C(C(=O)N(C1=O)CCCC)NC(=N2)Cl
+36,9944978,"1,3-Di-n-butyl-8-acetamido Xanthine",CCCCN1C2=C(C(=O)N(C1=O)CCCC)NC(=N2)NC(=O)C
+37,17857237,Xanthine hydrochloride,C1=NC2=C(N1)C(=O)NC(=O)N2.Cl
+38,150049964,Xanthine oxidase-IN-7,C1CCC(C1)N2C=C(C3=C2C=CC(=C3)C4=NOC(=O)N4)C#N
+39,91126174,8-(1h-Pyrazol-4-yl)xanthine,C1=C(C=NN1)C2=NC3=C(N2)C(=O)NC(=O)N3
+40,125331077,8-Bromo-3-methyl-9-(2-butynyl)-xanthine,CC#CCN1C2=C(C(=O)NC(=O)N2C)N=C1Br
+41,101499773,"1,3,7-Trimethyl-8-(5-formylthiophen-2-yl)-xanthine",CN1C2=C(N=C1C3=CC=C(S3)C=O)N(C(=O)N(C2=O)C)C
+42,10475778,3-[2-(4-aminophenyl)ethyl]-1-propyl-8-[(1H-tetrazol-5-yl)methyl]xanthine,CCCN1C(=O)C2=C(N=C(N2)CC3=NNN=N3)N(C1=O)CCC4=CC=C(C=C4)N
+43,46780260,"5-Amino-3,7-dimethyl Xanthine-d6",[2H]C([2H])([2H])N1C=NC2=C1C(=O)N(C(=O)N2C([2H])([2H])[2H])N
+44,1330,"4-(2,3,6,7-Tetrahydro-2,6-dioxo-1,3-dipropyl-1H-purin-8-yl)benzenesulfonic acid",CCCN1C2=C(C(=O)N(C1=O)CCC)NC(=N2)C3=CC=C(C=C3)S(=O)(=O)O
+45,5429,Theobromine,CN1C=NC2=C1C(=O)NC(=O)N2C
+46,20041127,7-Benzyl-3-methyl-1-(5-oxohexyl)xanthine,CC(=O)CCCCN1C(=O)C2=C(N=CN2CC3=CC=CC=C3)N(C1=O)C
+47,20157766,"1,3-Dibutyl-7-(3-butenyl)xanthine",CCCCN1C2=C(C(=O)N(C1=O)CCCC)N(C=N2)CCC=C
+48,66723736,1-[2-(2-Hydroxy-phenyl)-2-oxo-ethyl]-3-methyl-7-(3-methyl-2-buten-1-yl)-8-[3-(tert.-butyloxycarbonylamino)-piperidin-1-yl]-xanthine,CC(=CCN1C2=C(N=C1N3CCCC(C3)NC(=O)OC(C)(C)C)N(C(=O)N(C2=O)CC(=O)C4=CC=CC=C4O)C)C
+49,12879841,1-Methyl-7-(pivaloyloxymethyl)xanthine,CC(C)(C)C(=O)OCN1C=NC2=C1C(=O)N(C(=O)N2)C
+50,12879842,1-Methyl-3(carboethoxypropyl)-7-(pivaloyloxymethyl)xanthine,CCOC(=O)CCCN1C2=C(C(=O)N(C1=O)C)N(C=N2)COC(=O)C(C)(C)C
+51,10154489,"1,3-Di-n-butyl-8-bromo Xanthine",CCCCN1C2=C(C(=O)N(C1=O)CCCC)NC(=N2)Br
+52,53711796,2-(3-Methyl-xanthine-7-yl)acetamidoxime,CN1C2=C(C(=O)NC1=O)N(C=N2)CC(=NO)N
+53,57498924,1-[2-(3-Methoxycarbonylamino-phenyl)-2-oxo-ethyl]-3-methyl-7-(3-methyl-2-buten-1-yl)-8-[3-(tert-butyloxycarbonylamino)-piperidin-1-yl]-xanthine,CC(=CCN1C2=C(N=C1N3CCCC(C3)NC(=O)OC(C)(C)C)N(C(=O)N(C2=O)CC(=O)C4=CC(=CC=C4)NC(=O)OC)C)C
+54,121513846,Xanthine amine congener (dihydrochloride),CCCN1C2=C(C(=O)N(C1=O)CCC)NC(=N2)C3=CC=C(C=C3)OCC(=O)NCCN.Cl.Cl
+55,9857658,"1,3-Dicyclopropylmethyl-8-nitro xanthine",C1CC1CN2C3=C(C(=O)N(C2=O)CC4CC4)NC(=N3)[N+](=O)[O-]
+56,156705020,Xanthine oxidase-IN-4,CC(C)OC1=C(C=C(C=C1)C2=NC=C3C(=N2)NNC3=O)C#N
+57,6857356,Xanthine-8-carboxylate,C12=C(NC(=O)NC1=O)N=C(N2)C(=O)[O-]
+58,14154538,"1,3-Dipropyl-8-tetrahydrofuranyl xanthine",CCCN1C2=C(C(=O)N(C1=O)CCC)NC(=N2)C3CCCO3
+59,164517238,Xanthine oxidase-IN-8,C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2OC3=C(C4=C(C(=C3)O)C(=O)C(=C(O4)C5=CC=C(C=C5)OC)O[C@H]6[C@@H]([C@@H]([C@H]([C@@H](O6)C)O)O)O[C@H]7[C@@H]([C@H]([C@@H](CO7)O)O)O)CC=C(C)C)CO)O)O)O)O)O
+60,164517239,Xanthine oxidase-IN-9,C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC2=C(OC3=C(C2=O)C(=CC(=C3CCC(C)(C)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O)C5=CC=C(C=C5)OC)O[C@H]6[C@@H]([C@@H]([C@H](CO6)O)O)O)O)O
+61,164516876,Xanthine oxidoreductase-IN-2,CC(C)(C)C1=CC=C(C=C1)C2=C(C=C(C=C2)N3CNC(=C3)C(=O)O)C#N
+62,121225800,"1,3-Dimethyl-8-[3-{2-(hexamethyleneimin-1-yl)-2-oxoethoxy}-phenyl]xanthine (14e, RB-376)",CN1C(=O)C2=NC(=NC2=[N+](C1=O)C)C3=CC(=CC=C3)OCC(=O)N4CCCCCC4
+63,633392,"Xanthine, 8-[3-bromocyclopentyl]-1,3-dipropyl-",CCCN1C2=C(C(=O)N(C1=O)CCC)NC(=N2)C3CCC(C3)Br
+64,634764,"Xanthine, 8-[3-iodocyclopentyl]-1,3-dipropyl-",CCCN1C2=C(C(=O)N(C1=O)CCC)NC(=N2)C3CCC(C3)I
+65,146310,Xanthine 7-N-oxide,C1=NC2=C(N1[O-])C(=O)NC(=O)[NH2+]2
+66,18918801,3-Methyl-7-[4-(4-chlorobenzoyl)benzyl]xanthine,CN1C2=C(C(=O)NC1=O)N(C=N2)CC3=CC=C(C=C3)C(=O)C4=CC=C(C=C4)Cl
+67,17964856,1-[2-(2-Aminophenyl)-2-oxoethyl]-3-methyl-7-(3-methyl-2-buten-1-yl)-8-[3-(tert-butyloxycarbonyl-amino)piperidin-1-yl]xanthine,CC(=CCN1C2=C(N=C1N3CCCC(C3)NC(=O)OC(C)(C)C)N(C(=O)N(C2=O)CC(=O)C4=CC=CC=C4N)C)C
+68,19063870,1-(5-Oxohexyl)-3-methyl-7-(methylpivaloyl)xanthine,CCC(C)(C)C(=O)N1C=NC2=C1C(=O)N(C(=O)N2C)CCCCC(=O)C
+69,96610,8-(Butylthio)xanthine,CCCCSC1=NC2=C(N1)C(=O)NC(=O)N2
+70,71314528,"1-(3-Carboxypropyl)-3,7-dimethyl Xanthine-d6",[2H]C([2H])([2H])N1C=NC2=C1C(=O)N(C(=O)N2C([2H])([2H])[2H])CCCC(=O)O
+71,42631819,"1,3-Dimethyl-8-[3-(2-piperidin-4-ylethoxy)phenyl]xanthine",CN1C2=C(C(=O)N(C1=O)C)NC(=N2)C3=CC(=CC=C3)OCCN4CCCCC4
+72,67533769,Purine xanthine,C1=C2C(=NC=N1)N=CN2.C1=NC2=C(N1)C(=O)NC(=O)N2
+73,42631610,"1,3-Dimethyl-8-[3-(2-morpholin-4-ylethoxy)-phenyl]xanthine",CN1C2=C(C(=O)N(C1=O)C)NC(=N2)C3=CC(=CC=C3)OCCN4CCOCC4
+74,42631614,"1,3-Dimethyl-8-[3-methoxy-4-(2-piperidin-1-ylethoxy)-phenyl]xanthine",CN1C2=C(C(=O)N(C1=O)C)NC(=N2)C3=CC(=C(C=C3)OCCN4CCCCC4)OC
+75,53629009,1-Methyl-3-[(2-trimethylsilanyl-ethoxy)methyl]-7-(2-cyano-benzyl)-xanthine,CN1C(=O)C2=C(N=CN2CC3=CC=CC=C3C#N)N(C1=O)COCC[Si](C)(C)C
+76,67523147,"1-[(1-hydroxy-3-oxo-2,3-dihydro-1H-isoindol-1-yl)methyl]-3-methyl-7-(3-methyl-2-buten-1-yl)-8-[3-(tert.-butyloxycarbonyl-amino)-piperidin-1-yl]-xanthine",CC(=CCN1C2=C(N=C1N3CCCC(C3)NC(=O)OC(C)(C)C)N(C(=O)N(C2=O)CC4(C5=CC=CC=C5C(=O)N4)O)C)C
+77,163322244,Xanthine oxidase-IN-5,COC1=CC=CC(=C1)CN2C=C(N=N2)COC3=C(C=C(C=C3)F)C=O
+78,163322352,Xanthine oxidase-IN-6,CC(=O)OC[C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)OC2[C@H]3[C@H](CC=C3COC(=O)C)C(=CO2)C(=O)NC4=NC=CO4)OC(=O)C)OC(=O)C)OC(=O)C
+79,71433932,1-Methyl Xanthine-d3,[2H]C([2H])([2H])N1C(=O)C2=C(NC1=O)N=CN2
+80,88042894,8-(p-Sulfophenyl)-xanthine,C1=CC(=CC=C1C2=NC3=C(N2)C(=O)NC(=O)N3)S(=O)(=O)O
+81,71521071,"3-Methyl-1,7-bis(3',4'-dihydroxybenzyl)xanthine",CN1C2=C(C(=O)N(C1=O)CC3=CC(=C(C=C3)O)O)N(C=N2)CC4=CC(=C(C=C4)O)O
+82,171379525,8-Bromo-3-methyl-d3-7-(2-butynyl)-xanthine,[2H]C([2H])([2H])N1C2=C(C(=O)NC1=O)N(C(=N2)Br)CC#CC
+83,169450154,Xanthine oxidase-IN-12,C1=CC(=CC(=C1)Br)C2=CC3=C(C=C(C=C3OC2=O)O)O
+84,66724051,1-(Phenylsulphinylmethyl)-3-methyl-7-(3-methyl-2-buten-1-yl)-8-[-3-(tert.-butyloxycarbonylamino)-piperidin-1-yl]-xanthine,CC(=CCN1C2=C(N=C1N3CCCC(C3)NC(=O)OC(C)(C)C)N(C(=O)N(C2=O)CS(=O)C4=CC=CC=C4)C)C
+85,66724207,1-(Phenylsulphanylmethyl)-3-methyl-7-(3-methyl-2-buten-1-yl)-8-[-3-(tert.-butyloxycarbonylamino)-piperidin-1-yl]-xanthine,CC(=CCN1C2=C(N=C1N3CCCC(C3)NC(=O)OC(C)(C)C)N(C(=O)N(C2=O)CSC4=CC=CC=C4)C)C
+86,171395290,"Xanthine-8-13C-7,9-15N2",[13CH]1=[15N]C2=C([15NH]1)C(=O)NC(=O)N2
+87,547264,"Xanthine, 1,3-diethyl-8-[4-[[(diethylamino)ethyl]methylamino]carbonyl]",CCN1C2=C(C(=O)N(C1=O)CC)NC(=N2)C3=CC=C(C=C3)OCC(=O)N(C)CCN(C)C
+88,541903,"Xanthin, 1,3-diallyl-8-[4-carboxymethoxypheny]-",C=CCN1C2=C(C(=O)N(C1=O)CC=C)NC(=N2)C3=CC=C(C=C3)OCC(=O)O
+89,10247834,"(e)-1,3-Dipropyl-7-methyl-8-[2-(3-thienyl)ethenyl]xanthine",CCCN1C2=C(C(=O)N(C1=O)CCC)N(C(=N2)/C=C/C3=CSC=C3)C
+90,10343476,"1,3-Di(cyclopropylmethyl)-8-(4-methoxybenzenesulphonylamino)xanthine",COC1=CC=C(C=C1)S(=O)(=O)NC2=NC3=C(N2)C(=O)N(C(=O)N3CC4CC4)CC5CC5
+91,10349233,"1,3-Bis(cyclopropylmethyl)-8-bis[(4-nitrophenylsulfonyl)amino]xanthine",C1CC1CN2C3=C(C(=O)N(C2=O)CC4CC4)NC(=N3)N(S(=O)(=O)C5=CC=C(C=C5)[N+](=O)[O-])S(=O)(=O)C6=CC=C(C=C6)[N+](=O)[O-]
+92,10347662,"1,3-Bis(cyclopropylmethyl)-8-bis[(phenylsulfonyl)amino]xanthine",C1CC1CN2C3=C(C(=O)N(C2=O)CC4CC4)NC(=N3)N(S(=O)(=O)C5=CC=CC=C5)S(=O)(=O)C6=CC=CC=C6
+93,10367176,1-[(benzyloxycarbonyl)methyl]-3-methyl-7-(2-butyn-1-yl)-8-[(R)-3-amino-piperidin-1-yl]-xanthine,CC#CCN1C2=C(N=C1N3CCC[C@H](C3)N)N(C(=O)N(C2=O)CC(=O)OCC4=CC=CC=C4)C
+94,53749731,"3,7-Dimethyl-1-propargyl-8-(3-chlorostyryl)xanthine",CN1C(=NC2=C1C(=O)N(C(=O)N2C)CC#C)C=CC3=CC(=CC=C3)Cl
+95,54456943,"1,3-Diethyl-7-(5-oxohexyl)xanthine",CCN1C2=C(C(=O)N(C1=O)CC)N(C=N2)CCCCC(=O)C
+96,2153,Theophylline,CN1C2=C(C(=O)N(C1=O)C)NC=N2
+97,3182,Diprophylline,CN1C2=C(C(=O)N(C1=O)C)N(C=N2)CC(CO)O
+98,2519,Caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)C
+99,66649236,"1-(2,3,5-Tri-O-benzoyl-beta-D-ribofuranosyl)xanthine",C1=CC=C(C=C1)C(=O)OC[C@@H]2[C@H]([C@H]([C@@H](O2)N3C(=O)C4=C(NC3=O)N=CN4)OC(=O)C5=CC=CC=C5)OC(=O)C6=CC=CC=C6
+100,66724121,1-(2-Phenyl-ethyl)-7-(3-methyl-2-buten-1-yl)-8[3-(tert.-butyloxycarbonylamino)-piperidin-1-yl]-xanthine,CC(=CCN1C2=C(NC(=O)N(C2=O)CCC3=CC=CC=C3)N=C1N4CCCC(C4)NC(=O)OC(C)(C)C)C
+101,66724237,1-(2-{3-[(Methoxycarbonyl)methoxy]-phenyl}-2-oxo-ethyl)-3-methyl-7-(3-methyl-2-buten-1-yl)-8-[3-(tert.-butyloxycarbonylamino)-piperidin-1-yl]-xanthine,CC(=CCN1C2=C(N=C1N3CCCC(C3)NC(=O)OC(C)(C)C)N(C(=O)N(C2=O)CC(=O)C4=CC(=CC=C4)OCC(=O)OC)C)C
+102,2822888,1-Benzyl-3-(3-methoxyphenyl)xanthine,COC1=CC=CC(=C1)N2C3=C(C(=O)N(C2=O)CC4=CC=CC=C4)NC=N3
+103,10264205,8-Methoxy isobutyl methyl xanthine,CC(C)CN1C2=C(C(=O)N(C1=O)C)NC(=N2)OC
+104,18449416,3-[2-(4-Aminophenyl)ethyl]-8-benzyl-1-(3-dimethylaminopropyl)xanthine,CN(C)CCCN1C(=O)C2=C(N=C(N2)CC3=CC=CC=C3)N(C1=O)CCC4=CC=C(C=C4)N
+105,57417586,8-[3-Amino-piperidin-1-yl]-xanthine,C1CC(CN(C1)C2=NC3=C(N2)C(=O)NC(=O)N3)N
+106,72703824,"1-[(1,3-benzothiazol-2-yl)methyl]-3-methyl-7-(2-butyn-1-yl)-8-[(R)-3-amino-piperidin-1-yl]-xanthine",CC#CCN1C2=C(N=C1N3CCC[C@H](C3)N)N(C(=O)N(C2=O)CC4=NC5=CC=CC=C5S4)C
+107,70131028,7-Benzyl-3-ethyl-1-(2-hydroxy-2-methylpropyl)-xanthine,CCN1C2=C(C(=O)N(C1=O)CC(C)(C)O)N(C=N2)CC3=CC=CC=C3
+108,72703825,"1-[(5-fluoro-1,3-benzothiazol-2-yl)methyl]-3-methyl-7-(2-butyn-1-yl)-8-[(R)-3-amino-piperidin-1-yl]-xanthine",CC#CCN1C2=C(N=C1N3CCC[C@H](C3)N)N(C(=O)N(C2=O)CC4=NC5=C(S4)C=CC(=C5)F)C
+109,3056831,"Xanthine, 8-(heptylthio)-",CCCCCCCSC1=NC2=C(N1)C(=O)NC(=O)N2
+110,3071391,"Xanthine, 1,9-dimethyl-3-(2-hydroxyethyl)-",CN1C=NC2=C1N(C(=O)N(C2=O)C)CCO
+111,57498913,"1,3-dimethyl-7-((E)-2-hexen-1-yl)-8-chloro-xanthine",CCC/C=C/CN1C2=C(N=C1Cl)N(C(=O)N(C2=O)C)C
+112,57514541,1-Methyl-3-[(2-trimethylsilanyl-ethoxy)methyl]-7-(2-cyano-benzyl)-8-chloro-xanthine,CN1C(=O)C2=C(N=C(N2CC3=CC=CC=C3C#N)Cl)N(C1=O)COCC[Si](C)(C)C
+113,57499146,1-Methyl-7-benzyl-8-(3-amino-piperidin-1-yl)-xanthine,CN1C(=O)C2=C(NC1=O)N=C(N2CC3=CC=CC=C3)N4CCCC(C4)N
+114,57498912,1-((E)-2-phenyl-vinyl)-3-methyl-7-(3-methyl-2-buten-1-yl)-8-bromo-xanthine,CC(=CCN1C2=C(N=C1Br)N(C(=O)N(C2=O)/C=C/C3=CC=CC=C3)C)C
+115,131715268,"8-(4'-Carboxymethyloxyphenyl)-1,3-dipropyl xanthine 2-aminoethylamide",CCCN1C2=C(C(=O)N(C1=O)CCC)NC(=N2)C3=CC=C(C=C3)OCC(=O)O.C(C[NH-])N
+116,70130775,7-Benzyl-3-ethyl-1-(5-oxohexyl)xanthine,CCN1C2=C(C(=O)N(C1=O)CCCCC(=O)C)N(C=N2)CC3=CC=CC=C3
+117,20570060,3-n-Butyl-7-(5'-oxohexyl)-xanthine,CCCCN1C2=C(C(=O)NC1=O)N(C=N2)CCCCC(=O)C
+118,20570064,3-(n-Butyl)-7-(6'-oxoheptyl)-xanthine,CCCCN1C2=C(C(=O)NC1=O)N(C=N2)CCCCCC(=O)C
+119,135948760,Xanthine sodium,C1=NC2=C(N1)[N-]C(=O)NC2=O.[Na+]
+120,137629452,Xanthine oxidase-IN-10,C1=CC=C(C=C1)/C=C\2/C(=O)NC(=N)S2
+121,137333188,1-Propyl-8-(4-sulfophenyl)xanthine potassium salt hydrate,CCCN1C(=O)C2=C(NC1=O)N=C(N2)C3=CC=C(C=C3)S(=O)(=O)[O-].O.[K+]
+122,3435331,3-Methyl-7-(3-methyl-2-buten-1-yl)-8-bromo-xanthine,CC(=CCN1C2=C(N=C1Br)N(C(=O)NC2=O)C)C
+123,15023897,1-(5-Hydroxyhexyl)-3-methyl-7-(2-oxopropyl)-xanthine,CC(CCCCN1C(=O)C2=C(N=CN2CC(=O)C)N(C1=O)C)O
+124,15023901,1-n-Hexyl-3-methyl-7-(5-hydroxyhexyl)-xanthine,CCCCCCN1C(=O)C2=C(N=CN2CCCCC(C)O)N(C1=O)C
+125,13151607,"1,3-Dibutyl-7-(3,4-dihydroxybutyl)xanthine",CCCCN1C2=C(C(=O)N(C1=O)CCCC)N(C=N2)CCC(CO)O
+126,13151639,"1,3-Dimethyl-7-(5,6-epoxyhexyl)xanthine",CN1C2=C(C(=O)N(C1=O)C)N(C=N2)CCCCC3CO3
+127,13298148,"1,3-Dimethyl-7-(but-3-enyl)-xanthine",CN1C2=C(C(=O)N(C1=O)C)N(C=N2)CCC=C
+128,13298152,3-Methyl-7-(hex-5-enyl)-xanthine,CN1C2=C(C(=O)NC1=O)N(C=N2)CCCCC=C
+129,13298147,1-(But-3-enyl)-3-methyl-7-n-propyl-xanthine,CCCN1C=NC2=C1C(=O)N(C(=O)N2C)CCC=C
+130,19707676,(5-Oxohexyl)-xanthine,CC(=O)CCCCN1C(=O)C2=C(NC1=O)N=CN2
+131,19819645,7-Allyl-3-ethyl-1-(5-hydroxy-5-methylhexyl)-xanthine,CCN1C2=C(C(=O)N(C1=O)CCCCC(C)(C)O)N(C=N2)CC=C
+132,19819649,7-Allyl-3-ethyl-xanthine,CCN1C2=C(C(=O)NC1=O)N(C=N2)CC=C
+133,19819648,7-Butyl-3-ethyl-1-(5-hydroxy-5-methylhexyl)-xanthine,CCCCN1C=NC2=C1C(=O)N(C(=O)N2CC)CCCCC(C)(C)O
+134,19819652,"3,7-Diethyl-1-(5-hydroxy-5-methylhexyl)-xanthine",CCN1C=NC2=C1C(=O)N(C(=O)N2CC)CCCCC(C)(C)O
+135,11649276,"7-N-benzyl-1,3-dipropyl-8-[N-1-(4-iodo)pyrazolyl]xanthine",CCCN1C2=C(C(=O)N(C1=O)CCC)N(C(=N2)N3C=C(C=N3)I)CC4=CC=CC=C4
+136,11606204,(R)-1-(4-methyl-quinazolin-2-ylmethyl)-3-(methoxycarbonylmethyl)-7-(but-2-ynyl)-8-(3-amino-piperidin-1-yl)-xanthine,CC#CCN1C2=C(N=C1N3CCC[C@H](C3)N)N(C(=O)N(C2=O)CC4=NC5=CC=CC=C5C(=N4)C)CC(=O)OC
+137,11620509,1-(Naphth-1-ylmethyl)-3-(methoxycarbonylmethyl)-7-(but-2-ynyl)-8-(3-amino-piperidin-1-yl)-xanthine,CC#CCN1C2=C(N=C1N3CCCC(C3)N)N(C(=O)N(C2=O)CC4=CC=CC5=CC=CC=C54)CC(=O)OC

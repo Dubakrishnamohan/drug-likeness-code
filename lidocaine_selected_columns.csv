@@ -1,0 +1,138 @@
+,Compound_CID,Name,SMILES
+0,9911821,"Lidocaine, Prilocaine Drug Combination",CCCNC(C)C(=O)NC1=CC=CC=C1C.CCN(CC)CC(=O)NC1=C(C=CC=C1C)C
+1,3676,Lidocaine,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C
+2,6314,Lidocaine Hydrochloride,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.Cl
+3,9578160,Chlorhexidine gluconate mixture with lidocaine hydrochloride,CCN(CC(=O)NC1=C(C=CC=C1C)C)CC.C1=CC(=CC=C1N/C(=N/C(=NCCCCCCN=C(/N=C(/NC2=CC=C(C=C2)Cl)\N)N)N)/N)Cl.C(O)[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)C(=O)O.C(O)[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)C(=O)O.Cl
+4,135089,Lidocaine ethiodide,CC[N+](CC)(CC)CC(=O)NC1=C(C=CC=C1C)C.[I-]
+5,6454431,Lidocaine iminodiacetic acid,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.C(C(=O)O)NCC(=O)O
+6,16219577,Lidocaine hydrochloride monohydrate,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.O.Cl
+7,11720242,Lidocaine; Tetracaine,CCCCNC1=CC=C(C=C1)C(=O)OCCN(C)C.CCN(CC)CC(=O)NC1=C(C=CC=C1C)C
+8,45039656,"Lidocaine-d10 (N,N-diethyl-d10)",[2H]C([2H])([2H])C([2H])([2H])N(CC(=O)NC1=C(C=CC=C1C)C)C([2H])([2H])C([2H])([2H])[2H]
+9,46782059,Lidocaine-d10 Hydrochloride,[2H]C([2H])([2H])C([2H])([2H])N(CC(=O)NC1=C(C=CC=C1C)C)C([2H])([2H])C([2H])([2H])[2H].Cl
+10,53253137,Bupivacaine plus lidocaine,CCCCN1CCCCC1C(=O)NC2=C(C=CC=C2C)C.CCN(CC)CC(=O)NC1=C(C=CC=C1C)C
+11,171393,Epinephrine mixture with lidocaine,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.CNC[C@@H](C1=CC(=C(C=C1)O)O)O
+12,139025495,Lidocaine-d6 Hydrochloride,[2H]C([2H])([2H])C1=C(C(=CC=C1)C([2H])([2H])[2H])NC(=O)CN(CC)CC.Cl
+13,172990278,N-nitroso Nor Lidocaine-d6,[2H]C([2H])([2H])C1=C(C(=CC=C1)C([2H])([2H])[2H])NC(=O)CN(CC)N=O
+14,90479623,Lidocaine Carbonate,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.C(=O)(O)O.C(=O)(O)O
+15,11519985,Hydrocortisone and lidocaine,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)CO)O)C)O
+16,71751223,Nor Lidocaine-d5 Hydrochloride,[2H]C([2H])([2H])C([2H])([2H])NCC(=O)NC1=C(C=CC=C1C)C.Cl
+17,25050300,Lidocaine bicarbonate,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.C(=O)(O)O
+18,46912271,Lidocaine sulfate,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.OS(=O)(=O)O
+19,171935210,Lidocaine impurity 31,CCCN1[C@@H](C(=O)N([C@@H]1C(=O)NC2=C(C=CC=C2C)C)C3=CC=CC=C3C)C
+20,171935211,Lidocaine impurity 30,CCCN1[C@@H](C(=O)N([C@@H]1C)C2=CC=CC=C2C)C
+21,175674375,Lidocaine Nitroso Impurity 58,CCN(C(=O)NC1=C(C=CC=C1C)C)N=O
+22,176481236,Lidocaine Nitroso Impurity 53,CC1=C(C(=CC=C1)C)NC(=O)CNN=O
+23,11288439,Lidocaine-d10 N-Oxide,[2H]C([2H])([2H])C([2H])([2H])[N+](CC(=O)NC1=C(C=CC=C1C)C)(C([2H])([2H])C([2H])([2H])[2H])[O-]
+24,86620570,Lidocaine ethyl caprate,CCCCCCCCCC(=O)OCC.CCN(CC)CC(=O)NC1=C(C=CC=C1C)C
+25,156612435,[D] Lidocaine,[2H]C1=CC(=C(C(=C1)C)NC(=O)CN(CC)CC)C
+26,45359004,Lidocaine-d6,[2H]C([2H])([2H])C1=C(C(=CC=C1)C([2H])([2H])[2H])NC(=O)CN(CC)CC
+27,71315598,N-Desethyl 3-Bromo Lidocaine,CCNCC(=O)NC1=C(C=CC(=C1C)Br)C
+28,131737460,"lidocaine N,N-dimethylaminobutane",CCCCN(C)C.CCN(CC)CC(=O)NC1=C(C=CC=C1C)C
+29,71749092,3-Hydroxy Lidocaine-d5,[2H]C([2H])([2H])C([2H])([2H])N(CC)CC(=O)NC1=C(C=CC(=C1C)O)C
+30,125291535,3-Bromo-N-desethyl-N-benzyl Lidocaine,CCN(CC1=CC=CC=C1)CC(=O)NC2=C(C=CC(=C2C)Br)C
+31,166593157,Lidocaine hydrochloride hydrate,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.O.O.Cl
+32,52563520,Lidocaine Impurity 55,CC1=C(C(=CC=C1)C)NC(=O)COCC(=O)NC2=C(C=CC=C2C)C
+33,9795082,Lidocaine N-methyl hydrochloride,CC1=C(C(=CC=C1)C)NC(=O)C[N+](C)(C)C.[Cl-]
+34,17401931,Lidocaine Impurity 20,CC1=CC=CC=C1NC(=O)C(C)NC2=CC=CC=C2
+35,69717818,3-Bromo Lidocaine,CCN(CC)CC(=O)NC1=C(C=CC(=C1C)Br)C
+36,176481235,Lidocaine impurity 63,CC1=C(C(=C(C=C1)NC(=O)CCl)C)NC(=O)CCl
+37,176481239,Lidocaine Impurity 73,CC1=C(C(=CC=C1)C)NC(=O)CN(C(C)C)N=O
+38,71749091,3-Hydroxy-N-desethyl Lidocaine-d5,[2H]C([2H])([2H])C([2H])([2H])NCC(=O)NC1=C(C=CC(=C1C)O)C
+39,163321931,Nor Lidocaine-d6 hydrochloride,[2H]C([2H])([2H])C1=C(C(=CC=C1)C([2H])([2H])[2H])NC(=O)CNCC.Cl
+40,85916709,Lidocaine impurity 64,CC1=C(C(=CC=C1)CO)NC(=O)CCl
+41,171935209,Lidocaine impurity 33,CCCN1C(C(=O)N(C1C(=O)NC2=C(C=CC=C2C)C)C3=CC=CC=C3C)C
+42,121114,Lidocaine methiodide,CC[N+](C)(C)CC(=O)NC1=C(C=CC=C1C)C.[I-]
+43,6429759,"Lidocaine, M(desethyl-), AC",CCN(CC(=O)NC1=C(C=CC=C1C)C)C(=O)C
+44,58781577,3-Nitro Lidocaine,CCN(CC)CC(=O)NC1=C(C=CC(=C1C)[N+](=O)[O-])C
+45,170903365,Lidocaine Impurity,CCN(CC(=O)NC1=C(C=CC(=C1C)O)C)CC(=O)NC2=C(C=CC(=C2C)O)C
+46,42605856,Lidocaine Lactic Acid,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.CC(C(=O)O)O
+47,170453001,Lidocaine Impurity 68,CCN(CC)CC1=NC2=C(C=CC=C2C=N1)C.Cl
+48,68521965,Lidocaine hydrobromide,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.Br
+49,162641438,3-Bromo lidocaine-d5,[2H]C([2H])([2H])C([2H])([2H])N(CC)CC(=O)NC1=C(C=CC(=C1C)Br)C
+50,49849768,Lidocaine d10,[2H]C([2H])([2H])CN(CC(=O)NC1=C(C=CC=C1C)C)C([2H])([2H])C([2H])([2H])[2H]
+51,163322676,Lidocaine impurity 5-d6,[2H]C([2H])([2H])C1=C(C(=CC=C1)C([2H])([2H])[2H])NC(=O)C(=O)O
+52,169444696,N-Nitroso Lidocaine EP Impurity E,CC1=C(C(=CC=C1)C)NC(=O)CN(CC(=O)NC2=C(C=CC=C2C)C)N=O
+53,76962800,Lidocaine maleate,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.C(=C\C(=O)O)\C(=O)O
+54,3043678,Epinephrine mixture with lidocaine hydrochloride,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.CNC[C@@H](C1=CC(=C(C=C1)O)O)O.Cl
+55,176481233,Lidocaine Impurity 25,CCN(CC)CC1NC2=C(C=CC=C2C=N1)C
+56,176481237,Lidocaine Impurity 71,CCN(CC)CC(=O)NC1=C(C(=C(C=C1)C)N)C
+57,176481241,Lidocaine Impurity 76,CC1=C(C(=CC=C1)C)NC(=O)CN(C)N=O
+58,176481232,Lidocaine EP Impurity D (trifluoroacetate),CCNCC(=O)NC1=C(C=CC=C1C)C.C(=O)(C(F)(F)F)[O-]
+59,176481240,Lidocaine Impurity 75,CCN(CC)C(C(=O)NC1=C(C=CC=C1C)C)Cl
+60,176491012,N-Nitroso-Desethyl Lidocaine D5,[2H]C([2H])([2H])C([2H])([2H])N(CC(=O)NC1=C(C=CC=C1C)C)N=O
+61,176481238,Lidocaine Impurity 72,CCN(CC)CC(=O)NC1=C(C(=C(C=C1)C)NC(=O)CN(CC)CC)C
+62,191932,Methyl nitrile lidocaine analog,CCN(CC)CC(=O)NC1=C(C(=C(N1)C)C)C#N.Cl
+63,178020,Lidocaine tosylate,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.CC1=CC=C(C=C1)S(=O)(=O)O
+64,178021,Lidocaine adipate,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.C(CCC(=O)O)CC(=O)O
+65,198524,Benzyl nitrile lidocaine analog,CCN(CC)CC(=O)NC1=C(C(=C(N1)CC2=CC=CC=C2)C)C#N.Cl
+66,6429760,"Lidocaine, M(HO-), AC",CCN(CC)CC(=O)NC1=C(C=C(C=C1C)OC(=O)C)C
+67,10037577,Lidocaine impurity 40,CCCN1C(C(=O)N(C1C)C2=CC=CC=C2C)C
+68,2109210,"2,2'-Iminobis(N-(2,6-dimethylphenyl)acetamide)",CC1=C(C(=CC=C1)C)NC(=O)CNCC(=O)NC2=C(C=CC=C2C)C
+69,118989034,"2-(Diethylamino)-N-(2,3-dimethylphenyl)acetamide Hydrochloride",CCN(CC)CC(=O)NC1=CC=CC(=C1C)C.Cl
+70,118989035,"2-(Isopropylamino)-2',6'-acetoxylidide Hydrochloride",CC1=C(C(=CC=C1)C)NC(=O)CNC(C)C.Cl
+71,46781380,"Acetamide, N-(2,6-dimethylphenyl)-2-(ethylmethylamino)-, monohydrochloride",CCN(C)CC(=O)NC1=C(C=CC=C1C)C.Cl
+72,23620769,"2-(Isopropylamino)-2',6'-acetoxylidide",CC1=C(C(=CC=C1)C)NC(=O)CNC(C)C
+73,16616,"N-Acetyl-2,6-xylidine",CC1=C(C(=CC=C1)C)NC(=O)C
+74,3036923,Lignocaine N-oxide,CC[N+](CC)(CC(=O)NC1=C(C=CC=C1C)C)[O-]
+75,11651585,"2-(diethylamino)-N-(2,5-dimethylphenyl)acetamide",CCN(CC)CC(=O)NC1=C(C=CC(=C1)C)C
+76,11637240,"2-Diethylamino-2',3'-acetoxylidide",CCN(CC)CC(=O)NC1=CC=CC(=C1C)C
+77,121230623,"2-(Diethylamino)-N-(2,5-dimethylphenyl)acetamide hydrochloride",CCN(CC)CC(=O)NC1=C(C=CC(=C1)C)C.Cl
+78,171379928,"N-(2,6-Dimethylphenyl)-2-(ethyl(nitroso)amino)acetamide",CCN(CC(=O)NC1=C(C=CC=C1C)C)N=O
+79,28447,"2-(Diethylamino)-2',4'-acetoxylidide",CCN(CC)CC(=O)NC1=C(C=C(C=C1)C)C
+80,13781345,"2-(Diethylamino)-N-(2,4-dimethylphenyl)ethanimidic acid--hydrogen chloride (1/1)",CCN(CC)CC(=O)NC1=C(C=C(C=C1)C)C.Cl
+81,12441775,Norlidocaine Hydrochloride,CCNCC(=O)NC1=C(C=CC=C1C)C.Cl
+82,161824,3-Hydroxylidocaine,CCN(CC)CC(=O)NC1=C(C=CC(=C1C)O)C
+83,24761814,"N-(2,6-dimethylphenyl)-2-((((2,6-dimethylphenyl)carbamoyl)methyl)amino)acetamide hydrochloride",CC1=C(C(=CC=C1)C)NC(=O)CNCC(=O)NC2=C(C=CC=C2C)C.Cl
+84,70798,"2-Chloro-N-(2,6-dimethylphenyl)acetamide",CC1=C(C(=CC=C1)C)NC(=O)CCl
+85,9884487,QX-314 bromide,CC[N+](CC)(CC)CC(=O)NC1=C(C=CC=C1C)C.[Br-]
+86,24415,Monoethylglycinexylidide,CCNCC(=O)NC1=C(C=CC=C1C)C
+87,235665,"2,2-Dichloro-N-(2,6-dimethylphenyl)acetamide",CC1=C(C(=CC=C1)C)NC(=O)C(Cl)Cl
+88,39593,Ethylmethylglycinexylidide,CCN(C)CC(=O)NC1=C(C=CC=C1C)C
+89,680002,"N-(2,6-Dimethylphenyl)-2-((2,6-dimethylphenyl)amino)acetamide",CC1=C(C(=CC=C1)C)NCC(=O)NC2=C(C=CC=C2C)C
+90,559903,Lignocaine trimethylsilyl deriv.,CCN(CC)CC(=O)N(C1=C(C=CC=C1C)C)[Si](C)(C)C
+91,43810403,"N-(2,6-dimethylphenyl)-2-(methylamino)acetamide hydrochloride",CC1=C(C(=CC=C1)C)NC(=O)CNC.Cl
+92,6896,"2,6-Dimethylaniline",CC1=C(C(=CC=C1)C)N
+93,168867,N-Methyllidocaine,CC[N+](C)(CC)CC(=O)NC1=C(C=CC=C1C)C.[Cl-]
+94,19518,Denatonium Benzoate,CC[N+](CC)(CC1=CC=CC=C1)CC(=O)NC2=C(C=CC=C2C)C.C1=CC=C(C=C1)C(=O)[O-]
+95,577176,2-Amino-3-methylbenzyl alcohol,CC1=C(C(=CC=C1)CO)N
+96,4591738,3-chloro-N-(2-methylphenyl)propanamide,CC1=CC=CC=C1NC(=O)CCCl
+97,3533685,"2,2-Dichloro-2',3'-dimethylacetanilide",CC1=C(C(=CC=C1)NC(=O)C(Cl)Cl)C
+98,13932575,"2-(Diethylamino)-N-(4-hydroxy-2,6-dimethylphenyl)acetamide",CCN(CC)CC(=O)NC1=C(C=C(C=C1C)O)C
+99,14665859,1-Ethyl-3-methyl-2-nitrobenzene,CCC1=CC=CC(=C1[N+](=O)[O-])C
+100,164186290,"2-(Diethylamino)-N-(3,4-dimethylphenyl)acetamide hydrochloride",CCN(CC)CC(=O)NC1=CC(=C(C=C1)C)C.Cl
+101,22763698,Dichloropropionylchloride,C(C(Cl)Cl)C(=O)Cl
+102,88919736,"N-(2,6-Dimethylphenyl)-2-oxo-acetamide",CC1=C(C(=CC=C1)C)NC(=O)C=O
+103,168438433,N-Ethyl-N-((8-methylquinazolin-2-yl)methyl)ethanamine,CCN(CC)CC1=NC2=C(C=CC=C2C=N1)C
+104,2829131,N-methyllidocaine iodide,CC[N+](C)(CC)CC(=O)NC1=C(C=CC=C1C)C.[I-]
+105,3014024,Benzalkonium Chloride,CCCCCCCCCCCCC[N+](C)(C)CC1=CC=CC=C1.[Cl-]
+106,3015693,"2-(Ethylamino)-N-(3-hydroxy-2,6-dimethylphenyl)acetamide",CCNCC(=O)NC1=C(C=CC(=C1C)O)C
+107,14627308,3-(Diethylamino)-8-methyl-2(1H)-quinolinone,CCN(CC)C1=CC2=CC=CC(=C2NC1=O)C
+108,44153675,Calcium Dobesilate mixture with Dexamethasone and Lidocaine,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4(C3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C)O)C)O)F)C.C1=CC(=C(C=C1O)S(=O)(=O)[O-])O.C1=CC(=C(C=C1O)S(=O)(=O)[O-])O.[Ca+2]
+109,53629521,Bismuth Subsalicylate,C1=CC=C(C(=C1)C(=O)[O-])[O-].[OH-].[Bi+3]
+110,294866,Methyl 3-hydroxy-4-nitrobenzoate,COC(=O)C1=CC(=C(C=C1)[N+](=O)[O-])O
+111,83290873,"2-Chloro-n-(4-chloro-2,6-dimethylphenyl)acetamide",CC1=CC(=CC(=C1NC(=O)CCl)C)Cl
+112,164186289,"2-(Dimethylamino)-N-(2,6-dimethylphenyl)acetamide hydrochloride",CC1=C(C(=CC=C1)C)NC(=O)CN(C)C.Cl
+113,81637,"2,6-Dimethyl-p-phenylenediamine",CC1=CC(=CC(=C1N)C)N
+114,88899,"Benzenamine, 2,6-dimethyl-, hydrochloride (1:1)",CC1=C(C(=CC=C1)C)N.Cl
+115,95945,"3-Nitro-2,6-xylidine",CC1=C(C(=C(C=C1)[N+](=O)[O-])C)N
+116,131203,"Dexpanthenol mixture with Lidocaine, Prednisolone and Triclosan",CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1CC[C@@]2(C(=O)CO)O)CCC4=CC(=O)C=C[C@]34C)O.CC(C)(CO)[C@H](C(=O)NCCCO)O.C1=CC(=C(C=C1Cl)O)OC2=C(C=C(C=C2)Cl)Cl.Cl
+117,1522873,"2-chloro-N-(3,5-dimethylphenyl)acetamide",CC1=CC(=CC(=C1)NC(=O)CCl)C
+118,53969272,2-(diethylamino)-N-(2-(hydroxymethyl)-6-methylphenyl)acetamide,CCN(CC)CC(=O)NC1=C(C=CC=C1CO)C
+119,917072,"1,4-Bis(2,6-dimethylphenyl)piperazine-2,5-dione",CC1=C(C(=CC=C1)C)N2CC(=O)N(CC2=O)C3=C(C=CC=C3C)C
+120,196121,Lidocaine mixture with tribenoside,CCN(CC)CC(=O)NC1=C(C=CC=C1C)C.CCOC1[C@@H]([C@H]([C@H](O1)[C@@H](COCC2=CC=CC=C2)OCC3=CC=CC=C3)OCC4=CC=CC=C4)O
+121,226887,"2-chloro-N-(3,4-dimethylphenyl)acetamide",CC1=C(C=C(C=C1)NC(=O)CCl)C
+122,234315,"N-(3-Amino-2,6-dimethylphenyl)-2-(diethylamino)acetamide",CCN(CC)CC(=O)NC1=C(C=CC(=C1C)N)C
+123,5018304,Diclofenac sodium,C1=CC=C(C(=C1)CC(=O)[O-])NC2=C(C=CC=C2Cl)Cl.[Na+]
+124,169439581,"(2R,5S)-2,5-Dimethyl-1-propyl-3-(o-tolyl)imidazolidin-4-one",CCCN1[C@H](C(=O)N([C@@H]1C)C2=CC=CC=C2C)C
+125,169439052,"rac-trans-N-(2,6-Dimethylphenyl)-4-methyl-1-(2-methylphenyl)-5-oxo-3-propylimidazolidine-2-carboxamide",CCCN1[C@@H](C(=O)N([C@H]1C(=O)NC2=C(C=CC=C2C)C)C3=CC=CC=C3C)C
+126,54675779,Terramycin,C[C@@]1([C@H]2[C@@H]([C@H]3[C@@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O)O
+127,169438994,"(2S,5R)-2,5-Dimethyl-1-propyl-4-(o-tolyl)pyrrolidin-3-one",CCCN1[C@@H](C(=O)N([C@H]1C)C2=CC=CC=C2C)C
+128,169438187,"N-(2,6-Dimethylphenyl)-2-(nitroso(2-oxo-2-(phenylamino)ethyl)amino)acetamide",CC1=C(C(=CC=C1)C)NC(=O)CN(CC(=O)NC2=CC=CC=C2)N=O
+129,3026066,"Acetamide, 2-(diethylamino)-N-(2-ethylphenyl)-, monohydrochloride",CCC1=CC=CC=C1NC(=O)CN(CC)CC.Cl
+130,1983,Acetaminophen,CC(=O)NC1=CC=C(C=C1)O
+131,6974,Nitro-p-xylene,CC1=CC(=C(C=C1)C)[N+](=O)[O-]
+132,16844,"Chloro-N,N-diethylacetamide",CCN(CC)C(=O)CCl
+133,28159,"2,6-Dimethyl-4-nitroaniline",CC1=CC(=CC(=C1N)C)[N+](=O)[O-]
+134,60834,Duloxetine Hydrochloride,CNCC[C@@H](C1=CC=CS1)OC2=CC=CC3=CC=CC=C32.Cl
+135,36911,"3,5-Dimethyl-4-nitroaniline",CC1=CC(=CC(=C1[N+](=O)[O-])C)N
+136,21462,"Ammonium, triethyl((2,6-xylylcarbamoyl)methyl)-, chloride",CC[N+](CC)(CC)CC(=O)NC1=C(C=CC=C1C)C.[Cl-]

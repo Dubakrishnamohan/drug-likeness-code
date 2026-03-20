@@ -1,0 +1,139 @@
+,Compound_CID,Name,SMILES
+0,23681059,Naproxen Sodium,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)[O-].[Na+]
+1,156391,Naproxen,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O
+2,181715,"Naproxen glucuronide, (S)-",C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O
+3,91936934,Cetyltrimethylammonium naproxenate,CCCCCCCCCCCCCCCC[N+](C)(C)C.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)[O-]
+4,156390,Naproxen Lysine,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C(CCN)C[C@@H](C(=O)O)N
+5,5492450,Naproxen isocyanate,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)N=C=O
+6,77098502,Diphenhydramine hydrochloride; naproxen sodium,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)[O-].CN(C)CCOC(C1=CC=CC=C1)C2=CC=CC=C2.[Na+].Cl
+7,9899603,Naproxen methyl ester,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC
+8,711615,Naproxen ethyl ester,CCOC(=O)[C@@H](C)C1=CC2=C(C=C1)C=C(C=C2)OC
+9,169118,"Naproxen, (-)-",C[C@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O
+10,56841568,Naproxen sodium; pseudoephedrine hydrochloride,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H]([C@H](C1=CC=CC=C1)O)NC.Cl
+11,59015013,rac Naproxen-d3,[2H]C([2H])([2H])C(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O
+12,92131904,(R)-Naproxen acyl-B-D-glucuronide,C[C@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O
+13,529084,(RS)-Naproxen methyl ester,CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC
+14,5491692,Naproxen chloride,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)Cl
+15,9884642,Naproxcinod,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCCCCO[N+](=O)[O-]
+16,11311807,Naproxen Isopropyl Ester,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC(C)C
+17,11254291,Rac-naproxen 2-propyl ester,CC(C)OC(=O)C(C)C1=CC2=C(C=C1)C=C(C=C2)OC
+18,25170420,Naproxen Etemesil,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCCS(=O)(=O)C
+19,76968825,Naproxen piperazine,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1CNCCN1
+20,46782447,"rac-Naproxen-13C,d3",[2H][13C]([2H])([2H])C(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O
+21,131667910,(S)-Naproxen-d3,[2H]C([2H])([2H])OC1=CC2=C(C=C1)C=C(C=C2)[C@H](C)C(=O)O
+22,71315404,Demethyl Naproxen Acyl-|A-D-glucuronide,COC1=CC2=C(C=C1)C=C(C=C2)CC(=O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O
+23,10092727,"(R,S)-Naproxen acyl-beta-D-glucuronide",CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O
+24,45039727,Desmethyl Naproxen-d3,[2H]C([2H])([2H])OC1=CC2=C(C=C1)C=C(C=C2)CC(=O)O
+25,46782450,(S)-Naproxen Iso-acyl-beta-D-glucuronide,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC3C(C(C(OC3C(=O)O)O)O)O
+26,165412088,Naproxen betainate sodium,C[C@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)[O-].C[N+](C)(C)CC(=O)[O-].[Na+]
+27,129318422,"Naproxen 1,2,3-Propanetriol Esters (Mixture of Regio-and Stereoisomers); Naproxen 1,2,3-Propanetriol Ester (Mixture of Isomers)",C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCC(CO)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC(CO)CO
+28,11529352,(+-)-Naproxen butyl ester,CCCCOC(=O)C(C)C1=CC2=C(C=C1)C=C(C=C2)OC
+29,185019,Naproxen 2-piperazineethanol,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1CN(CCN1)CCO
+30,162641503,rac-Naproxen 2-Propyl Ester-d3,[2H]C([2H])([2H])C(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC(C)C
+31,23690939,Naproxen betainate,C[C@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)[O-].C[N+](C)(C)CC(=O)O.[Na+]
+32,23709079,Treximet,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)[O-].CNS(=O)(=O)CC1=CC2=C(C=C1)NC=C2CCN(C)C.C(CC(=O)O)C(=O)O.[Na+]
+33,46781184,rac O-Desmethyl Naproxen-d3,[2H]C([2H])([2H])C(C1=CC2=C(C=C1)C=C(C=C2)O)C(=O)O
+34,131866405,(R)-5-Iodo Naproxen,C[C@H](C1=CC2=C(C=C1)C(=C(C=C2)OC)I)C(=O)O
+35,139196855,D-Prolinium cocrystal of S-Naproxen,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1C[C@@H]([NH2+]C1)C(=O)[O-]
+36,6426145,"Naproxen, tert-butyldimethylsilyl ester",CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O[Si](C)(C)C(C)(C)C
+37,45040001,rac Naproxen-d3 Methyl Ester,[2H]C([2H])([2H])C(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC
+38,168339165,"RS-naproxen D-proline 1:1 cocrystal, polymorph II",C[C@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1C[C@H]([NH2+]C1)C(=O)[O-].C1C[C@H]([NH2+]C1)C(=O)[O-]
+39,44147054,Naproxen aminobutanol,CCC(CO)N.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O
+40,49849423,"(inverted exclamation markA)-Naproxen-13C,d3",[2H][13C]([2H])([2H])OC1=CC2=C(C=C1)C=C(C=C2)C(C)C(=O)O
+41,60457,2-Hydroxyethyl naproxenate,CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCCO
+42,9837916,Sodium naproxen,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.[Na]
+43,10413000,"Naproxen, octadecyl ester",CCCCCCCCCCCCCCCCCCOC(=O)C(C)C1=CC2=C(C=C1)C=C(C=C2)OC
+44,15545563,Naproxen 3-hydroxypropyl ester,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCCCO
+45,21412586,"Naproxen, hexadecyl ester",CCCCCCCCCCCCCCCCOC(=O)C(C)C1=CC2=C(C=C1)C=C(C=C2)OC
+46,13152115,(R)-5-Bromo Naproxen,C[C@H](C1=CC2=C(C=C1)C(=C(C=C2)OC)Br)C(=O)O
+47,13393710,(R)-O-Desmethyl Naproxen,C[C@H](C1=CC2=C(C=C1)C=C(C=C2)O)C(=O)O
+48,86658638,Naproxen cesium,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.[Cs]
+49,18603625,Naproxen alcohol,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OO
+50,91729740,"Naproxen, heptadecyl ester",CCCCCCCCCCCCCCCCCOC(=O)C(C)C1=CC2=C(C=C1)C=C(C=C2)OC
+51,139196854,L-Prolinium cocrystal of S-Naproxen,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1C[C@H]([NH2+]C1)C(=O)[O-]
+52,139198550,S-naproxen L-alanine,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H](C(=O)[O-])[NH3+]
+53,91729733,"Naproxen, tetradecyl ester",CCCCCCCCCCCCCCOC(=O)C(C)C1=CC2=C(C=C1)C=C(C=C2)OC
+54,67607212,S-naproxen ethanol solvate,CCO.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O
+55,46705297,Naproxen Metheyl Amide,CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)NC
+56,131736273,(-)-tramadol (S)-naproxen,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.CN(C)C[C@@H]1CCCC[C@]1(C2=CC(=CC=C2)OC)O
+57,46782449,(S)-Naproxen Acyl-beta-D-glucuronide Benzyl Ester,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O[C@@H]3[C@@H]([C@@H]([C@H](C(O3)C(=O)OCC4=CC=CC=C4)O)O)O
+58,54393649,Naproxen butyl ester,CCCCOC(=O)[C@@H](C)C1=CC2=C(C=C1)C=C(C=C2)OC
+59,46782446,(R)-Naproxen Acyl-beta-D-glucuronide Benzyl Ester,C[C@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O[C@@H]3[C@@H]([C@@H]([C@H](C(O3)C(=O)OCC4=CC=CC=C4)O)O)O
+60,118856069,(S)-Naproxen iso-acyl-beta-D-glucuronidediscontinued,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O[C@H]3C(C([C@@H](C(O3)C(=O)O)O)O)O
+61,54484412,Naproxen O-glucuronide,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O
+62,77557160,Naproxen sodium dihydrate,CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)[O-].O.O.[Na+]
+63,86623029,Aminopropanol naproxen Hydrochloride,CCC(N)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.Cl
+64,59014996,"(R,S)-Naproxen-1,3,4,5,7,8-d6",[2H]C1=C(C(=C(C2=C1C(=C(C(=C2[2H])[2H])OC)[2H])[2H])C(C)C(=O)O)[2H]
+65,92024125,Demethyl naproxen acyl-beta-D-glucuronide,COC1=CC2=C(C=C1)C=C(C=C2)CC(=O)OC3C(C(C(C(O3)C(=O)O)O)O)O
+66,90804054,Naproxen-d1,[2H]OC(=O)[C@@H](C)C1=CC2=C(C=C1)C=C(C=C2)OC
+67,91729739,"Naproxen, pentadecyl ester",CCCCCCCCCCCCCCCOC(=O)C(C)C1=CC2=C(C=C1)C=C(C=C2)OC
+68,98108373,(S)-Naproxen acyl-B-D-glucuronide benzyl ester,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O[C@@H]3CCCCO3
+69,86623028,Boc-aminopropanol naproxen,CCC(C(=O)OC(C)(C)C)(N)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O
+70,86599386,Tilmicosin Naproxen,CC[C@@H]1[C@H](/C=C(/C=C/C(=O)[C@@H](C[C@@H]([C@@H]([C@H]([C@@H](CC(=O)O1)O)C)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C)O)N(C)C)O)CCN3C[C@@H](C[C@@H](C3)C)C)C)\C)CO[C@H]4[C@@H]([C@@H]([C@@H]([C@H](O4)C)O)OC)OC.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O
+71,70257390,Calcium naproxen,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)[O-].C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)[O-].[Ca+2]
+72,139198551,S-naproxen D-alanine,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@H](C(=O)[O-])[NH3+]
+73,100996897,"(r,s)-Naproxen 2,2,2-trifluoroethyl ester",C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCC(F)(F)F
+74,139205087,"Co-crystal of naproxen and 4,4'-azopyridine",C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1=CN=CC=C1N=NC2=CC=NC=C2
+75,172642097,(R)-Naproxen acyl-b-D-glucuronide benzyl ester,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O[C@H]3C([C@@H]([C@@H](C(O3)C(=O)OCC4=CC=CC=C4)O)O)O
+76,10087109,"Naproxen,acetyloxyethyl ester",CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCCOC(=O)C
+77,129866199,Naproxen sodium tetrahydrate,CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)[O-].O.O.O.O.[Na+]
+78,6429924,"Naproxen, TBDMS",CC(C)(C)[Si](C)(C)OC(=O)CC1=CC2=C(C=C1)C=C(C=C2)OC
+79,131736274,(+)-tramadol (R)-naproxen,C[C@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.CN(C)C[C@H]1CCCC[C@@]1(C2=CC(=CC=C2)OC)O
+80,711616,Ethyl (2S)-2-(6-Methoxynaphthalen-2-yl)propanoate (Naproxen Ethyl Ester),CCOC(=O)[C@H](C)C1=CC2=C(C=C1)C=C(C=C2)OC
+81,6925666,Naproxen(1-),C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)[O-]
+82,176481417,Naproxen Impurity 19,CC1=CC2=C(CC(=CC2)C(C)O)C=C1
+83,131727063,Naproxen Succinimide,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1CC(=O)NC1=O
+84,131727751,Naproxen 6-aminohexanoic Acid Serinol,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C(CCC(=O)O)CCN.C(C(CO)N)O
+85,129704790,Naproxen salicylate,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OOC(=O)C3=CC=CC=C3O
+86,68542372,Naproxen monohydrate,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.O
+87,24795900,(S)-Naproxen-d6 Methyl Ester,[2H]C([2H])([2H])OC1=CC2=C(C=C1)C=C(C=C2)[C@H](C)C(=O)OC([2H])([2H])[2H]
+88,176481423,Naproxen Impurity 9 Sodium Salt,CC(C(=O)C1=CC2=C(C=C1)C=C(C=C2)[O-])OCC(C)(C)CO.[Na+]
+89,136387734,Acyclovir Imidazole Naproxen,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1=CN=CN1.C1=NC2=C(N1COCCO)N=C(NC2=O)N
+90,136387738,Acyclovir Sodium Imidazole Naproxen,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1=CN=CN1.C1=NC2=C(N1COCCO)N=C(NC2=O)N.[Na]
+91,169501932,Naproxen-O-glucuronide,C[C@H]1[C@@H]([C@H](OC([C@@H]1C)OC(=O)[C@@H](C)C2=CC3=C(C=C2)C=C(C=C3)OC)C(=O)O)C
+92,129318419,"Naproxen 2,3-Butylene Glycol Ester",C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC(C)C(C)O
+93,129882629,Glucosyl naproxen,CC(C1=C(C2=C(C=C1)C=C(C=C2)OC)C3([C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)O)O)C(=O)O
+94,176481416,Naproxen Impurity 17,CC(C(=O)C1=CC2=C(C=C1)C=C(C=C2)OC)OCC(C)(C)CO
+95,44208596,Memantine Naproxen,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.CC12CC3CC(C1)(CC(C3)(C2)N)C
+96,129098564,Naproxen phenyl ester,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC3=CC=CC=C3
+97,168339161,S-naproxen DL-proline 1:1 cocrystal,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1C[C@@H]([NH2+]C1)C(=O)[O-].C1C[C@H]([NH2+]C1)C(=O)[O-]
+98,71750939,(S)-Naproxen ethyl ester-d5,[2H]C([2H])([2H])C([2H])([2H])OC(=O)[C@@H](C)C1=CC2=C(C=C1)C=C(C=C2)OC
+99,168308049,Naproxen-picolinamide (1/1),C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1=CC=NC(=C1)C(=O)N.C1=CC=NC(=C1)C(=O)N
+100,23276885,"Naproxen,(N,N-di-OH-Et)gylcolamide ester",CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCC(=O)N(CCO)CCO
+101,23276582,"Naproxen,(N-Me-N-hydroxyethyl)gycolamide ester",CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCC(=O)N(C)CCO
+102,390923,(S)-Naproxen-propargylester,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCC#C
+103,169444626,rac-Naproxen-13C3,[13CH3]C(C1=CC2=C(C=C1)C=C(C=C2)O[13CH3])[13C](=O)O
+104,129733623,ZINC-naproxen,CC(C(=[Zn])/C=C\C1=[C-]C=CC(=C1)OC)C(=O)O
+105,171921279,Naproxen-d6 acyl-beta-D-glucuronide,[2H]C1=C(C(=C(C2=C1C(=C(C(=C2[2H])[2H])OC)[2H])[2H])C(C)C(=O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O)[2H]
+106,168339162,S-naproxen L-proline 2:3 cocrystal,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1C[C@H]([NH2+]C1)C(=O)[O-].C1C[C@H]([NH2+]C1)C(=O)[O-].C1C[C@H]([NH2+]C1)C(=O)[O-]
+107,168339166,"RS-naproxen D-proline 1:1 cocrystal, polymorph I",C[C@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1C[C@@H]([NH2+]C1)C(=O)[O-].C1C[C@@H]([NH2+]C1)C(=O)[O-]
+108,129866262,Phospho-naproxen,C[C@@H](C1=C(C2=C(C=C1)C=C(C=C2)OC)P(=O)=O)C(=O)O
+109,129826730,"(r,s)-Naproxen thioester",C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OS
+110,129628919,Naproxen AL,C[C@@H](C1=C(C2=C(C=C1)C=C(C=C2)OC)C=O)C(=O)O
+111,124417976,(R)-5-Chloro Naproxen,C[C@H](C1=CC2=C(C=C1)C(=C(C=C2)OC)Cl)C(=O)O
+112,176481418,Naproxen Impurity 33,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCC(C(C(C(CO)O)O)O)O
+113,176481422,Naproxen Impurity 7,COCC1=CC2=C(C=C1)C=C(C=C2)C/C=N/O
+114,168339160,"RS-naproxen DL-proline 1:1 cocrystal, polymorph II",C[C@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1C[C@@H]([NH2+]C1)C(=O)[O-]
+115,168339164,"S-naproxen L-proline 1:1 cocrystal, polymorph II",C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1C[C@H]([NH2+]C1)C(=O)[O-].C1C[C@H]([NH2+]C1)C(=O)[O-]
+116,102602145,Naproxen Diisopropyl Amide,CCC(=O)N.CCC(=O)N.C[C@@H](C1=CC2=C(C=C1)C(=CC=C2)OC)C(=O)O
+117,168339163,1:1 S-naproxen DL-proline cocrystal hydrate,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1C[C@@H]([NH2+]C1)C(=O)[O-].C1C[C@H]([NH2+]C1)C(=O)[O-].O.O
+118,138395470,"Naproxen,acetyloxymethyl ester",CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCOC(=O)C
+119,169444627,"rac-Naproxen Methyl Ester-13C,d3",[2H][13C]([2H])([2H])C(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC
+120,155489092,Naproxen-CoA; (Acyl-CoA); [M+H]+,CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)SCCNC(=O)CCNC(=O)C(C(C)(C)COP(=O)(O)OP(=O)(O)OCC3C(C(C(O3)N4C=NC5=C(N=CN=C54)N)O)OP(=O)(O)O)O
+121,129318420,"Naproxen 1,2-Propylene Glycol Esters (Mixture of Isomers)",C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCC(C)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OC(C)CO
+122,139196857,L-Prolinium cocrystal of RS-Naproxen,C[C@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1C[C@H]([NH2+]C1)C(=O)[O-].C1C[C@H]([NH2+]C1)C(=O)[O-].O.O
+123,129679277,Naproxen sulfonamide,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OS(=O)(=O)N
+124,139196856,DL-Prolinium cocrystal of RS-Naproxen,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1C[C@H]([NH2+]C1)C(=O)[O-].O
+125,139198552,S-naproxen D-tryptophan monohydrate,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1=CC=C2C(=C1)C(=CN2)C[C@H](C(=O)[O-])[NH3+].O
+126,139198553,S-naproxen D-tyrosine,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O.C1=CC(=CC=C1C[C@H](C(=O)[O-])[NH3+])O
+127,129629076,Naproxen HEXAL,C[C@@H](C1=C(C2=C(C(=C1C=O)C=O)C(=C(C(=C2C=O)C=O)OC)C=O)C=O)C(=O)O
+128,138395483,"Naproxen,acetyloxypropyl ester",CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCCCOC(=O)C
+129,138395487,Naproxen acetyloxybutyl ester,CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCCCCOC(=O)C
+130,129689488,Naproxen nitrite,C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OON=O
+131,13075209,"5-Chloronaproxen, (S)-",C[C@@H](C1=CC2=C(C=C1)C(=C(C=C2)OC)Cl)C(=O)O
+132,71771710,"5-Iodonaproxen, (S)-",C[C@@H](C1=CC2=C(C=C1)C(=C(C=C2)OC)I)C(=O)O
+133,1302,2-(6-Methoxy-2-naphthyl)propionic acid,CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O
+134,575523,1-(6-Methoxy-2-naphthyl)ethanol,CC(C1=CC2=C(C=C1)C=C(C=C2)OC)O
+135,11789931,2-Ethyl-6-methoxynaphthalene,CCC1=CC2=C(C=C1)C=C(C=C2)OC
+136,11529664,"5-Bromonaproxen, (S)-",C[C@@H](C1=CC2=C(C=C1)C(=C(C=C2)OC)Br)C(=O)O
+137,288634,6-Methoxy-2-naphthol,COC1=CC2=C(C=C1)C=C(C=C2)O

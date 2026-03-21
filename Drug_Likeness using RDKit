@@ -101,12 +101,12 @@ for i in range(len(df)):
    fingerprint_Bits.append(fp.ToBitString())
    similarity_scores.append(score)
 #<-------9. Add Results To Dataset------->
-df["mol_wt"]=molwt_list
-df["logP"]=logP_list
+df["mol_wt"]=[round(x,3) for x in molwt_list]
+df["logP"]=[round(x,3) for x in logP_list]
 df["H_Acceptors"]=H_Acceptors_list
 df["H_Donors"]=H_Donors_list
 df["rot_bonds"]=rot_bonds_list
-df["TPSA"]=tpsa_list
+df["TPSA"]=[round(x,3) for x in tpsa_list]
 df["lipinski_results"]=lipinski_results
 df["veber_results"]=veber_results
 df["lipinski_fails"] =lipinski_fails

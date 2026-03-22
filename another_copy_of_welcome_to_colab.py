@@ -1,0 +1,1 @@
+filtered=df[(df["mol_wt")<500&(df["logP"]<5)]

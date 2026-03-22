@@ -6,15 +6,11 @@ import pandas as pd
 #<-------2. Load Dataset------->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
-while True:
-    input_smiles = input("Enter SMILES (or type exit): ")
-    if input_smiles.lower() == "exit":
-        print("Program stopped ✅")
-        break
-    input_mol = Chem.MolFromSmiles(input_smiles)
-    if input_mol is None:
-        print("Invalid SMILES ❌ Try again")
-        continue
+input_smiles=input("enter your smiles: )
+input_mol=Chem.MolFromSmiles(input_smiles)
+if input_mol is None:
+    print("invalid input smiles")
+    exit() 
 morgan_fp=rdFingerprintGenerator.GetMorganGenerator(radius=2,fpSize=2048)
 input_fp = morgan_fp.GetFingerprint(input_mol)
 #<-------3. Initialize Result Storage------->

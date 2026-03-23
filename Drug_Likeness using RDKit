@@ -6,7 +6,7 @@ import pandas as pd
 #<-------2. Load Dataset------->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
-input_smiles=input("enter your smiles: )
+input_smiles=input("enter your smiles: ")
 input_mol=Chem.MolFromSmiles(input_smiles)
 if input_mol is None:
     print("invalid input smiles")

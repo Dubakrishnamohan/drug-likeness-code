@@ -3,6 +3,7 @@ from rdkit.Chem import rdFingerprintGenerator
 from rdkit import DataStructs
 from rdkit.Chem import Descriptors
 import pandas as pd
+import matplotlib.pyplot as plt
 #<-------2. Load Dataset------->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
@@ -114,8 +115,17 @@ df["veber_fails"]=veber_fails
 df["drug_like_results"]=drug_like_results
 df["fingerprint_Bits"]=fingerprint_Bits
 df["similarity_scores"]=similarity_scores
-df=df.sort_values(by="similarity_scores",ascending=False)
 filtered=df[(df["mol_wt"])<500&(df["logP"]<5)]
+#<-------10. Graphs(Visualization)------->
+top10=df.sort_values(by="similarity_scores",ascending=False).head(10)
+plt.figure(figsize=(10,6))
+plt.bar(range(len(top10)),top10["similarity_scores"])
+plt.xticks(range(len(top10)),top10["SMILES"],rotation=90)
+plt.title("top10 similar molecules")
+plt.xlabel("smiles")
+plt.ylabel("similarity")
+plt.tight_layout()
+plt.show()
 #<-------10. Save Updated Dataset------->
 df.to_csv("drug_analysis_results.csv",index=False)
 print("updated drug analysis dataset saved")

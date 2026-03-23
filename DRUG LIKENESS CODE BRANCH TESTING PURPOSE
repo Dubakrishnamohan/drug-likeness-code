@@ -1,3 +1,4 @@
+
 from rdkit import Chem
 from rdkit.Chem import rdFingerprintGenerator
 from rdkit import DataStructs
@@ -11,7 +12,7 @@ input_smiles=input("enter your smiles: ")
 input_mol=Chem.MolFromSmiles(input_smiles)
 if input_mol is None:
     print("invalid input smiles")
-    exit() 
+    exit()
 morgan_fp=rdFingerprintGenerator.GetMorganGenerator(radius=2,fpSize=2048)
 input_fp = morgan_fp.GetFingerprint(input_mol)
 #<-------3. Initialize Result Storage------->
@@ -19,8 +20,8 @@ molwt_list=[]
 logP_list=[]
 H_Acceptors_list=[]
 H_Donors_list=[]
-rot_bonds_list=[] 
-tpsa_list=[] 
+rot_bonds_list=[]
+tpsa_list=[]
 lipinski_results=[]
 veber_results=[]
 lipinski_fails=[]
@@ -52,7 +53,7 @@ for i in range(len(df)):
    score = DataStructs.TanimotoSimilarity(input_fp, fp)
 #<-------4.2 Calculate Molecular Descriptors ------->
    mol_wt=Descriptors.MolWt(mol)
-   logP=Descriptors.MolLogP(mol)        
+   logP=Descriptors.MolLogP(mol)
    H_Acceptors=Descriptors.NumHAcceptors(mol)
    H_Donors=Descriptors.NumHDonors(mol)
 #<-------5. Apply Lipinski Rule Of Five ------->
@@ -67,7 +68,7 @@ for i in range(len(df)):
    if(H_Donors>5):
     lipinski_fail+=1
    if lipinski_fail<=1:
-    lipinski_result="pass" 
+    lipinski_result="pass"
    else:
     lipinski_result="fail"
 #<-------6. Apply veber_rule------->
@@ -78,9 +79,9 @@ for i in range(len(df)):
    if rot_bonds>10:
     veber_fail+=1
    if tpsa>140:
-    veber_fail+=1    
+    veber_fail+=1
    if veber_fail==0:
-    veber_result="pass" 
+    veber_result="pass"
    else:
     veber_result="fail"
    if lipinski_fail==0 and veber_fail==0:
@@ -94,7 +95,7 @@ for i in range(len(df)):
    H_Donors_list.append(H_Donors)
    rot_bonds_list.append(rot_bonds)
    tpsa_list.append(tpsa)
-   lipinski_results.append(lipinski_result) 
+   lipinski_results.append(lipinski_result)
    veber_results.append(veber_result)
    lipinski_fails.append(lipinski_fail)
    veber_fails.append(veber_fail)
@@ -115,20 +116,23 @@ df["veber_fails"]=veber_fails
 df["drug_like_results"]=drug_like_results
 df["fingerprint_Bits"]=fingerprint_Bits
 df["similarity_scores"]=similarity_scores
-filtered=df[(df["mol_wt"])<500&(df["logP"]<5)]
+filtered=df[(df["mol_wt"]) <500&(df["logP"]<5)]
+df=df[df["drug_like_results"]=="pass"]
+df=df[df["similarity_scores"]>0.1]
 #<-------10. Graphs(Visualization)------->
-#------->10.1.Bar Graph<-------
 top10=df.sort_values(by="similarity_scores",ascending=False).head(10)
+top10=df.head(10)
+print(top10[["SMILES","similarity_scores","drug_like_results"]])
 plt.figure(figsize=(10,6))
 plt.bar(range(len(top10)),top10["similarity_scores"])
 plt.xticks(range(len(top10)),top10["SMILES"],rotation=90)
 plt.title("top10 similar molecules")
-plt.xlabel("smiles")
+plt.xlabel("SMILES")
 plt.ylabel("similarity")
 plt.tight_layout()
-plt.savefig("top10 similar molecules")
+plt.savefig("top10 similar molecules.png")
 plt.show()
-#------->10.2.pie chart<-------
+#------->pie chart<-------
 counts=df["drug_like_results"].value_counts()
 plt.figure()
 plt.pie(counts,labels=counts.index,autopct="%1.1f%%")

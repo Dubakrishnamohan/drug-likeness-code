@@ -117,6 +117,7 @@ df["fingerprint_Bits"]=fingerprint_Bits
 df["similarity_scores"]=similarity_scores
 filtered=df[(df["mol_wt"])<500&(df["logP"]<5)]
 #<-------10. Graphs(Visualization)------->
+#------->10.1.Bar Graph<-------
 top10=df.sort_values(by="similarity_scores",ascending=False).head(10)
 plt.figure(figsize=(10,6))
 plt.bar(range(len(top10)),top10["similarity_scores"])
@@ -126,6 +127,13 @@ plt.xlabel("smiles")
 plt.ylabel("similarity")
 plt.tight_layout()
 plt.savefig("top10 similar molecules")
+plt.show()
+#------->10.2.pie chart<-------
+counts=df["drug_like_results"].value_counts()
+plt.figure()
+plt.pie(counts,labels=counts.index,autopct="%1.1f%%")
+plt.title("drug_like vs non_drug_like")
+plt.savefig("drug like vs non drug like pie chart.png")
 plt.show()
 #<-------10. Save Updated Dataset------->
 df.to_csv("drug_analysis_results.csv",index=False)

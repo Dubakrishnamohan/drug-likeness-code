@@ -125,6 +125,7 @@ plt.title("top10 similar molecules")
 plt.xlabel("smiles")
 plt.ylabel("similarity")
 plt.tight_layout()
+plt.savefig("top10 similar molecules")
 plt.show()
 #<-------10. Save Updated Dataset------->
 df.to_csv("drug_analysis_results.csv",index=False)

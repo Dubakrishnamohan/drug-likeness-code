@@ -6,7 +6,7 @@ import pandas as pd
 #<-------2. Load Dataset------->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
-input_smiles=input("enter your smiles: )
+input_smiles=input("enter your smiles: ")
 input_mol=Chem.MolFromSmiles(input_smiles)
 if input_mol is None:
     print("invalid input smiles")
@@ -115,7 +115,7 @@ df["drug_like_results"]=drug_like_results
 df["fingerprint_Bits"]=fingerprint_Bits
 df["similarity_scores"]=similarity_scores
 df=df.sort_values(by="similarity_scores",ascending=False)
-filtered=df[(df["mol_wt")<500&(df["logP"]<5)]
+filtered=df[(df["mol_wt"])<500&(df["logP"]<5)]
 #<-------10. Save Updated Dataset------->
 df.to_csv("drug_analysis_results.csv",index=False)
 print("updated drug analysis dataset saved")

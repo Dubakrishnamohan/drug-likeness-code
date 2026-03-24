@@ -1,4 +1,3 @@
-
 from rdkit import Chem
 from rdkit.Chem import rdFingerprintGenerator
 from rdkit import DataStructs
@@ -74,7 +73,6 @@ for i in range(len(df)):
 #<-------6. Apply veber_rule------->
    rot_bonds=Descriptors.NumRotatableBonds(mol)
    tpsa=Descriptors.TPSA(mol)
-
    veber_fail=0
    if rot_bonds>10:
     veber_fail+=1
@@ -120,6 +118,7 @@ filtered=df[(df["mol_wt"]) <500&(df["logP"]<5)]
 df=df[df["drug_like_results"]=="pass"]
 df=df[df["similarity_scores"]>0.1]
 #<-------10. Graphs(Visualization)------->
+   #----->10.1. Bar Graph(top10 similar molecules)<-----
 top10=df.sort_values(by="similarity_scores",ascending=False).head(10)
 top10=df.head(10)
 print(top10[["SMILES","similarity_scores","drug_like_results"]])
@@ -132,13 +131,30 @@ plt.ylabel("similarity")
 plt.tight_layout()
 plt.savefig("top10 similar molecules.png")
 plt.show()
-#------->pie chart<-------
+   #------->10.2 pie chart(drug_like vs non_drug_like)<-------
 counts=df["drug_like_results"].value_counts()
 plt.figure()
 plt.pie(counts,labels=counts.index,autopct="%1.1f%%")
 plt.title("drug_like vs non_drug_like")
-plt.savefig("drug like vs non drug like pie chart.png")
+plt.savefig("drug_like vs non_drug_like pie chart.png")
 plt.show()
-#<-------10. Save Updated Dataset------->
-df.to_csv("drug_analysis_results.csv",index=False)
+   #----->10.3. histogram(molecular weight distribution)<-----
+plt.figure()
+plt.hist(df["mol_wt"].dropna(),bins=30)
+plt.title("molecular weight distribution") 
+plt.xlabel("mol_wt")  
+plt.ylabel("frequency")
+plt.savefig("molecular weight distribution.png")
+plt.show()
+   #----->10.4.Histogram(""similarity_scores distribution")<-----
+plt.figure()
+plt.hist(df["similarity_scores"].dropna(),bins=30)
+plt.title("similarity_scores distribution") 
+plt.xlabel("similarity_scores")  
+plt.ylabel("count")
+plt.savefig("similarity scores distribution.png")
+plt.show()
+#<-------11. Save Updated Dataset------->
+filename=input("Enter file name")
+df.to_csv(filename + ".csv",index=False)
 print("updated drug analysis dataset saved")

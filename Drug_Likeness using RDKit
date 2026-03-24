@@ -55,7 +55,6 @@ for i in range(len(df)):
    H_Acceptors=Descriptors.NumHAcceptors(mol)
    H_Donors=Descriptors.NumHDonors(mol)
 #<-------5. Apply Lipinski Rule Of Five ------->
-
    lipinski_fail= 0
    if(mol_wt>500):
     lipinski_fail+=1
@@ -72,7 +71,6 @@ for i in range(len(df)):
 #<-------6. Apply veber_rule------->
    rot_bonds=Descriptors.NumRotatableBonds(mol)
    tpsa=Descriptors.TPSA(mol)
-
    veber_fail=0
    if rot_bonds>10:
     veber_fail+=1

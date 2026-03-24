@@ -154,6 +154,6 @@ plt.ylabel("count")
 plt.savefig("similarity scores distribution.png")
 plt.show()
 #<-------11. Save Updated Dataset------->
-filename=input("Enter file name")
+filename=input("Enter file name: ")
 df.to_csv(filename + ".csv",index=False)
 print("updated drug analysis dataset saved")

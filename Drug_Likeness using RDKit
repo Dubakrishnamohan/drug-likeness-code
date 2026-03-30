@@ -4,6 +4,8 @@ from rdkit import DataStructs
 from rdkit.Chem import Descriptors
 import pandas as pd
 import matplotlib.pyplot as plt
+from fpdf import FPDF
+from datetime import datetime
 #<-------2. Load Dataset------->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
@@ -140,20 +142,78 @@ plt.show()
    #----->10.3. histogram(molecular weight distribution)<-----
 plt.figure()
 plt.hist(df["mol_wt"].dropna(),bins=30)
-plt.title("molecular weight distribution") 
-plt.xlabel("mol_wt")  
+plt.title("molecular weight distribution")
+plt.xlabel("mol_wt")
 plt.ylabel("frequency")
 plt.savefig("molecular weight distribution.png")
 plt.show()
   #----->10.4.Histogram(""similarity_scores distribution")<-----
 plt.figure()
 plt.hist(df["similarity_scores"].dropna(),bins=30)
-plt.title("similarity_scores distribution") 
-plt.xlabel("similarity_scores")  
+plt.title("similarity_scores distribution")
+plt.xlabel("similarity_scores")
 plt.ylabel("count")
-plt.savefig("similarity scores distribution.png")
+plt.savefig("similarity_scores_distribution.png")
 plt.show()
 #<-------11. Save Updated Dataset------->
 filename=input("Enter file name: ")
 df.to_csv(filename + ".csv",index=False)
 print("updated drug analysis dataset saved")
+
+def generate_pdf_report(input_smiles,df):
+  pdf=FPDF()
+  pdf.add_page()
+  pdf.set_font("Arial",style='B',size=12)
+  #title
+
+  pdf.cell(200,10,txt="Drug Analysis Report",ln=True,align="C")
+  pdf.ln(5)
+
+  #input
+  pdf.cell(200,10,txt=f"input SMILES:{input_smiles}",ln=True)
+
+  #Date
+  now=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+  pdf.cell(200,10,txt=f"Generated on:{now}",ln=True)
+  pdf.ln(5)
+
+  #Summary
+  pdf.cell(200,10, txt=f"Total molecules after filtering : {len(df)}",ln=True)
+  pdf.ln(5)
+
+  #Top 10 molecules
+  pdf.cell(200,20,txt=f"Top 10 Similar molecules",ln=True)
+  pdf.image("top10 similar molecules.png",x=10,w=90)
+
+  #drug_like vs non_drug_like
+  pdf.cell(200,20,txt=f"drug_like vs non_drug_like",ln=True)
+  pdf.image("drug_like vs non_drug_like pie chart.png",x=110,w=90)
+  pdf.ln(70)
+
+  #molecular weight distribution
+  pdf.cell(200,20,txt=f"molecular weight distribution",ln=True)
+  pdf.image("molecular weight distribution.png",x=10,w=90)
+
+  #similarity_scores distribution
+  pdf.cell(200,20,txt=f"similarity_scores distribution",ln=True)
+  pdf.image("similarity_scores_distribution.png",x=110,w=90)
+
+  top10=df.sort_values(by="similarity_scores",ascending=False).head(10)
+
+  for i, row in top10.iterrows():
+    pdf.cell(200,10,txt=f"{row["SMILES"]}i Score:{round(row["similarity_scores"],3)}",ln=True)
+  pdf.ln(5)
+
+  #pdf.cell(200,10,txt="Graphs generated separately as png files. ",ln=True)
+
+  #save
+  filename=input("Enter file name: ")
+  pdf.output(filename + ".pdf")
+  print("pdf report generated")
+
+choice=input("Generate PDF? (y/n):").strip().lower()
+
+if choice=="y":
+  generate_pdf_report(input_smiles,df)
+else:
+  print("Skipped PDF generation")

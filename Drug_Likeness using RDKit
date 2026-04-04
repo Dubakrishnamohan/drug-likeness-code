@@ -84,9 +84,9 @@ for i in range(len(df)):
    else:
     veber_result="fail"
    if lipinski_fail==0 and veber_fail==0:
-    drug_like_result="pass"
+    drug_like_result=1
    else:
-    drug_like_result="fail"
+    drug_like_result=0
 #<-------8. store results------->
    molwt_list.append(mol_wt)
    logP_list.append(logP)

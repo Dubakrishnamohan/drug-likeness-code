@@ -115,9 +115,9 @@ df["veber_fails"]=veber_fails
 df["drug_like_results"]=drug_like_results
 df["fingerprint_Bits"]=fingerprint_Bits
 df["similarity_scores"]=similarity_scores
-filtered=df[(df["mol_wt"]) <500&(df["logP"]<5)]
-df=df[df["drug_like_results"]=="pass"]
-df=df[df["similarity_scores"]>0.1]
+filtered=df[(df["mol_wt"] <500)&(df["logP"]<5)]
+df=df[df["drug_like_results"]==1]
+df=df[df["similarity_scores"]>0]
 #<-------10. Graphs(Visualization)------->
    #----->10.1. Bar Graph(top10 similar molecules)<-----
 top10=df.sort_values(by="similarity_scores",ascending=False).head(10)

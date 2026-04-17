@@ -6,6 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from fpdf import FPDF
 from datetime import datetime
+import pytz
 #<-------2. Load Dataset------->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
@@ -162,48 +163,62 @@ print("updated drug analysis dataset saved")
 def generate_pdf_report(input_smiles,df):
   pdf=FPDF()
   pdf.add_page()
-  pdf.set_font("Arial",style='B',size=12)
-  #title
+  pdf.set_font("Arial",style='B',size=18)
 
+  #title
+  pdf.set_text_color(0,102,204)
+  pdf.set_font("Arial",style='B',size=18)
   pdf.cell(200,10,txt="Drug Analysis Report",ln=True,align="C")
   pdf.ln(5)
 
   #input
+  pdf.set_text_color(0,0,0)
+  pdf.set_font("Arial",style='B',size=14)
   pdf.cell(200,10,txt=f"input SMILES:{input_smiles}",ln=True)
 
   #Date
-  now=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+  pdf.set_font("Arial",style='B',size=14)
+  ist=pytz.timezone("Asia/Kolkata")
+  now=datetime.now(ist).strftime("%d-%m-%Y %H:%M:%S")
   pdf.cell(200,10,txt=f"Generated on:{now}",ln=True)
   pdf.ln(5)
 
   #Summary
+  pdf.set_font("Arial",style='B',size=14)
   pdf.cell(200,10, txt=f"Total molecules after filtering : {len(df)}",ln=True)
   pdf.ln(5)
 
   #Top 10 molecules
+  pdf.set_font("Arial",style='B',size=14)
   pdf.cell(200,20,txt=f"Top 10 Similar molecules",ln=True)
-  pdf.image("top10 similar molecules.png",x=10,w=90)
-
+  pdf.image("top10 similar molecules.png",x=30,w=120)
+  pdf.ln(5)
   #drug_like vs non_drug_like
+  pdf.set_font("Arial",style='B',size=14)
   pdf.cell(200,20,txt=f"drug_like vs non_drug_like",ln=True)
-  pdf.image("drug_like vs non_drug_like pie chart.png",x=110,w=90)
-  pdf.ln(70)
+  pdf.image("drug_like vs non_drug_like pie chart.png",x=30,w=120)
+  pdf.ln(10)
 
   #molecular weight distribution
+  pdf.set_font("Arial",style='B',size=14)
   pdf.cell(200,20,txt=f"molecular weight distribution",ln=True)
-  pdf.image("molecular weight distribution.png",x=10,w=90)
+  pdf.image("molecular weight distribution.png",x=30,w=120)
 
   #similarity_scores distribution
+  pdf.set_font("Arial",style='B',size=14)
   pdf.cell(200,20,txt=f"similarity_scores distribution",ln=True)
-  pdf.image("similarity_scores_distribution.png",x=110,w=90)
-
+  pdf.image("similarity_scores_distribution.png",x=30,w=120)
+  
+  pdf.set_font("Arial",style='B',size=18)
+  pdf.cell(200,20,txt=f"Top 10 Similar molecules SMILES",ln=True,align="C")
   top10=df.sort_values(by="similarity_scores",ascending=False).head(10)
 
   for i, row in top10.iterrows():
+    pdf.set_font("Arial",style='B',size=12)
     pdf.cell(200,10,txt=f"{row["SMILES"]}i Score:{round(row["similarity_scores"],3)}",ln=True)
-  pdf.ln(5)
+    pdf.ln(5)
 
-  #pdf.cell(200,10,txt="Graphs generated separately as png files. ",ln=True)
+  #pdf.cell(200,10,txt="Graphs generated separately as png files.",ln=True)
 
   #save
   filename=input("Enter file name: ")

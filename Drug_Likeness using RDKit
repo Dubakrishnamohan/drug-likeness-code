@@ -1,6 +1,7 @@
 from rdkit import Chem
 from rdkit.Chem import rdFingerprintGenerator
 from rdkit import DataStructs
+from rdkit.Chem import Draw
 from rdkit.Chem import Descriptors
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -156,10 +157,10 @@ plt.ylabel("count")
 plt.savefig("similarity_scores_distribution.png")
 plt.show()
 #<-------11. Save Updated Dataset------->
-filename=input("Enter file name: ")
-df.to_csv(filename + ".csv",index=False)
-print("updated drug analysis dataset saved")
-
+filename=input("Enter file name to save upated csv: ")
+df.to_csv(filename +".csv",index=False)
+print("updated dataset saved")
+#<-------12. pdf generator ------->
 def generate_pdf_report(input_smiles,df):
   pdf=FPDF()
   pdf.add_page()
@@ -174,13 +175,13 @@ def generate_pdf_report(input_smiles,df):
   #input
   pdf.set_text_color(0,0,0)
   pdf.set_font("Arial",style='B',size=14)
-  pdf.cell(200,10,txt=f"input SMILES:{input_smiles}",ln=True)
+  pdf.cell(200,10,txt=f"input SMILES:{input_smiles}",ln=True,align="C")
 
   #Date
   pdf.set_font("Arial",style='B',size=14)
   ist=pytz.timezone("Asia/Kolkata")
   now=datetime.now(ist).strftime("%d-%m-%Y %H:%M:%S")
-  pdf.cell(200,10,txt=f"Generated on:{now}",ln=True)
+  pdf.cell(200,10,txt=f"Generated on:{now}",ln=True,align="C")
   pdf.ln(5)
 
   #Summary
@@ -189,36 +190,84 @@ def generate_pdf_report(input_smiles,df):
   pdf.ln(5)
 
   #Top 10 molecules
-  pdf.set_font("Arial",style='B',size=14)
-  pdf.cell(200,20,txt=f"Top 10 Similar molecules",ln=True)
-  pdf.image("top10 similar molecules.png",x=30,w=120)
-  pdf.ln(5)
-  #drug_like vs non_drug_like
-  pdf.set_font("Arial",style='B',size=14)
-  pdf.cell(200,20,txt=f"drug_like vs non_drug_like",ln=True)
-  pdf.image("drug_like vs non_drug_like pie chart.png",x=30,w=120)
   pdf.ln(10)
+  pdf.set_font("Arial", 'B', 14)
+  pdf.cell(0, 10, "Top 10 Similar Molecules", ln=True)
 
-  #molecular weight distribution
-  pdf.set_font("Arial",style='B',size=14)
-  pdf.cell(200,20,txt=f"molecular weight distribution",ln=True)
-  pdf.image("molecular weight distribution.png",x=30,w=120)
+  pdf.set_font("Arial", size=8)
 
-  #similarity_scores distribution
-  pdf.set_font("Arial",style='B',size=14)
-  pdf.cell(200,20,txt=f"similarity_scores distribution",ln=True)
-  pdf.image("similarity_scores_distribution.png",x=30,w=120)
-  
-  pdf.set_font("Arial",style='B',size=18)
-  pdf.cell(200,20,txt=f"Top 10 Similar molecules SMILES",ln=True,align="C")
-  top10=df.sort_values(by="similarity_scores",ascending=False).head(10)
+# Top 10 molecules select chey
+  top_df = df.sort_values(by="similarity_scores", ascending=False).head(10)
 
-  for i, row in top10.iterrows():
-    pdf.set_font("Arial",style='B',size=12)
-    pdf.cell(200,10,txt=f"{row["SMILES"]}i Score:{round(row["similarity_scores"],3)}",ln=True)
+  col_width = 95
+  row_height = 65
+
+  x_start = 10
+  y_start = pdf.get_y()
+  col = 0
+
+  for i, row in top_df.iterrows():
+    
+    smiles = row["SMILES"]
+    score = row["similarity_scores"]
+    mol = Chem.MolFromSmiles(smiles)
+
+    if mol:
+        img_file = f"mol_{i}.png"
+        Draw.MolToFile(mol, img_file)
+
+        short_smiles = smiles[:60] + "..." if len(smiles) > 60 else smiles
+
+        # FIX POSITION
+        x = x_start + col * col_width
+        y = y_start
+
+        pdf.set_xy(x, y)
+
+        # TEXT
+        pdf.set_font("Arial", size=9)
+        pdf.multi_cell(col_width, 5,f"Molecule {i+1}\nScore: {round(score,3)}\nSMILES: {short_smiles}")
+
+        # IMAGE (VERY IMPORTANT FIX)
+        pdf.set_xy(x, y + 20)
+        pdf.image(img_file, w=40)
+
+        # COLUMN SWITCH
+        col += 1
+
+        if col == 2:
+            col = 0
+            y_start = pdf.get_y()# next row
+
+            # PAGE BREAK (VERY IMPORTANT)
+            if y_start > 250:
+                pdf.add_page()
+                y_start = 20
+# After loop (keep outside)
+  def add_graph(pdf, title, img_path):
+    img_height = 80   # graph approx height
+
+    # page space check
+    if pdf.get_y() + img_height > 270:
+        pdf.add_page()
+
+    # heading
+    pdf.set_font("Arial", "B", 14)
+    pdf.set_x(0)
+    pdf.cell(0, 10, title, ln=True, align="C")
+
     pdf.ln(5)
 
-  #pdf.cell(200,10,txt="Graphs generated separately as png files.",ln=True)
+    # center image
+    img_width = 120
+    x_center = (210 - img_width) / 2
+    pdf.image(img_path, x=x_center, w=img_width)
+    pdf.ln(10)
+
+  add_graph(pdf,"top 10 similar molecules","top10 similar molecules.png")
+  add_graph(pdf,"drug_like vs non_drug_like","drug_like vs non_drug_like pie chart.png")
+  add_graph(pdf,"molecular weight distribution","molecular weight distribution.png")
+  add_graph(pdf,"similarity_scores distribution","similarity_scores_distribution.png")
 
   #save
   filename=input("Enter file name: ")

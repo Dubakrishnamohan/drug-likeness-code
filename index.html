@@ -1,120 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DrugLike AI Predictor</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+    <title>DrugLike AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
-<div class="bg"></div>
-<canvas id="particles"></canvas>
+<div class="container">
 
-<nav>
-  <div class="logo">Drug<span>Like</span> AI</div>
+    <h1>DrugLike AI</h1>
 
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="#">Predict</a>
-    <a href="#">GitHub</a>
-  </div>
-</nav>
+    <form action="/predict" method="POST">
 
-<section class="hero">
+        <textarea
+        name="smiles"
+        placeholder="Enter SMILES"></textarea>
 
-  <div class="hero-left">
+        <button type="submit">
+            Analyze Molecule
+        </button>
 
-    <div class="badge">
-      AI Powered • RDKit • Machine Learning
-    </div>
+    </form>
 
-    <h1>
-      Predict
-      <span>Drug-Likeness</span>
-      Instantly
-    </h1>
+    {% if result %}
 
-    <p>
-      Enter a molecular SMILES string and analyze whether the molecule satisfies drug-likeness properties using Lipinski's Rule of Five, QED scoring, and ML prediction.
-    </p>
+    <div class="result">
 
-    <div class="input-card">
+        <h2>Analysis Result</h2>
 
-      <label>SMILES Input</label>
-
-      <textarea id="smilesInput" placeholder="Example:
-CC(=O)Oc1ccccc1C(=O)O"></textarea>
-
-      <button id="predictBtn">
-        Analyze Molecule
-      </button>
+        <p><b>SMILES:</b> {{ smiles }}</p>
+        <p><b>Molecular Weight:</b> {{ mol_wt }}</p>
+        <p><b>LogP:</b> {{ logp }}</p>
+        <p><b>HBA:</b> {{ hba }}</p>
+        <p><b>HBD:</b> {{ hbd }}</p>
+        <p><b>Lipinski:</b> {{ lipinski }}</p>
 
     </div>
 
-  </div>
+    {% endif %}
 
-  <div class="hero-right">
+</div>
 
-    <div class="molecule">
-      <div class="orbit"></div>
-      <div class="orbit orbit2"></div>
-      <div class="atom atom1"></div>
-      <div class="atom atom2"></div>
-      <div class="atom atom3"></div>
-    </div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 
-  </div>
-
-</section>
-
-<section class="results-section">
-
-  <div class="section-title">
-    Prediction Results
-  </div>
-
-  <div class="results-grid">
-
-    <div class="result-card">
-      <h3>Molecular Weight</h3>
-      <p id="mw">--</p>
-    </div>
-
-    <div class="result-card">
-      <h3>LogP</h3>
-      <p id="logp">--</p>
-    </div>
-
-    <div class="result-card">
-      <h3>H-Bond Donors</h3>
-      <p id="hbd">--</p>
-    </div>
-
-    <div class="result-card">
-      <h3>H-Bond Acceptors</h3>
-      <p id="hba">--</p>
-    </div>
-
-    <div class="result-card">
-      <h3>QED Score</h3>
-      <p id="qed">--</p>
-    </div>
-
-    <div class="result-card glow-card">
-      <h3>Drug-Like Status</h3>
-      <p id="status">Waiting...</p>
-    </div>
-
-  </div>
-
-</section>
-
-<script src="script.js"></script>
 </body>
 </html>

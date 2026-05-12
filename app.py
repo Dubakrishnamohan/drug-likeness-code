@@ -1,27 +1,44 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask import Flask, render_template, request
+from rdkit import Chem
+from rdkit.Chem import Descriptors
+import pandas as pd
 
 app = Flask(__name__)
-CORS(app)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
 
-    data = request.json
-    smiles = data['smiles']
+    smiles = request.form['smiles']
 
-    # Replace with your actual ML + RDKit logic
+    mol = Chem.MolFromSmiles(smiles)
 
-    result = {
-        "molecular_weight": 180.16,
-        "logP": 1.19,
-        "hbd": 1,
-        "hba": 3,
-        "qed_score": 0.582,
-        "drug_like": True
-    }
+    if mol is None:
+        return "Invalid SMILES"
 
-    return jsonify(result)
+    mol_wt = Descriptors.MolWt(mol)
+    logp = Descriptors.MolLogP(mol)
+    hba = Descriptors.NumHAcceptors(mol)
+    hbd = Descriptors.NumHDonors(mol)
 
-if __name__ == '__main__':
+    lipinski = "PASS"
+
+    if mol_wt > 500 or logp > 5 or hba > 10 or hbd > 5:
+        lipinski = "FAIL"
+
+    return render_template(
+        'index.html',
+        result=True,
+        smiles=smiles,
+        mol_wt=round(mol_wt,2),
+        logp=round(logp,2),
+        hba=hba,
+        hbd=hbd,
+        lipinski=lipinski
+    )
+
+if __name__ == "__main__":
     app.run(debug=True)

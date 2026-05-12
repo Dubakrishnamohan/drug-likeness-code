@@ -1,13 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DrugLike AI — Molecular Intelligence Platform</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DrugLike AI — Molecular Intelligence Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+:root{
+  --c1:#07ffb4;
+  --c2:#00b4ff;
+  --c3:#7b2fff;
+  --glow1:rgba(7,255,180,0.35);
+  --glow2:rgba(0,180,255,0.3);
+  --bg:#020408;
+  --bg2:#060c14;
+  --bg3:#0a1020;
+  --glass:rgba(7,255,180,0.04);
+  --glassBorder:rgba(7,255,180,0.12);
+  --text:#8ab4cc;
+  --white:#dff0f8;
+}
 
-  <link rel="stylesheet" href="style.css"/>
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;overflow-x:hidden;cursor:none}
+
+/* CURSOR */
+#cur{position:fixed;width:6px;height:6px;background:var(--c1);border-radius:50%;pointer-events:none;z-index:9999;box-shadow:0 0 20px var(--c1),0 0 40px var(--glow1)}
+#curT{position:fixed;width:44px;height:44px;border:1px solid rgba(7,255,180,.3);border-radius:50%;pointer-events:none;z-index:9998;transition:transform .4s cubic-bezier(.23,1,.32,1),width .3s,height .3s,border-color .3s}
+
+/* AURORA */
+.aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(120px);opacity:.12;animation:drift 20s infinite ease-in-out}
+.blob1{width:700px;height:700px;background:var(--c1);top:-200px;left:-200px;animation-delay:0s}
+.blob2{width:500px;height:500px;background:var(--c2);bottom:-100px;right:-100px;animation-delay:-7s}
+.blob3{width:400px;height:400px;background:var(--c3);top:40%;left:60%;animation-delay:-13s}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(60px,-40px) scale(1.1)}66%{transform:translate(-40px,60px) scale(.95)}}
+
+#bgC{position:fixed;inset:0;z-index:0}
+
+/* GRAIN */
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9990;opacity:.4}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:20px 64px;background:linear-gradient(180deg,rgba(2,4,8,.95) 0%,transparent 100%);backdrop-filter:blur(20px)}
+.logo-wrap{display:flex;align-items:center;gap:10px}
+.logo-icon{width:34px;height:34px;background:linear-gradient(135deg,var(--c1),var(--c2));border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem;box-shadow:0 0 20px var(--glow1)}
+.logo-text{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--white);letter-spacing:.02em}
+.logo-text span{color:var(--c1)}
+.nav-center{display:flex;gap:36px;list-style:none}
+.nav-center a{color:var(--text);text-decoration:none;font-size:.8rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;position:relative;padding-bottom:4px;transition:color .3s}
+.nav-center a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--c1);transition:width .3s}
+.nav-center a:hover{color:var(--c1)}
+.nav-center a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--c1),var(--c2));padding:9px 22px;border-radius:100px;text-decoration:none;font-size:.78rem;font-weight:700;color:var(--bg);letter-spacing:.1em;text-transform:uppercase;box-shadow:0 0 30px var(--glow1);transition:box-shadow .3s,transform .2s}
+.nav-right:hover{box-shadow:0 0 50px var(--glow1);transform:translateY(-1px)}
+
+/* HERO */
+.hero{position:relative;z-index:1;min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:0 64px;gap:40px;overflow:hidden}
+.hero-left{padding-top:100px}
+
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(7,255,180,.06);border:1px solid var(--glassBorder);border-radius:100px;padding:7px 18px;margin-bottom:32px;animation:fadeUp .8s ease both}
+.eyebrow-dot{width:7px;height:7px;background:var(--c1);border-radius:50%;box-shadow:0 0 8px var(--c1);animation:pulse 2s infinite}
+.eyebrow-text{font-family:'JetBrains Mono';font-size:.68rem;color:var(--c1);letter-spacing:.18em;text-transform:uppercase}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 var(--glow1)}50%{box-shadow:0 0 0 6px transparent}}
+
+.hero-h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,5.5vw,6rem);font-weight:700;line-height:1.04;color:var(--white);margin-bottom:24px;animation:fadeUp .9s .08s ease both}
+.hero-h1 .accent{background:linear-gradient(135deg,var(--c1) 0%,var(--c2) 50%,var(--c3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;font-style:italic}
+.hero-h1 .line2{display:block}
+
+.hero-p{font-size:1.05rem;line-height:1.85;color:var(--text);font-weight:300;max-width:480px;margin-bottom:44px;animation:fadeUp 1s .16s ease both}
+
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;animation:fadeUp 1s .28s ease both}
+.btn-glow{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--c1),var(--c2));color:var(--bg);padding:14px 32px;border-radius:8px;font-weight:700;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;box-shadow:0 0 40px var(--glow1),inset 0 1px 0 rgba(255,255,255,.2);transition:box-shadow .3s,transform .2s}
+.btn-glow:hover{box-shadow:0 0 70px var(--glow1);transform:translateY(-3px)}
+.btn-outline{display:inline-flex;align-items:center;gap:9px;background:transparent;color:var(--white);padding:13px 32px;border-radius:8px;font-weight:500;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(10px);transition:border-color .3s,color .3s,transform .2s}
+.btn-outline:hover{border-color:var(--c1);color:var(--c1);transform:translateY(-3px)}
+
+.hero-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px;animation:fadeUp 1s .4s ease both}
+.chip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:100px;padding:5px 14px;font-size:.72rem;font-weight:500;color:var(--text);letter-spacing:.06em}
+.chip-dot{width:5px;height:5px;border-radius:50%;background:var(--c1)}
+
+/* HERO RIGHT - 3D MOLECULE */
+.hero-right{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;animation:fadeIn 1.5s .3s ease both}
+.mol-stage{position:relative;width:520px;height:520px}
+#heroMol{width:100%;height:100%}
+.mol-hud{position:absolute;background:rgba(7,255,180,.05);border:1px solid var(--glassBorder);backdrop-filter:blur(20px);border-radius:12px;padding:14px 18px;font-family:'JetBrains Mono';font-size:.68rem}
+.mol-hud-tl{top:20px;left:-20px;min-width:150px}
+.mol-hud-br{bottom:40px;right:-20px;min-width:170px}
+.hud-title{color:var(--c1);letter-spacing:.1em;margin-bottom:8px}
+.hud-row{display:flex;justify-content:space-between;gap:16px;margin-bottom:4px;color:var(--text)}
+.hud-val{color:var(--white)}
+.hud-badge{margin-top:10px;padding:5px 10px;background:rgba(7,255,180,.12);border:1px solid var(--glassBorder);border-radius:4px;color:var(--c1);font-size:.65rem;text-align:center;letter-spacing:.1em;text-transform:uppercase}
+.mol-ring{position:absolute;inset:-30px;border:1px solid rgba(7,255,180,.1);border-radius:50%;animation:spinRing 20s linear infinite}
+.mol-ring2{position:absolute;inset:-60px;border:1px dashed rgba(0,180,255,.07);border-radius:50%;animation:spinRing 35s linear infinite reverse}
+@keyframes spinRing{to{transform:rotate(360deg)}}
+
+/* SCROLL HINT */
+.scroll-hint{position:absolute;bottom:36px;left:64px;display:flex;align-items:center;gap:12px;z-index:1;animation:fadeIn 2s 1.5s both}
+.scroll-hint span{font-family:'JetBrains Mono';font-size:.62rem;color:var(--text);letter-spacing:.2em;text-transform:uppercase}
+.scroll-pill{width:24px;height:40px;border:1px solid rgba(7,255,180,.3);border-radius:12px;display:flex;justify-content:center;padding-top:6px}
+.scroll-ball{width:4px;height:8px;background:var(--c1);border-radius:2px;animation:scrollBounce 2s infinite;box-shadow:0 0 8px var(--c1)}
+@keyframes scrollBounce{0%,100%{transform:translateY(0);opacity:1}80%{transform:translateY(12px);opacity:.3}}
+
+/* MARQUEE */
+.marquee-wrap{position:relative;z-index:1;overflow:hidden;border-top:1px solid var(--glassBorder);border-bottom:1px solid var(--glassBorder);background:rgba(7,255,180,.02);padding:14px 0}
+.marquee-track{display:flex;animation:marquee 30s linear infinite;width:max-content}
+.marquee-item{display:flex;align-items:center;gap:24px;padding:0 40px;font-family:'JetBrains Mono';font-size:.72rem;color:var(--text);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+.marquee-item::after{content:'✦';color:var(--c1);opacity:.5;font-size:.8rem}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* STATS */
+.stats-section{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--glassBorder)}
+.stat-block{background:var(--bg2);padding:50px 36px;text-align:center;position:relative;overflow:hidden;transition:background .3s}
+.stat-block::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--c1),var(--c2),transparent);opacity:0;transition:opacity .3s}
+.stat-block:hover{background:var(--bg3)}
+.stat-block:hover::before{opacity:1}
+.stat-num{font-family:'Playfair Display',serif;font-size:4rem;font-weight:700;background:linear-gradient(135deg,var(--c1),var(--c2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:10px}
+.stat-label{font-size:.75rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--text)}
+
+/* SECTION SHARED */
+section{position:relative;z-index:1}
+.s-tag{display:inline-flex;align-items:center;gap:10px;font-family:'JetBrains Mono';font-size:.68rem;color:var(--c1);letter-spacing:.24em;text-transform:uppercase;margin-bottom:18px}
+.s-tag::before{content:'//';opacity:.5}
+.s-title{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4vw,3.8rem);font-weight:700;color:var(--white);line-height:1.1;margin-bottom:18px}
+.s-title em{font-style:italic;background:linear-gradient(135deg,var(--c1),var(--c2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.s-desc{font-size:1rem;line-height:1.85;color:var(--text);font-weight:300;max-width:500px}
+
+/* HOW */
+.how-section{padding:120px 64px;max-width:1400px;margin:0 auto}
+.how-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:70px}
+.steps{display:flex;flex-direction:column}
+.step{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:32px 0;border-bottom:1px solid rgba(255,255,255,.05);cursor:pointer;transition:padding-left .35s cubic-bezier(.23,1,.32,1)}
+.step:last-child{border:none}
+.step:hover{padding-left:10px}
+.step-n{width:44px;height:44px;border:1px solid var(--glassBorder);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono';font-size:.75rem;color:var(--c1);background:var(--glass);flex-shrink:0;transition:background .3s,box-shadow .3s}
+.step:hover .step-n{background:rgba(7,255,180,.1);box-shadow:0 0 20px var(--glow1)}
+.step h3{font-size:1.05rem;font-weight:600;color:var(--white);margin-bottom:8px}
+.step p{font-size:.88rem;line-height:1.75;color:var(--text);font-weight:300}
+
+.pipeline-visual{position:relative;background:linear-gradient(135deg,var(--bg2),var(--bg3));border:1px solid var(--glassBorder);border-radius:20px;padding:40px;overflow:hidden}
+.pipeline-visual::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(7,255,180,.06),transparent 60%);pointer-events:none}
+.pipe-step{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:12px;border:1px solid var(--glassBorder);background:rgba(255,255,255,.02);margin-bottom:12px;transition:border-color .3s,background .3s;animation:pipeIn 4s infinite}
+.pipe-step:nth-child(1){animation-delay:0s}
+.pipe-step:nth-child(2){animation-delay:1s}
+.pipe-step:nth-child(3){animation-delay:2s}
+.pipe-step:nth-child(4){animation-delay:3s}
+@keyframes pipeIn{0%,100%{border-color:var(--glassBorder);background:rgba(255,255,255,.02)}25%{border-color:rgba(7,255,180,.4);background:rgba(7,255,180,.06)}}
+.pipe-icon{width:40px;height:40px;border-radius:8px;background:linear-gradient(135deg,rgba(7,255,180,.15),rgba(0,180,255,.15));display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.pipe-label{font-size:.88rem;font-weight:500;color:var(--white)}
+.pipe-sub{font-size:.75rem;color:var(--text);margin-top:2px}
+.pipe-check{margin-left:auto;width:20px;height:20px;border-radius:50%;background:rgba(7,255,180,.15);display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--c1)}
+.pipe-connector{width:2px;height:14px;background:linear-gradient(to bottom,var(--c1),transparent);margin:0 0 0 38px;opacity:.4}
+
+/* FEATURES */
+.feat-section{background:linear-gradient(180deg,var(--bg2),var(--bg));border-top:1px solid var(--glassBorder);border-bottom:1px solid var(--glassBorder);padding:120px 64px}
+.feat-inner{max-width:1400px;margin:0 auto}
+.feat-header{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:70px}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.fc{position:relative;overflow:hidden;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:36px 30px;transition:transform .35s,border-color .35s,box-shadow .35s;cursor:default}
+.fc::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(7,255,180,.04),transparent);transition:left .5s}
+.fc:hover{transform:translateY(-8px);border-color:rgba(7,255,180,.25);box-shadow:0 20px 60px rgba(7,255,180,.08),0 0 0 1px rgba(7,255,180,.1)}
+.fc:hover::before{left:100%}
+.fc-glow{position:absolute;top:0;right:0;width:120px;height:120px;background:radial-gradient(circle,rgba(7,255,180,.08),transparent 70%);border-radius:50%;transform:translate(30%,-30%);transition:opacity .3s;opacity:0}
+.fc:hover .fc-glow{opacity:1}
+.fc-icon{width:50px;height:50px;border-radius:12px;background:linear-gradient(135deg,rgba(7,255,180,.15),rgba(0,180,255,.1));border:1px solid var(--glassBorder);display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:22px}
+.fc h3{font-size:1rem;font-weight:600;color:var(--white);margin-bottom:10px}
+.fc p{font-size:.85rem;line-height:1.75;color:var(--text);font-weight:300}
+.fc-badge{display:inline-flex;margin-top:16px;background:rgba(7,255,180,.08);border:1px solid var(--glassBorder);border-radius:4px;padding:4px 10px;font-family:'JetBrains Mono';font-size:.62rem;color:var(--c1);letter-spacing:.1em}
+
+/* TERMINAL */
+.demo-section{padding:120px 64px;max-width:1400px;margin:0 auto}
+.demo-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center;margin-top:70px}
+.terminal-wrap{border-radius:16px;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.5),0 0 0 1px var(--glassBorder),0 0 60px rgba(7,255,180,.04)}
+.t-bar{background:#0d1117;padding:14px 20px;display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(255,255,255,.06)}
+.td{width:12px;height:12px;border-radius:50%}
+.td.r{background:#ff5f57}.td.y{background:#febc2e}.td.g{background:#28c840}
+.t-name{font-family:'JetBrains Mono';font-size:.72rem;color:rgba(255,255,255,.3);margin:0 auto;letter-spacing:.1em}
+.t-body{background:#090d13;padding:28px;font-family:'JetBrains Mono';font-size:.78rem;line-height:2.1}
+.tc{color:#3d5266}.tk{color:#7dd3fc}.ts{color:#fde68a}
+.tf{color:var(--c1)}.tn{color:#fb923c}.to{color:#94a3b8}
+.tg{color:#4ade80}
+.t-cursor{display:inline-block;width:8px;height:15px;background:var(--c1);vertical-align:middle;animation:blink 1.1s step-end infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+
+.result-cards{display:flex;flex-direction:column;gap:16px}
+.rc{display:flex;align-items:center;gap:18px;background:var(--bg2);border:1px solid var(--glassBorder);border-radius:12px;padding:22px 24px;transition:border-color .3s,transform .3s}
+.rc:hover{border-color:rgba(7,255,180,.3);transform:translateX(6px)}
+.rc-icon{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,rgba(7,255,180,.12),rgba(0,180,255,.08));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.rc-val{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;background:linear-gradient(135deg,var(--c1),var(--c2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+.rc-lbl{font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--text);margin-top:3px}
+.rc-bar{margin-left:auto;width:80px}
+.rc-bar-bg{height:4px;background:rgba(255,255,255,.06);border-radius:2px;overflow:hidden}
+.rc-bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--c1),var(--c2));transition:width 1.5s cubic-bezier(.23,1,.32,1)}
+
+/* RULES */
+.rules-section{padding:120px 64px;background:radial-gradient(ellipse at 50% 0,rgba(7,255,180,.04),transparent 60%),var(--bg2);border-top:1px solid var(--glassBorder)}
+.rules-inner{max-width:1400px;margin:0 auto}
+.rules-header{text-align:center;margin-bottom:70px}
+.rules-header .s-tag{justify-content:center}
+.rules-header .s-tag::before{display:none}
+.rules-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.rule-c{position:relative;overflow:hidden;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:36px 24px;text-align:center;transition:transform .35s,border-color .35s,box-shadow .35s}
+.rule-c:hover{transform:translateY(-10px);border-color:rgba(7,255,180,.3);box-shadow:0 20px 50px rgba(7,255,180,.1)}
+.rule-c::after{content:attr(data-n);position:absolute;top:12px;right:14px;font-family:'JetBrains Mono';font-size:.58rem;color:var(--c1);opacity:.35;letter-spacing:.1em}
+.rule-orb{width:64px;height:64px;margin:0 auto 20px;border-radius:50%;background:linear-gradient(135deg,rgba(7,255,180,.15),rgba(0,180,255,.1));border:1px solid var(--glassBorder);display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 0 30px rgba(7,255,180,.05);transition:box-shadow .3s}
+.rule-c:hover .rule-orb{box-shadow:0 0 40px rgba(7,255,180,.2)}
+.rule-name{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--white);margin-bottom:8px}
+.rule-desc{font-size:.78rem;line-height:1.65;color:var(--text)}
+.rule-val{margin-top:16px;display:inline-block;background:rgba(7,255,180,.08);border:1px solid var(--glassBorder);border-radius:6px;padding:6px 14px;font-family:'JetBrains Mono';font-size:.7rem;color:var(--c1);letter-spacing:.08em}
+
+/* CTA */
+.cta-section{position:relative;overflow:hidden;padding:160px 64px;text-align:center;border-top:1px solid var(--glassBorder)}
+.cta-mesh{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(7,255,180,.06),transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(0,180,255,.05),transparent 60%),radial-gradient(ellipse at 50% 100%,rgba(123,47,255,.04),transparent 60%)}
+.cta-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(7,255,180,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(7,255,180,.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse at 50%,black 30%,transparent 70%)}
+.cta-inner{position:relative;z-index:1}
+.cta-title{font-family:'Playfair Display',serif;font-size:clamp(3rem,6vw,5.5rem);font-weight:700;color:var(--white);line-height:1.05;margin:16px 0 28px}
+.cta-title em{font-style:italic;background:linear-gradient(135deg,var(--c1),var(--c2),var(--c3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.cta-sub{font-size:1.05rem;color:var(--text);max-width:440px;margin:0 auto 52px;line-height:1.8;font-weight:300}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* FOOTER */
+footer{background:var(--bg);border-top:1px solid var(--glassBorder);padding:70px 64px 44px}
+.foot-grid{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:60px}
+.foot-brand .logo-wrap{margin-bottom:16px}
+.foot-tagline{font-size:.85rem;color:var(--text);line-height:1.75;max-width:240px;font-weight:300}
+.foot-col h4{font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--white);margin-bottom:20px}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.foot-col a{font-size:.83rem;color:var(--text);text-decoration:none;font-weight:300;transition:color .2s}
+.foot-col a:hover{color:var(--c1)}
+.foot-bottom{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--glassBorder);padding-top:30px;font-size:.75rem;color:rgba(255,255,255,.3)}
+.foot-mono{font-family:'JetBrains Mono';color:rgba(7,255,180,.3)}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .9s ease,transform .9s ease}
+.reveal.vis{opacity:1;transform:translateY(0)}
+.reveal-l{opacity:0;transform:translateX(-32px);transition:opacity .9s ease,transform .9s ease}
+.reveal-l.vis{opacity:1;transform:translateX(0)}
+.reveal-r{opacity:0;transform:translateX(32px);transition:opacity .9s ease,transform .9s ease}
+.reveal-r.vis{opacity:1;transform:translateX(0)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  nav{padding:16px 28px}
+  .nav-center{display:none}
+  .hero{grid-template-columns:1fr;padding:100px 28px 60px;text-align:center}
+  .hero-right{height:400px;order:-1}
+  .mol-stage{width:320px;height:320px}
+  .mol-hud-tl,.mol-hud-br{display:none}
+  .stats-section{grid-template-columns:repeat(2,1fr)}
+  .how-layout,.demo-layout,.feat-header{grid-template-columns:1fr;gap:40px}
+  .feat-grid{grid-template-columns:repeat(2,1fr)}
+  .rules-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:40px}
+  .how-section,.feat-section,.demo-section,.rules-section,.cta-section{padding-left:28px!important;padding-right:28px!important}
+  footer{padding-left:28px;padding-right:28px}
+}
+@media(max-width:600px){
+  .feat-grid,.rules-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-actions{justify-content:center}
+  .hero-chips{justify-content:center}
+}
+</style>
 </head>
 <body>
 
@@ -28,66 +286,345 @@
     <div class="logo-icon">⬡</div>
     <div class="logo-text">Drug<span>Like</span> AI</div>
   </div>
-
   <ul class="nav-center">
     <li><a href="#how">Process</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#demo">Demo</a></li>
     <li><a href="#rules">Rules</a></li>
   </ul>
-
-  <a href="https://github.com/Dubakrishnamohan/drug-likeness-code"
-     target="_blank"
-     class="nav-right">
-     ⎇ &nbsp;GitHub
-  </a>
+  <a href="https://github.com/Dubakrishnamohan/drug-likeness-code" target="_blank" class="nav-right">⎇ &nbsp;GitHub</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-
   <div class="hero-left">
     <div class="hero-eyebrow">
       <span class="eyebrow-dot"></span>
       <span class="eyebrow-text">ML-Powered · Open Source · Python</span>
     </div>
-
     <h1 class="hero-h1">
       <span class="line2">Predict</span>
       <span class="accent">Drug-Likeness</span>
       <span class="line2">Intelligently</span>
     </h1>
-
-    <p class="hero-p">
-      A computational pipeline that evaluates whether a molecule has the physicochemical properties to become a viable drug.
-    </p>
-
+    <p class="hero-p">A computational pipeline that evaluates whether a molecule has the physicochemical properties to become a viable drug — powered by Lipinski's Rule of Five, QED scoring, and machine learning.</p>
     <div class="hero-actions">
-      <a href="https://github.com/Dubakrishnamohan/drug-likeness-code"
-         target="_blank"
-         class="btn-glow">
-         ⎇ &nbsp;View on GitHub
-      </a>
-
-      <a href="#how" class="btn-outline">
-        ↓ &nbsp;Explore
-      </a>
+      <a href="https://github.com/Dubakrishnamohan/drug-likeness-code" target="_blank" class="btn-glow">⎇ &nbsp;View on GitHub</a>
+      <a href="#how" class="btn-outline">↓ &nbsp;Explore</a>
+    </div>
+    <div class="hero-chips">
+      <span class="chip"><span class="chip-dot"></span>RDKit</span>
+      <span class="chip"><span class="chip-dot"></span>scikit-learn</span>
+      <span class="chip"><span class="chip-dot"></span>Python 3.x</span>
+      <span class="chip"><span class="chip-dot"></span>Pandas</span>
+      <span class="chip"><span class="chip-dot"></span>SMILES</span>
     </div>
   </div>
 
   <div class="hero-right">
     <div class="mol-stage">
-
       <div class="mol-ring"></div>
       <div class="mol-ring2"></div>
-
       <canvas id="heroMol"></canvas>
-
+      <div class="mol-hud mol-hud-tl">
+        <div class="hud-title">// aspirin.smiles</div>
+        <div class="hud-row"><span>MW</span><span class="hud-val">180.16 Da</span></div>
+        <div class="hud-row"><span>LogP</span><span class="hud-val">1.19</span></div>
+        <div class="hud-row"><span>HBD</span><span class="hud-val">1</span></div>
+        <div class="hud-badge">✓ Lipinski Pass</div>
+      </div>
+      <div class="mol-hud mol-hud-br">
+        <div class="hud-title">// qed_score</div>
+        <div class="hud-row"><span>Score</span><span class="hud-val">0.582</span></div>
+        <div class="hud-row"><span>Confidence</span><span class="hud-val">94.7%</span></div>
+        <div class="hud-row"><span>Status</span><span class="hud-val" style="color:var(--c1)">Drug-Like ✓</span></div>
+        <div class="hud-badge">ML Prediction Active</div>
+      </div>
     </div>
   </div>
 
+  <div class="scroll-hint">
+    <div class="scroll-pill"><div class="scroll-ball"></div></div>
+    <span>Scroll to explore</span>
+  </div>
 </section>
 
-<script src="script.js"></script>
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-item">Lipinski Rule of Five</div>
+    <div class="marquee-item">QED Drug Score</div>
+    <div class="marquee-item">SMILES Parsing</div>
+    <div class="marquee-item">ML Classification</div>
+    <div class="marquee-item">RDKit Cheminformatics</div>
+    <div class="marquee-item">Oral Bioavailability</div>
+    <div class="marquee-item">Molecular Descriptors</div>
+    <div class="marquee-item">Batch Processing</div>
+    <div class="marquee-item">Lipinski Rule of Five</div>
+    <div class="marquee-item">QED Drug Score</div>
+    <div class="marquee-item">SMILES Parsing</div>
+    <div class="marquee-item">ML Classification</div>
+    <div class="marquee-item">RDKit Cheminformatics</div>
+    <div class="marquee-item">Oral Bioavailability</div>
+    <div class="marquee-item">Molecular Descriptors</div>
+    <div class="marquee-item">Batch Processing</div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-section">
+  <div class="stat-block reveal"><div class="stat-num" data-target="5">0</div><div class="stat-label">Lipinski Rules</div></div>
+  <div class="stat-block reveal"><div class="stat-num">QED</div><div class="stat-label">Drug-Likeness Score</div></div>
+  <div class="stat-block reveal"><div class="stat-num" data-target="94">0</div><div class="stat-label">% Model Accuracy</div></div>
+  <div class="stat-block reveal"><div class="stat-num">&lt;50ms</div><div class="stat-label">Per Prediction</div></div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="how-section">
+  <div class="s-tag reveal">Process</div>
+  <h2 class="s-title reveal">How <em>It Works</em></h2>
+  <div class="how-layout">
+    <div class="steps">
+      <div class="step reveal"><div class="step-n">01</div><div><h3>Input SMILES String</h3><p>Provide the molecular SMILES (Simplified Molecular Input Line Entry System) representation — the universal chemical language used in drug databases worldwide.</p></div></div>
+      <div class="step reveal"><div class="step-n">02</div><div><h3>Feature Extraction via RDKit</h3><p>Extracts key physicochemical descriptors: molecular weight, H-bond donors & acceptors, lipophilicity (LogP), topological polar surface area, and rotatable bond count.</p></div></div>
+      <div class="step reveal"><div class="step-n">03</div><div><h3>Lipinski Rule Validation</h3><p>Applies Lipinski's Rule of Five as a hard filter — automatically flagging molecules that violate oral bioavailability criteria before ML evaluation.</p></div></div>
+      <div class="step reveal"><div class="step-n">04</div><div><h3>ML Score & QED Prediction</h3><p>The trained classifier produces a QED score (0–1) and drug-likeness probability with confidence, giving researchers an interpretable, actionable result.</p></div></div>
+    </div>
+    <div class="pipeline-visual reveal-r">
+      <div class="pipe-step"><div class="pipe-icon">📝</div><div><div class="pipe-label">SMILES Input</div><div class="pipe-sub">CC(=O)Oc1ccccc1C(=O)O</div></div><div class="pipe-check">✓</div></div>
+      <div class="pipe-connector"></div>
+      <div class="pipe-step"><div class="pipe-icon">⚗️</div><div><div class="pipe-label">RDKit Processing</div><div class="pipe-sub">Compute molecular descriptors</div></div><div class="pipe-check">✓</div></div>
+      <div class="pipe-connector"></div>
+      <div class="pipe-step"><div class="pipe-icon">⚖️</div><div><div class="pipe-label">Lipinski Filter</div><div class="pipe-sub">5/5 rules satisfied</div></div><div class="pipe-check">✓</div></div>
+      <div class="pipe-connector"></div>
+      <div class="pipe-step"><div class="pipe-icon">🧠</div><div><div class="pipe-label">ML Classifier</div><div class="pipe-sub">QED: 0.582 · 94.7% confidence</div></div><div class="pipe-check">✓</div></div>
+      <div style="margin-top:20px;padding:16px;background:rgba(7,255,180,.06);border:1px solid var(--glassBorder);border-radius:10px;font-family:'JetBrains Mono';font-size:.72rem">
+        <span style="color:var(--c1)">✓ DRUG-LIKE</span>
+        <span style="color:var(--text);margin-left:12px">Confidence: 94.7%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="feat-section">
+  <div class="feat-inner">
+    <div class="feat-header">
+      <div><div class="s-tag reveal">Capabilities</div><h2 class="s-title reveal">Built for <em>Discovery</em></h2></div>
+      <p class="s-desc reveal">A comprehensive computational toolkit combining cheminformatics, machine learning, and rule-based filtering for early-stage pharmaceutical screening.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="fc reveal"><div class="fc-glow"></div><div class="fc-icon">🔬</div><h3>RDKit Integration</h3><p>Leverages industry-standard RDKit for accurate molecular descriptor computation, SMILES parsing and 2D/3D molecular property calculation.</p><div class="fc-badge">rdkit.Chem</div></div>
+      <div class="fc reveal"><div class="fc-glow"></div><div class="fc-icon">🧠</div><h3>ML Classification</h3><p>Trained scikit-learn classifier produces probability scores for drug-likeness with high accuracy, validated on known pharmaceutical datasets.</p><div class="fc-badge">sklearn.ensemble</div></div>
+      <div class="fc reveal"><div class="fc-glow"></div><div class="fc-icon">⚖️</div><h3>Lipinski Rule of 5</h3><p>Full automated validation of all five Lipinski rules — instantly flag molecules that violate fundamental oral bioavailability requirements.</p><div class="fc-badge">Ro5 Filter</div></div>
+      <div class="fc reveal"><div class="fc-glow"></div><div class="fc-icon">📊</div><h3>QED Scoring</h3><p>Computes Quantitative Estimate of Drug-likeness — a holistic continuous score from 0 to 1 that integrates multiple physicochemical properties.</p><div class="fc-badge">qed(mol)</div></div>
+      <div class="fc reveal"><div class="fc-glow"></div><div class="fc-icon">⚡</div><h3>Batch Processing</h3><p>Evaluate entire chemical libraries at scale — pass a CSV with thousands of SMILES strings and receive structured output in seconds.</p><div class="fc-badge">pandas.DataFrame</div></div>
+      <div class="fc reveal"><div class="fc-glow"></div><div class="fc-icon">📦</div><h3>Clean Python API</h3><p>Simple, well-documented interface. Import the module, pass a SMILES string, get a rich structured dictionary with all relevant metrics.</p><div class="fc-badge">pip install</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO -->
+<section id="demo" class="demo-section">
+  <div class="s-tag reveal">Live Demo</div>
+  <h2 class="s-title reveal">See It <em>In Action</em></h2>
+  <div class="demo-layout">
+    <div class="terminal-wrap reveal-l">
+      <div class="t-bar">
+        <span class="td r"></span><span class="td y"></span><span class="td g"></span>
+        <span class="t-name">drug_likeness_predictor.py</span>
+      </div>
+      <div class="t-body">
+        <div><span class="tc"># Drug-Likeness Prediction Engine</span></div>
+        <div><span class="tk">from</span> <span class="tf">druglike</span> <span class="tk">import</span> Predictor</div>
+        <div>&nbsp;</div>
+        <div><span class="tc"># Aspirin — a classic drug molecule</span></div>
+        <div><span class="to">smiles</span> <span class="tc">=</span> <span class="ts">"CC(=O)Oc1ccccc1C(=O)O"</span></div>
+        <div>&nbsp;</div>
+        <div><span class="to">result</span> <span class="tc">=</span> <span class="tf">Predictor</span><span class="to">.</span><span class="tf">analyze</span><span class="to">(smiles)</span></div>
+        <div>&nbsp;</div>
+        <div><span class="tc">▶ Output:</span></div>
+        <div><span class="to">{</span></div>
+        <div><span class="to">&nbsp;&nbsp;</span><span class="ts">"molecular_weight"</span><span class="to">: </span><span class="tn">180.16</span><span class="to">,</span></div>
+        <div><span class="to">&nbsp;&nbsp;</span><span class="ts">"logP"</span><span class="to">: </span><span class="tn">1.19</span><span class="to">,</span></div>
+        <div><span class="to">&nbsp;&nbsp;</span><span class="ts">"hbd"</span><span class="to">: </span><span class="tn">1</span><span class="to">, </span><span class="ts">"hba"</span><span class="to">: </span><span class="tn">3</span><span class="to">,</span></div>
+        <div><span class="to">&nbsp;&nbsp;</span><span class="ts">"qed_score"</span><span class="to">: </span><span class="tn">0.582</span><span class="to">,</span></div>
+        <div><span class="to">&nbsp;&nbsp;</span><span class="ts">"lipinski_pass"</span><span class="to">: </span><span class="tg">True</span><span class="to">,</span></div>
+        <div><span class="to">&nbsp;&nbsp;</span><span class="ts">"drug_like"</span><span class="to">: </span><span class="tg">True</span><span class="to">,</span></div>
+        <div><span class="to">&nbsp;&nbsp;</span><span class="ts">"ml_confidence"</span><span class="to">: </span><span class="tn">0.947</span></div>
+        <div><span class="to">}</span></div>
+        <div>&nbsp;</div>
+        <div><span class="tg">✓ Drug-like compound confirmed</span> <span class="t-cursor"></span></div>
+      </div>
+    </div>
+    <div class="result-cards reveal-r">
+      <div class="rc"><div class="rc-icon">💊</div><div><div class="rc-val">94.7%</div><div class="rc-lbl">ML Confidence</div></div><div class="rc-bar"><div class="rc-bar-bg"><div class="rc-bar-fill" style="width:0%" data-w="94.7%"></div></div></div></div>
+      <div class="rc"><div class="rc-icon">🎯</div><div><div class="rc-val">0.582</div><div class="rc-lbl">QED Drug Score</div></div><div class="rc-bar"><div class="rc-bar-bg"><div class="rc-bar-fill" style="width:0%" data-w="58.2%"></div></div></div></div>
+      <div class="rc"><div class="rc-icon">⚡</div><div><div class="rc-val">&lt;50ms</div><div class="rc-lbl">Prediction Speed</div></div><div class="rc-bar"><div class="rc-bar-bg"><div class="rc-bar-fill" style="width:0%" data-w="90%"></div></div></div></div>
+      <div class="rc"><div class="rc-icon">✅</div><div><div class="rc-val">5 / 5</div><div class="rc-lbl">Rules Passed</div></div><div class="rc-bar"><div class="rc-bar-bg"><div class="rc-bar-fill" style="width:0%" data-w="100%"></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- RULES -->
+<section id="rules" class="rules-section">
+  <div class="rules-inner">
+    <div class="rules-header">
+      <div class="s-tag reveal">Framework</div>
+      <h2 class="s-title reveal">Lipinski's Rule <em>of Five</em></h2>
+    </div>
+    <div class="rules-grid">
+      <div class="rule-c reveal" data-n="Ro5"><div class="rule-orb">⚖️</div><div class="rule-name">MW</div><div class="rule-desc">Molecular Weight must stay below the oral absorption threshold for gut permeability</div><div class="rule-val">≤ 500 Da</div></div>
+      <div class="rule-c reveal" data-n="Ro5"><div class="rule-orb">💧</div><div class="rule-name">LogP</div><div class="rule-desc">Lipophilicity controls membrane permeability and aqueous solubility balance</div><div class="rule-val">≤ 5</div></div>
+      <div class="rule-c reveal" data-n="Ro5"><div class="rule-orb">🔗</div><div class="rule-name">HBD</div><div class="rule-desc">H-Bond Donors — -OH and -NH groups that affect membrane crossing capability</div><div class="rule-val">≤ 5</div></div>
+      <div class="rule-c reveal" data-n="Ro5"><div class="rule-orb">🧲</div><div class="rule-name">HBA</div><div class="rule-desc">H-Bond Acceptors — N and O atoms influencing solubility and permeability</div><div class="rule-val">≤ 10</div></div>
+      <div class="rule-c reveal" data-n="QED"><div class="rule-orb">🎯</div><div class="rule-name">QED</div><div class="rule-desc">Quantitative Drug-likeness — holistic continuous score integrating all properties</div><div class="rule-val">0.0 → 1.0</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-mesh"></div>
+  <div class="cta-grid-lines"></div>
+  <div class="cta-inner">
+    <div class="s-tag reveal" style="justify-content:center"><span>Open Source Project</span></div>
+    <h2 class="cta-title reveal">Start Predicting<br><em>Drug-Likeness</em><br>Today</h2>
+    <p class="cta-sub reveal">Full source code, dataset, trained models, and documentation — all open source on GitHub. Built with Python, RDKit, and scikit-learn.</p>
+    <div class="cta-btns reveal">
+      <a href="https://github.com/Dubakrishnamohan/drug-likeness-code" target="_blank" class="btn-glow">⎇ &nbsp;View on GitHub</a>
+      <a href="#how" class="btn-outline">📖 &nbsp;Documentation</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="logo-wrap"><div class="logo-icon">⬡</div><div class="logo-text">Drug<span>Like</span> AI</div></div>
+      <p class="foot-tagline">ML-powered drug-likeness prediction for early-stage pharmaceutical screening and computational chemistry.</p>
+    </div>
+    <div class="foot-col"><h4>Navigate</h4><ul><li><a href="#how">How It Works</a></li><li><a href="#features">Features</a></li><li><a href="#demo">Demo</a></li><li><a href="#rules">Lipinski Rules</a></li></ul></div>
+    <div class="foot-col"><h4>Resources</h4><ul><li><a href="https://github.com/Dubakrishnamohan/drug-likeness-code" target="_blank">GitHub Repo</a></li><li><a href="#">Documentation</a></li><li><a href="#">Research Paper</a></li><li><a href="#">Dataset</a></li></ul></div>
+    <div class="foot-col"><h4>Tech Stack</h4><ul><li><a href="#">Python 3.x</a></li><li><a href="#">RDKit</a></li><li><a href="#">scikit-learn</a></li><li><a href="#">Pandas / NumPy</a></li></ul></div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2025 DrugLike AI · Duba Krishnamohan</span>
+    <span class="foot-mono">// drug_likeness_predictor_v2.0</span>
+  </div>
+</footer>
+
+<script>
+/* CURSOR */
+const cur=document.getElementById('cur'),curT=document.getElementById('curT');
+let mx=0,my=0,tx=0,ty=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
+(function animC(){
+  cur.style.transform=`translate(${mx-3}px,${my-3}px)`;
+  tx+=(mx-tx)*.12; ty+=(my-ty)*.12;
+  curT.style.transform=`translate(${tx-22}px,${ty-22}px)`;
+  requestAnimationFrame(animC);
+})();
+
+/* BACKGROUND PARTICLE NETWORK */
+const bgC=document.getElementById('bgC'),bgX=bgC.getContext('2d');
+let W,H;
+function rz(){W=bgC.width=window.innerWidth;H=bgC.height=window.innerHeight}
+rz(); window.addEventListener('resize',rz);
+const pts=[];
+for(let i=0;i<100;i++) pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:Math.random()*1.5+.5,a:Math.random()*.4+.15,hue:Math.random()<.7?170:200});
+(function drawBg(){
+  bgX.clearRect(0,0,W,H);
+  pts.forEach(p=>{
+    p.x+=p.vx; p.y+=p.vy;
+    if(p.x<0||p.x>W) p.vx*=-1;
+    if(p.y<0||p.y>H) p.vy*=-1;
+    bgX.beginPath(); bgX.arc(p.x,p.y,p.r,0,Math.PI*2);
+    bgX.fillStyle=`hsla(${p.hue},100%,65%,${p.a})`; bgX.fill();
+  });
+  for(let i=0;i<pts.length;i++) for(let j=i+1;j<pts.length;j++){
+    const d=Math.hypot(pts[i].x-pts[j].x,pts[i].y-pts[j].y);
+    if(d<140){bgX.beginPath();bgX.moveTo(pts[i].x,pts[i].y);bgX.lineTo(pts[j].x,pts[j].y);bgX.strokeStyle=`rgba(7,255,180,${(1-d/140)*.08})`;bgX.lineWidth=1;bgX.stroke()}
+  }
+  requestAnimationFrame(drawBg);
+})();
+
+/* 3D MOLECULE */
+const hMol=document.getElementById('heroMol'),hCtx=hMol.getContext('2d');
+hMol.width=520; hMol.height=520;
+const CX=260,CY=260;
+const atoms=[
+  {x:0,y:0,z:0,e:'C',c:'#07ffb4'},{x:1.5,y:0,z:0,e:'C',c:'#07ffb4'},
+  {x:2.2,y:1.2,z:.3,e:'C',c:'#07ffb4'},{x:1.5,y:2.4,z:.5,e:'C',c:'#07ffb4'},
+  {x:0,y:2.4,z:.4,e:'C',c:'#07ffb4'},{x:-.7,y:1.2,z:.2,e:'C',c:'#07ffb4'},
+  {x:2.3,y:-1,z:-.3,e:'O',c:'#ff5555'},{x:3.8,y:-1.2,z:-.5,e:'C',c:'#07ffb4'},
+  {x:4.5,y:-.2,z:0,e:'O',c:'#ff5555'},{x:-2.2,y:1.2,z:.3,e:'C',c:'#07ffb4'},
+  {x:-3,y:2.3,z:.8,e:'O',c:'#ff5555'},{x:-3,y:.2,z:-.2,e:'O',c:'#ff5555'},
+];
+const bonds=[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0],[1,6],[6,7],[7,8],[5,9],[9,10],[9,11]];
+let rotY=0,rotX=.3;
+(function drawMol(){
+  hCtx.clearRect(0,0,520,520);
+  const ry=rotY,rx=rotX;
+  const cosY=Math.cos(ry),sinY=Math.sin(ry),cosX=Math.cos(rx),sinX=Math.sin(rx);
+  const scale=55;
+  const proj=atoms.map(a=>{
+    const cx=a.x-1,cy=a.y-1.2,cz=a.z;
+    const x1=cx*cosY-cz*sinY,z1=cx*sinY+cz*cosY;
+    const y1=cy*cosX-z1*sinX,z2=cy*sinX+z1*cosX;
+    const fov=8/(8+z2);
+    return{sx:CX+x1*scale*fov,sy:CY+y1*scale*fov,z:z2,e:a.e,c:a.c,fov};
+  });
+  bonds.forEach(([i,j])=>{
+    const a=proj[i],b=proj[j];
+    hCtx.beginPath();hCtx.moveTo(a.sx,a.sy);hCtx.lineTo(b.sx,b.sy);
+    hCtx.strokeStyle=`rgba(7,220,160,0.5)`;hCtx.lineWidth=2;hCtx.stroke();
+  });
+  [...proj].sort((a,b)=>a.z-b.z).forEach(p=>{
+    const r=(p.e==='C'?10:9)*p.fov*1.4;
+    const alpha=Math.max(.3,Math.min(1,1-p.z*.15));
+    const grd=hCtx.createRadialGradient(p.sx-r*.3,p.sy-r*.3,0,p.sx,p.sy,r*2);
+    grd.addColorStop(0,'rgba(255,255,255,.5)');grd.addColorStop(.4,p.c);grd.addColorStop(1,'rgba(0,0,0,.4)');
+    hCtx.beginPath();hCtx.arc(p.sx,p.sy,r,0,Math.PI*2);hCtx.fillStyle=grd;hCtx.globalAlpha=alpha;hCtx.fill();
+    const glw=hCtx.createRadialGradient(p.sx,p.sy,r*.5,p.sx,p.sy,r*2.5);
+    glw.addColorStop(0,p.c+'55');glw.addColorStop(1,'transparent');
+    hCtx.beginPath();hCtx.arc(p.sx,p.sy,r*2.5,0,Math.PI*2);hCtx.fillStyle=glw;hCtx.fill();
+    hCtx.globalAlpha=1;
+    if(r>6){hCtx.fillStyle='rgba(255,255,255,.9)';hCtx.font=`bold ${Math.max(8,r*.9)}px JetBrains Mono,monospace`;hCtx.textAlign='center';hCtx.textBaseline='middle';hCtx.fillText(p.e,p.sx,p.sy)}
+  });
+  rotY+=.008; rotX=.3+Math.sin(Date.now()*.0005)*.15;
+  requestAnimationFrame(drawMol);
+})();
+
+/* SCROLL REVEAL */
+const allR=document.querySelectorAll('.reveal,.reveal-l,.reveal-r');
+new IntersectionObserver((entries)=>{
+  entries.forEach((e,i)=>{if(e.isIntersecting) setTimeout(()=>e.target.classList.add('vis'),i*70)});
+},{threshold:.1}).observe=((obs)=>{allR.forEach(r=>obs.observe(r));return obs})(new IntersectionObserver((entries)=>{
+  entries.forEach((e,i)=>{if(e.isIntersecting) setTimeout(()=>e.target.classList.add('vis'),i*70)});
+},{threshold:.1}));
+
+/* RESULT BARS */
+new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting) e.target.querySelectorAll('.rc-bar-fill').forEach(b=>setTimeout(()=>b.style.width=b.dataset.w,400))});
+},{threshold:.3}).observe(document.querySelector('.result-cards')||document.body);
+
+/* COUNTER */
+function countUp(el,target){let v=0;const s=()=>{v+=target/50;if(v<target){el.textContent=Math.floor(v);requestAnimationFrame(s)}else el.textContent=target};s()}
+new IntersectionObserver(e=>{if(e[0].isIntersecting){document.querySelectorAll('[data-target]').forEach(el=>countUp(el,+el.dataset.target))}},{threshold:.5}).observe(document.querySelector('.stats-section'));
+
+/* FIX REVEAL - simple approach */
+document.addEventListener('scroll',()=>{
+  document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el=>{
+    const r=el.getBoundingClientRect();
+    if(r.top<window.innerHeight*.9) el.classList.add('vis');
+  });
+},{passive:true});
+setTimeout(()=>document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el=>{
+  const r=el.getBoundingClientRect();
+  if(r.top<window.innerHeight) el.classList.add('vis');
+}),100);
+</script>
 </body>
 </html>

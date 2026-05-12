@@ -359,3 +359,107 @@ nav{
     justify-content:center;
   }
 }
+@media(max-width:768px){
+
+  body{
+    cursor:auto;
+  }
+
+  #cur,
+  #curT,
+  .scroll-hint,
+  .mol-hud{
+    display:none;
+  }
+
+  nav{
+    padding:16px 20px;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    min-height:auto;
+    padding:120px 20px 60px;
+    gap:20px;
+    text-align:center;
+  }
+
+  .hero-left{
+    padding-top:0;
+    order:2;
+  }
+
+  .hero-right{
+    height:auto;
+    min-height:auto;
+    order:1;
+  }
+
+  .mol-stage{
+    width:260px;
+    height:260px;
+    margin:auto;
+  }
+
+  #heroMol{
+    width:260px;
+    height:260px;
+  }
+
+  .hero-actions{
+    justify-content:center;
+  }
+
+  .hero-chips{
+    justify-content:center;
+  }
+
+  .hero-p{
+    max-width:100%;
+  }
+
+  .stats-section{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .feat-grid{
+    grid-template-columns:1fr;
+  }
+
+  .rules-grid{
+    grid-template-columns:1fr;
+  }
+
+  .demo-layout,
+  .feat-header,
+  .how-layout{
+    grid-template-columns:1fr;
+  }
+
+  .foot-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-h1{
+    font-size:3rem;
+  }
+
+  .s-title{
+    font-size:2.3rem;
+  }
+
+  .cta-title{
+    font-size:3rem;
+  }
+
+  .how-section,
+  .feat-section,
+  .demo-section,
+  .rules-section,
+  .cta-section,
+  footer{
+    padding-left:20px !important;
+    padding-right:20px !important;
+  }
+
+}

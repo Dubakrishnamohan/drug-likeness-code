@@ -1,29 +1,26 @@
-const canvas = document.getElementById('particles');
-const ctx = canvas.getContext('2d');
+const particlesCanvas = document.getElementById('particles');
+const ctx = particlesCanvas.getContext('2d');
 
 let w,h;
 
 function resize(){
-w = canvas.width = window.innerWidth;
-h = canvas.height = window.innerHeight;
+  w = particlesCanvas.width = window.innerWidth;
+  h = particlesCanvas.height = window.innerHeight;
 }
 
 resize();
-
 window.addEventListener('resize',resize);
 
 const particles = [];
 
-for(let i=0;i<90;i++){
-
-particles.push({
-x:Math.random()*w,
-y:Math.random()*h,
-r:Math.random()*2,
-dx:(Math.random()-.5)*0.5,
-dy:(Math.random()-.5)*0.5
-});
-
+for(let i=0;i<80;i++){
+  particles.push({
+    x:Math.random()*w,
+    y:Math.random()*h,
+    r:Math.random()*2,
+    dx:(Math.random()-.5)*0.5,
+    dy:(Math.random()-.5)*0.5
+  });
 }
 
 function animate(){
@@ -46,7 +43,50 @@ ctx.fill();
 });
 
 requestAnimationFrame(animate);
-
 }
 
 animate();
+
+
+const predictBtn = document.getElementById('predictBtn');
+
+predictBtn.addEventListener('click', async ()=>{
+
+const smiles = document.getElementById('smilesInput').value;
+
+if(!smiles){
+alert('Please enter SMILES string');
+return;
+}
+
+// BACKEND API CALL
+// Replace this URL with your Flask/FastAPI endpoint
+
+try{
+
+const response = await fetch('http://127.0.0.1:5000/predict',{
+method:'POST',
+headers:{
+'Content-Type':'application/json'
+},
+body:JSON.stringify({smiles})
+});
+
+const data = await response.json();
+
+// OUTPUT UPDATE
+
+document.getElementById('mw').textContent = data.molecular_weight;
+document.getElementById('logp').textContent = data.logP;
+document.getElementById('hbd').textContent = data.hbd;
+document.getElementById('hba').textContent = data.hba;
+document.getElementById('qed').textContent = data.qed_score;
+document.getElementById('status').textContent = data.drug_like ? 'Drug-Like ✓' : 'Not Drug-Like ✗';
+
+}
+catch(err){
+console.log(err);
+alert('Backend not connected');
+}
+
+});

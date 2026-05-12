@@ -161,4 +161,4 @@ let rotY = 0;
 
   requestAnimationFrame(drawMol);
 
-})();
+})(); 

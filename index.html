@@ -1,47 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DrugLike AI</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DrugLike AI — Molecular Intelligence Platform</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<div class="container">
+<div id="cur"></div>
+<div id="curT"></div>
 
-    <h1>DrugLike AI</h1>
-
-    <form action="/predict" method="POST">
-
-        <textarea
-        name="smiles"
-        placeholder="Enter SMILES"></textarea>
-
-        <button type="submit">
-            Analyze Molecule
-        </button>
-
-    </form>
-
-    {% if result %}
-
-    <div class="result">
-
-        <h2>Analysis Result</h2>
-
-        <p><b>SMILES:</b> {{ smiles }}</p>
-        <p><b>Molecular Weight:</b> {{ mol_wt }}</p>
-        <p><b>LogP:</b> {{ logp }}</p>
-        <p><b>HBA:</b> {{ hba }}</p>
-        <p><b>HBD:</b> {{ hbd }}</p>
-        <p><b>Lipinski:</b> {{ lipinski }}</p>
-
-    </div>
-
-    {% endif %}
-
+<div class="aurora">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
 </div>
 
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+<canvas id="bgC"></canvas>
 
+<!-- NAV -->
+<nav>
+  <div class="logo-wrap">
+    <div class="logo-icon">⬡</div>
+    <div class="logo-text">Drug<span>Like</span> AI</div>
+  </div>
+
+  <ul class="nav-center">
+    <li><a href="#how">Process</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#rules">Rules</a></li>
+  </ul>
+
+  <a href="https://github.com/Dubakrishnamohan/drug-likeness-code"
+     target="_blank"
+     class="nav-right">
+     ⎇ &nbsp;GitHub
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      <span class="eyebrow-text">ML-Powered · Open Source · Python</span>
+    </div>
+
+    <h1 class="hero-h1">
+      <span class="line2">Predict</span>
+      <span class="accent">Drug-Likeness</span>
+      <span class="line2">Intelligently</span>
+    </h1>
+
+    <p class="hero-p">
+      A computational pipeline that evaluates whether a molecule has the physicochemical properties to become a viable drug.
+    </p>
+
+    <div class="hero-actions">
+      <a href="https://github.com/Dubakrishnamohan/drug-likeness-code"
+         target="_blank"
+         class="btn-glow">
+         ⎇ &nbsp;View on GitHub
+      </a>
+
+      <a href="#how" class="btn-outline">
+        ↓ &nbsp;Explore
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="mol-stage">
+
+      <div class="mol-ring"></div>
+      <div class="mol-ring2"></div>
+
+      <canvas id="heroMol"></canvas>
+
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>

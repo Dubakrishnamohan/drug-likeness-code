@@ -1,350 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DrugLike AI | AI-Powered Drug Likeness Prediction using RDKit & Machine Learning</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <title>DrugLike AI — Computational Drug Discovery</title>
 
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div id="cur"></div>
-<div id="curT"></div>
+<div class="bg"></div>
 
-<div class="aurora">
-  <div class="blob blob1"></div>
-  <div class="blob blob2"></div>
-  <div class="blob blob3"></div>
+<canvas id="particles"></canvas>
+
+<nav>
+
+<div class="logo">
+Drug<span>Like</span> AI
 </div>
 
-<canvas id="bgC"></canvas>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">Demo</a></li>
+<li><a href="#">GitHub</a></li>
+</ul>
 
-<!-- NAV -->
-<nav>
-  <div class="logo-wrap">
-    <div class="logo-icon">⬡</div>
-    <div class="logo-text">Drug<span>Like</span> AI</div>
-  </div>
-
-  <ul class="nav-center">
-    <li><a href="#how">Process</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#demo">Demo</a></li>
-    <li><a href="#rules">Rules</a></li>
-  </ul>
-
-  <a href="https://github.com/Dubakrishnamohan/drug-likeness-code"
-     target="_blank"
-     class="nav-right">
-     ⎇ &nbsp;GitHub
-  </a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
 
-  <div class="hero-left">
+<div class="hero-text">
 
-    <div class="hero-eyebrow">
-      <span class="eyebrow-dot"></span>
-      <span class="eyebrow-text">
-        ML-Powered · Open Source · Python
-      </span>
-    </div>
+<h1>
+AI-Powered<br>
+<span>Drug Discovery</span>
+</h1>
 
-    <h1 class="hero-h1">
-      <span class="line2">Predict</span>
-      <span class="accent">Drug-Likeness</span>
-      <span class="line2">Intelligently</span>
-    </h1>
+<p>
+Advanced computational drug-likeness prediction platform using RDKit, QED scoring, Lipinski’s Rule of Five, and Machine Learning for pharmaceutical screening.
+</p>
 
-    <p class="hero-p">
-      A computational pipeline that evaluates whether a molecule
-      has the physicochemical properties to become a viable drug —
-      powered by Lipinski's Rule of Five, QED scoring,
-      and machine learning.
-    </p>
+<div class="hero-btns">
 
-    <div class="hero-actions">
+<a href="https://github.com/Dubakrishnamohan/drug-likeness-code"
+target="_blank"
+class="btn btn-primary">
+View GitHub
+</a>
 
-      <a href="https://github.com/Dubakrishnamohan/drug-likeness-code"
-         target="_blank"
-         class="btn-glow">
-         ⎇ &nbsp;View on GitHub
-      </a>
-
-      <a href="#how" class="btn-outline">
-        ↓ &nbsp;Explore
-      </a>
-
-    </div>
-
-    <div class="hero-chips">
-      <span class="chip"><span class="chip-dot"></span>RDKit</span>
-      <span class="chip"><span class="chip-dot"></span>scikit-learn</span>
-      <span class="chip"><span class="chip-dot"></span>Python 3.x</span>
-      <span class="chip"><span class="chip-dot"></span>Pandas</span>
-      <span class="chip"><span class="chip-dot"></span>SMILES</span>
-    </div>
-
-  </div>
-
-  <!-- HERO RIGHT -->
-  <div class="hero-right">
-
-    <div class="mol-stage">
-
-      <div class="mol-ring"></div>
-      <div class="mol-ring2"></div>
-
-      <canvas id="heroMol"></canvas>
-
-      <div class="mol-hud mol-hud-tl">
-
-        <div class="hud-title">// aspirin.smiles</div>
-
-        <div class="hud-row">
-          <span>MW</span>
-          <span class="hud-val">180.16 Da</span>
-        </div>
-
-        <div class="hud-row">
-          <span>LogP</span>
-          <span class="hud-val">1.19</span>
-        </div>
-
-        <div class="hud-row">
-          <span>HBD</span>
-          <span class="hud-val">1</span>
-        </div>
-
-        <div class="hud-badge">
-          ✓ Lipinski Pass
-        </div>
-
-      </div>
-
-      <div class="mol-hud mol-hud-br">
-
-        <div class="hud-title">// qed_score</div>
-
-        <div class="hud-row">
-          <span>Score</span>
-          <span class="hud-val">0.582</span>
-        </div>
-
-        <div class="hud-row">
-          <span>Confidence</span>
-          <span class="hud-val">94.7%</span>
-        </div>
-
-        <div class="hud-row">
-          <span>Status</span>
-          <span class="hud-val" style="color:var(--c1)">
-            Drug-Like ✓
-          </span>
-        </div>
-
-        <div class="hud-badge">
-          ML Prediction Active
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- SCROLL -->
-  <div class="scroll-hint">
-    <div class="scroll-pill">
-      <div class="scroll-ball"></div>
-    </div>
-    <span>Scroll to explore</span>
-  </div>
-
-</section>
-
-<!-- MARQUEE -->
-<div class="marquee-wrap">
-
-  <div class="marquee-track">
-
-    <div class="marquee-item">Lipinski Rule of Five</div>
-    <div class="marquee-item">QED Drug Score</div>
-    <div class="marquee-item">SMILES Parsing</div>
-    <div class="marquee-item">ML Classification</div>
-    <div class="marquee-item">RDKit Cheminformatics</div>
-    <div class="marquee-item">Oral Bioavailability</div>
-    <div class="marquee-item">Molecular Descriptors</div>
-    <div class="marquee-item">Batch Processing</div>
-
-  </div>
+<a href="#"
+class="btn btn-secondary">
+Live Demo
+</a>
 
 </div>
 
-<!-- STATS -->
-<div class="stats-section">
+</div>
 
-  <div class="stat-block reveal">
-    <div class="stat-num" data-target="5">0</div>
-    <div class="stat-label">Lipinski Rules</div>
-  </div>
+<div class="hero-right">
 
-  <div class="stat-block reveal">
-    <div class="stat-num">QED</div>
-    <div class="stat-label">Drug-Likeness Score</div>
-  </div>
+<div class="glow"></div>
 
-  <div class="stat-block reveal">
-    <div class="stat-num" data-target="94">0</div>
-    <div class="stat-label">% Model Accuracy</div>
-  </div>
+<div class="molecule">
 
-  <div class="stat-block reveal">
-    <div class="stat-num">&lt;50ms</div>
-    <div class="stat-label">Per Prediction</div>
-  </div>
+<div class="orbit"></div>
+<div class="orbit"></div>
+<div class="orbit"></div>
+
+<div class="atom a1"></div>
+<div class="atom a2"></div>
+<div class="atom a3"></div>
 
 </div>
 
-<!-- HOW IT WORKS -->
-<section id="how" class="how-section">
-
-  <div class="s-tag reveal">Process</div>
-
-  <h2 class="s-title reveal">
-    How <em>It Works</em>
-  </h2>
+</div>
 
 </section>
 
-<!-- FEATURES -->
-<section id="features" class="feat-section">
+<section class="stats">
 
-  <div class="feat-inner">
+<div class="card">
+<h2>94%</h2>
+<p>Prediction Accuracy</p>
+</div>
 
-    <div class="feat-header">
+<div class="card">
+<h2>QED</h2>
+<p>Drug-Likeness Scoring</p>
+</div>
 
-      <div>
-        <div class="s-tag reveal">Capabilities</div>
+<div class="card">
+<h2>RDKit</h2>
+<p>Molecular Processing</p>
+</div>
 
-        <h2 class="s-title reveal">
-          Built for <em>Discovery</em>
-        </h2>
-      </div>
-
-      <p class="s-desc reveal">
-        A comprehensive computational toolkit combining
-        cheminformatics, machine learning,
-        and rule-based filtering.
-      </p>
-
-    </div>
-
-  </div>
+<div class="card">
+<h2>&lt;50ms</h2>
+<p>Prediction Speed</p>
+</div>
 
 </section>
 
-<!-- DEMO -->
-<section id="demo" class="demo-section">
+<section class="section">
 
-  <div class="s-tag reveal">Live Demo</div>
+<h2 class="section-title">
+Core <span>Features</span>
+</h2>
 
-  <h2 class="s-title reveal">
-    See It <em>In Action</em>
-  </h2>
+<p class="section-sub">
+Modern cheminformatics and AI pipeline designed for early-stage pharmaceutical molecule screening.
+</p>
 
-</section>
+<div class="grid">
 
-<!-- RULES -->
-<section id="rules" class="rules-section">
+<div class="feature">
+<div class="icon">🧠</div>
+<h3>Machine Learning</h3>
+<p>
+Predicts drug-likeness using trained ML models with high confidence scoring.
+</p>
+</div>
 
-  <div class="rules-inner">
+<div class="feature">
+<div class="icon">⚗️</div>
+<h3>RDKit Integration</h3>
+<p>
+Advanced molecular descriptor extraction and cheminformatics analysis pipeline.
+</p>
+</div>
 
-    <div class="rules-header">
+<div class="feature">
+<div class="icon">💊</div>
+<h3>QED Scoring</h3>
+<p>
+Quantitative estimate of drug-likeness for molecular screening and optimization.
+</p>
+</div>
 
-      <div class="s-tag reveal">Framework</div>
-
-      <h2 class="s-title reveal">
-        Lipinski's Rule <em>of Five</em>
-      </h2>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- CTA -->
-<section class="cta-section">
-
-  <div class="cta-mesh"></div>
-  <div class="cta-grid-lines"></div>
-
-  <div class="cta-inner">
-
-    <div class="s-tag reveal" style="justify-content:center">
-      <span>Open Source Project</span>
-    </div>
-
-    <h2 class="cta-title reveal">
-      Start Predicting<br>
-      <em>Drug-Likeness</em><br>
-      Today
-    </h2>
-
-    <p class="cta-sub reveal">
-      Full source code, dataset,
-      trained models, and documentation —
-      all open source on GitHub.
-    </p>
-
-    <div class="cta-btns reveal">
-
-      <a href="https://github.com/Dubakrishnamohan/drug-likeness-code"
-         target="_blank"
-         class="btn-glow">
-         ⎇ &nbsp;View on GitHub
-      </a>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
-<!-- FOOTER -->
+<section class="section">
+
+<div class="demo">
+
+<div class="terminal">
+
+<div class="terminal-top">
+<div class="dot red"></div>
+<div class="dot yellow"></div>
+<div class="dot green"></div>
+</div>
+
+<div class="code">
+
+<div>
+<span class="blueText">from</span>
+druglike
+<span class="blueText">import</span>
+Predictor
+</div>
+
+<div>
+smiles =
+<span class="yellowText">
+"CC(=O)Oc1ccccc1C(=O)O"
+</span>
+</div>
+
+<div>
+result = Predictor.analyze(smiles)
+</div>
+
+<br>
+
+<div class="greenText">
+✓ Drug-like molecule detected
+</div>
+
+</div>
+
+</div>
+
+<div class="result">
+
+<div class="result-box">
+<h3>ML Confidence</h3>
+<p>94.7% Prediction Confidence</p>
+</div>
+
+<div class="result-box">
+<h3>QED Score</h3>
+<p>0.582 Drug-Likeness Score</p>
+</div>
+
+<div class="result-box">
+<h3>Lipinski Filter</h3>
+<p>5 / 5 Rules Passed</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 <footer>
 
-  <div class="foot-grid">
+<p>
+© 2025 DrugLike AI — Duba Krishna Mohan
+</p>
 
-    <div class="foot-brand">
-
-      <div class="logo-wrap">
-        <div class="logo-icon">⬡</div>
-        <div class="logo-text">Drug<span>Like</span> AI</div>
-      </div>
-
-      <p class="foot-tagline">
-        ML-powered drug-likeness prediction
-        for computational chemistry.
-      </p>
-
-    </div>
-
-  </div>
-
-  <div class="foot-bottom">
-    <span>© 2025 DrugLike AI · Duba Krishnamohan</span>
-    <span class="foot-mono">
-      // drug_likeness_predictor_v2.0
-    </span>
-  </div>
+<p>
+Built with Python · RDKit · Machine Learning
+</p>
 
 </footer>
 

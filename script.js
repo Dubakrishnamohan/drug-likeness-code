@@ -91,11 +91,13 @@ for(let i=0;i<100;i++){
 const hMol = document.getElementById('heroMol');
 const hCtx = hMol.getContext('2d');
 
-hMol.width = 520;
-hMol.height = 520;
+const mobile = window.innerWidth < 768;
 
-const CX = 260;
-const CY = 260;
+hMol.width = mobile ? 260 : 520;
+hMol.height = mobile ? 260 : 520;
+
+const CX = hMol.width / 2;
+const CY = hMol.height / 2;
 
 const atoms = [
   {x:0,y:0,z:0,e:'C',c:'#07ffb4'},

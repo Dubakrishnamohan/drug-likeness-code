@@ -34,5 +34,38 @@ for i in range(len(df)):
         drug_like_results.append("invalid")
         continue
 
+#<-------5. Apply Lipinski Rule Of Five ------->
+   lipinski_fail= 0
+   if(mol_wt>500):
+    lipinski_fail+=1
+   if(logP>5):
+    lipinski_fail+=1
+   if(H_Acceptors>10):
+    lipinski_fail+=1
+   if(H_Donors>5):
+    lipinski_fail+=1
+   if lipinski_fail<=1:
+    lipinski_result="pass"
+   else:
+    lipinski_result="fail"
+#<-------6. Apply veber_rule------->
+   rot_bonds=Descriptors.NumRotatableBonds(mol)
+   tpsa=Descriptors.TPSA(mol)
+   veber_fail=0
+   if rot_bonds>10:
+    veber_fail+=1
+   if tpsa>140:
+    veber_fail+=1
+   if veber_fail==0:
+    veber_result="pass"
+   else:
+    veber_result="fail"
+   if lipinski_fail==0 and veber_fail==0:
+    drug_like_result=1
+   else:
+    drug_like_result=0
+
+
+
 
 

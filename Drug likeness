@@ -14,5 +14,15 @@ drug_like_results=[]
 #<-------4. Process Each Molecule------->
 for i in range(len(df)):
    Smiles=df.loc[i,"SMILES"]
+#<-------4.1 Convert Smiles Into Molecules------->
+   mol=Chem.MolFromSmiles(str(Smiles))
+   if mol is None:
+        lipinski_results.append("invalid")
+        veber_results.append("invalid")
+        lipinski_fails.append(None)
+        veber_fails.append(None)
+        drug_like_results.append("invalid")
+        continue
+
 
 

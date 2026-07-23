@@ -24,5 +24,10 @@ for i in range(len(df)):
         H_Donors_list.append(None)
         rot_bonds_list.append(None)
         tpsa_list.append(None)
+        continue
 
+  mol_wt=Descriptors.MolWt(mol)
+   logP=Descriptors.MolLogP(mol)
+   H_Acceptors=Descriptors.NumHAcceptors(mol)
+   H_Donors=Descriptors.NumHDonors(mol)
 

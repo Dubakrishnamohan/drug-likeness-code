@@ -1,0 +1,7 @@
+#<----- 1.import libraries ----->
+from rdkit import Chem
+import pandas as pd
+from rdkit.Chem import Draw
+from rdkit import DataStructs
+from rdkit.Chem import Descriptors
+

@@ -15,4 +15,8 @@ if input_mol is None:
     exit()
 morgan_fp=rdFingerprintGenerator.GetMorganGenerator(radius=2,fpSize=2048)
 input_fp = morgan_fp.GetFingerprint(input_mol)
+#<-------3. Initialize Result Storage------->
+fingerprint_Bits=[]
+similarity_scores=[]
+
 

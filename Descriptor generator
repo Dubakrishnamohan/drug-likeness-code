@@ -1,3 +1,7 @@
+#<----- 1.import libraries ----->
+
+
+#<----- 2.load dataset ----->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
 input_smiles=input("enter your smiles: ")
@@ -5,17 +9,17 @@ input_mol=Chem.MolFromSmiles(input_smiles)
 if input_mol is None:
     print("invalid input smiles")
     exit()
-
+#<----- 3.initialize result storage ----->
 molwt_list=[]
 logP_list=[]
 H_Acceptors_list=[]
 H_Donors_list=[]
 rot_bonds_list=[]
 tpsa_list=[]
-
+#<----- 4.process each molecule ----->
 for i in range(len(df)):
    Smiles=df.loc[i,"SMILES"]
-
+#<----- 4.1.Convert smiles into molecules ----->
   mol=Chem.MolFromSmiles(str(Smiles))
    if mol is None:
         molwt_list.append(None)
@@ -25,25 +29,25 @@ for i in range(len(df)):
         rot_bonds_list.append(None)
         tpsa_list.append(None)
         continue
-
+#<-----4.2.Calculate molecular descriptors ----->
   mol_wt=Descriptors.MolWt(mol)
    logP=Descriptors.MolLogP(mol)
    H_Acceptors=Descriptors.NumHAcceptors(mol)
    H_Donors=Descriptors.NumHDonors(mol)
-
+#<----- 5.store results ----->
  molwt_list.append(mol_wt)
    logP_list.append(logP)
    H_Acceptors_list.append(H_Acceptors)
    H_Donors_list.append(H_Donors)
    rot_bonds_list.append(rot_bonds)
    tpsa_list.append(tpsa)
-
+#<----- 6.add result to dataset ----->
 df["mol_wt"]=[round(x,3) for x in molwt_list]
 df["logP"]=[round(x,3) for x in logP_list]
 df["H_Acceptors"]=H_Acceptors_list
 df["H_Donors"]=H_Donors_list
 df["rot_bonds"]=rot_bonds_list
 df["TPSA"]=[round(x,3) for x in tpsa_list]
-
+#<----- 7.initialize result storage----->
 
 

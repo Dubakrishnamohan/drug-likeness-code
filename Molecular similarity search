@@ -29,5 +29,9 @@ for i in range(len(df)):
         continue
    fp = morgan_fp.GetFingerprint(mol)
    score = DataStructs.TanimotoSimilarity(input_fp, fp)
+#<-------8. store results------->
+   fingerprint_Bits.append(fp.ToBitString())
+   similarity_scores.append(score)
+
 
 

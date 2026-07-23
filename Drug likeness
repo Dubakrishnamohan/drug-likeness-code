@@ -64,6 +64,15 @@ for i in range(len(df)):
     drug_like_result=1
    else:
     drug_like_result=0
+#<-------8. store results------->
+   lipinski_results.append(lipinski_result)
+   veber_results.append(veber_result)
+   lipinski_fails.append(lipinski_fail)
+   veber_fails.append(veber_fail)
+   drug_like_results.append(drug_like_result)
+
+  
+
 
 
 

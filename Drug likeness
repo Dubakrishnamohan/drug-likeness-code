@@ -70,6 +70,12 @@ for i in range(len(df)):
    lipinski_fails.append(lipinski_fail)
    veber_fails.append(veber_fail)
    drug_like_results.append(drug_like_result)
+#<-------9. Add Results To Dataset------->
+df["lipinski_results"]=lipinski_results
+df["veber_results"]=veber_results
+df["lipinski_fails"] =lipinski_fails
+df["veber_fails"]=veber_fails
+df["drug_like_results"]=drug_like_results
 
   
 

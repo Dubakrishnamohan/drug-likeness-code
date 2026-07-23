@@ -12,3 +12,6 @@ H_Acceptors_list=[]
 H_Donors_list=[]
 rot_bonds_list=[]
 tpsa_list=[]
+
+for i in range(len(df)):
+   Smiles=df.loc[i,"SMILES"]

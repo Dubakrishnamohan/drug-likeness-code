@@ -15,3 +15,14 @@ tpsa_list=[]
 
 for i in range(len(df)):
    Smiles=df.loc[i,"SMILES"]
+
+  mol=Chem.MolFromSmiles(str(Smiles))
+   if mol is None:
+        molwt_list.append(None)
+        logP_list.append(None)
+        H_Acceptors_list.append(None)
+        H_Donors_list.append(None)
+        rot_bonds_list.append(None)
+        tpsa_list.append(None)
+
+

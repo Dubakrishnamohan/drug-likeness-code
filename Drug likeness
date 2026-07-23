@@ -5,3 +5,14 @@ from rdkit.Chem import Draw
 from rdkit import DataStructs
 from rdkit.Chem import Descriptors
 
+lipinski_results=[]
+veber_results=[]
+lipinski_fails=[]
+veber_fails=[]
+drug_like_results=[]
+
+#<-------4. Process Each Molecule------->
+for i in range(len(df)):
+   Smiles=df.loc[i,"SMILES"]
+
+

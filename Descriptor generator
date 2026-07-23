@@ -38,5 +38,12 @@ for i in range(len(df)):
    rot_bonds_list.append(rot_bonds)
    tpsa_list.append(tpsa)
 
+df["mol_wt"]=[round(x,3) for x in molwt_list]
+df["logP"]=[round(x,3) for x in logP_list]
+df["H_Acceptors"]=H_Acceptors_list
+df["H_Donors"]=H_Donors_list
+df["rot_bonds"]=rot_bonds_list
+df["TPSA"]=[round(x,3) for x in tpsa_list]
+
 
 

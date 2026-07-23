@@ -18,5 +18,15 @@ input_fp = morgan_fp.GetFingerprint(input_mol)
 #<-------3. Initialize Result Storage------->
 fingerprint_Bits=[]
 similarity_scores=[]
+#<-------4. Process Each Molecule------->
+for i in range(len(df)):
+   Smiles=df.loc[i,"SMILES"]
+#<-------4.1 Convert Smiles Into Molecules------->
+   mol=Chem.MolFromSmiles(str(Smiles))
+   if mol is None:
+        fingerprint_Bits.append(None)
+        similarity_scores.append(None)
+        continue
+
 
 

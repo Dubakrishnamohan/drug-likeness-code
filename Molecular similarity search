@@ -1,6 +1,8 @@
 #<----- 1.import libraries ----->
 from rdkit import Chem
+from rdkit.Chem import rdFingerprintGenerator
 import pandas as pd
 from rdkit.Chem import Draw
 from rdkit import DataStructs
 from rdkit.Chem import Descriptors
+

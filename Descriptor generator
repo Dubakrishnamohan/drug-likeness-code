@@ -31,3 +31,12 @@ for i in range(len(df)):
    H_Acceptors=Descriptors.NumHAcceptors(mol)
    H_Donors=Descriptors.NumHDonors(mol)
 
+ molwt_list.append(mol_wt)
+   logP_list.append(logP)
+   H_Acceptors_list.append(H_Acceptors)
+   H_Donors_list.append(H_Donors)
+   rot_bonds_list.append(rot_bonds)
+   tpsa_list.append(tpsa)
+
+
+

@@ -1,5 +1,9 @@
 #<----- 1.import libraries ----->
-
+from rdkit import Chem
+import pandas as pd
+from rdkit.Chem import Draw
+from rdkit import DataStructs
+from rdkit.Chem import Descriptors
 
 #<----- 2.load dataset ----->
 file=input("enter csv file name: ")
@@ -9,6 +13,7 @@ input_mol=Chem.MolFromSmiles(input_smiles)
 if input_mol is None:
     print("invalid input smiles")
     exit()
+
 #<----- 3.initialize result storage ----->
 molwt_list=[]
 logP_list=[]
@@ -16,11 +21,19 @@ H_Acceptors_list=[]
 H_Donors_list=[]
 rot_bonds_list=[]
 tpsa_list=[]
+MolMR_list=[]
+FractionCSP3_list=[]
+RingCount_list=[]
+HeavyAtomCount_list=[]
+ExactMolWt_list=[]
+NumValenceElectrons_list=[]
+
 #<----- 4.process each molecule ----->
 for i in range(len(df)):
    Smiles=df.loc[i,"SMILES"]
+
 #<----- 4.1.Convert smiles into molecules ----->
-  mol=Chem.MolFromSmiles(str(Smiles))
+   mol=Chem.MolFromSmiles(str(Smiles))
    if mol is None:
         molwt_list.append(None)
         logP_list.append(None)
@@ -28,19 +41,42 @@ for i in range(len(df)):
         H_Donors_list.append(None)
         rot_bonds_list.append(None)
         tpsa_list.append(None)
+        MolMR_list.append(None)
+        FractionCSP3_list.append(None)
+        RingCount_list.append(None)
+        HeavyAtomCount_list.append(None)
+        ExactMolWt_list.append(None)
+        NumValenceElectrons_list.append(None)
         continue
+
 #<-----4.2.Calculate molecular descriptors ----->
-  mol_wt=Descriptors.MolWt(mol)
+   mol_wt=Descriptors.MolWt(mol)
    logP=Descriptors.MolLogP(mol)
    H_Acceptors=Descriptors.NumHAcceptors(mol)
    H_Donors=Descriptors.NumHDonors(mol)
+   rot_bonds=Descriptors.NumRotatableBonds(mol)
+   tpsa=Descriptors.TPSA(mol)
+   MolMR=Descriptors.MolMR(mol)
+   FractionCSP3=Descriptors.FractionCSP3(mol)
+   RingCount=Descriptors.RingCount(mol)
+   HeavyAtomCount=Descriptors.HeavyAtomCount(mol)
+   ExactMolWt=Descriptors.ExactMolWt(mol)
+   NumValenceElectrons=Descriptors.NumValenceElectrons(mol)
+
 #<----- 5.store results ----->
- molwt_list.append(mol_wt)
+   molwt_list.append(mol_wt)
    logP_list.append(logP)
    H_Acceptors_list.append(H_Acceptors)
    H_Donors_list.append(H_Donors)
    rot_bonds_list.append(rot_bonds)
    tpsa_list.append(tpsa)
+   MolMR_list.append(MolMR)
+   FractionCSP3_list.append(FractionCSP3)
+   RingCount_list.append(RingCount)
+   HeavyAtomCount_list.append(HeavyAtomCount)
+   ExactMolWt_list.append(ExactMolWt)
+   NumValenceElectrons_list.append(NumValenceElectrons)
+   
 #<----- 6.add result to dataset ----->
 df["mol_wt"]=[round(x,3) for x in molwt_list]
 df["logP"]=[round(x,3) for x in logP_list]
@@ -48,6 +84,15 @@ df["H_Acceptors"]=H_Acceptors_list
 df["H_Donors"]=H_Donors_list
 df["rot_bonds"]=rot_bonds_list
 df["TPSA"]=[round(x,3) for x in tpsa_list]
-#<----- 7.initialize result storage----->
+df["MolMR"]=[round(x,3) for x in MolMR_list]
+df["FractionCSP3"]=[round(x,3) for x in FractionCSP3_list]
+df["RingCount"]=RingCount_list
+df["HeavyAtomCount"]=HeavyAtomCount_list
+df["ExactMolWt"]=[round(x,3) for x in ExactMolWt_list]
+df["NumValenceElectrons"]=NumValenceElectrons_list
 
+#<----- 7.save updated dataset ----->
+filename=input("Enter file name to save upated csv: ")
+df.to_csv(filename +".csv",index=False)
+print("updated dataset saved")
 

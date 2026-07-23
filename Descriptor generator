@@ -5,3 +5,10 @@ input_mol=Chem.MolFromSmiles(input_smiles)
 if input_mol is None:
     print("invalid input smiles")
     exit()
+
+molwt_list=[]
+logP_list=[]
+H_Acceptors_list=[]
+H_Donors_list=[]
+rot_bonds_list=[]
+tpsa_list=[]

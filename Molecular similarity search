@@ -32,6 +32,9 @@ for i in range(len(df)):
 #<-------8. store results------->
    fingerprint_Bits.append(fp.ToBitString())
    similarity_scores.append(score)
+#<-------9. Add Results To Dataset------->
+df["fingerprint_Bits"]=fingerprint_Bits
+df["similarity_scores"]=similarity_scores
 
 
 

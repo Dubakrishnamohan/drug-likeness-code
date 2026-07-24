@@ -1,0 +1,161 @@
+from fpdf import FPDF
+from rdkit import Chem
+from rdkit.Chem import Draw
+from datetime import datetime
+import pandas as pd
+import pytz
+import os
+
+# ---------- PDF Generator ----------
+def generate_pdf_report(input_smiles, df):
+
+    pdf = FPDF()
+    pdf.add_page()
+
+    # ---------- Title ----------
+    pdf.set_text_color(0,102,204)
+    pdf.set_font("Arial","B",18)
+    pdf.cell(0,10,"Drug Analysis Report",ln=True,align="C")
+    pdf.ln(5)
+
+    # ---------- Input SMILES ----------
+    pdf.set_text_color(0,0,0)
+    pdf.set_font("Arial","B",14)
+    pdf.cell(0,10,f"Input SMILES : {input_smiles}",ln=True)
+
+    # ---------- Date ----------
+    ist = pytz.timezone("Asia/Kolkata")
+    now = datetime.now(ist).strftime("%d-%m-%Y %H:%M:%S")
+
+    pdf.cell(0,10,f"Generated On : {now}",ln=True)
+    pdf.ln(5)
+
+    # ---------- Summary ----------
+    pdf.set_font("Arial","B",14)
+    pdf.cell(0,10,"Summary",ln=True)
+
+    pdf.set_font("Arial","",12)
+    pdf.cell(0,8,f"Total Molecules : {len(df)}",ln=True)
+    pdf.cell(0,8,f"Drug Like Molecules : {df['drug_like_results'].sum()}",ln=True)
+    pdf.cell(0,8,f"Non Drug Like Molecules : {len(df)-df['drug_like_results'].sum()}",ln=True)
+    pdf.cell(0,8,f"Average similarity score : {df['similarity_scores'].mean()}",ln=True)
+    pdf.ln(5)
+
+    # ---------- Top 10 Molecules ----------
+    pdf.add_page()
+
+    pdf.set_font("Arial", "B", 14)
+    pdf.cell(0, 10, "Top 10 Similar Molecules", ln=True)
+  
+    top_df = df.sort_values(by="similarity_scores",ascending=False).head(10)
+
+    x_left = 10
+    x_right = 110
+
+    y = pdf.get_y()
+    col = 0
+
+    for rank, (_, row) in enumerate(top_df.iterrows(), start=1):
+      
+      if rank == 7:
+        pdf.add_page()
+        pdf.set_font("Arial", "B", 14)
+        pdf.cell(0, 10, "Top 10 Similar Molecules (Continued)", ln=True)
+
+        y = pdf.get_y()
+        col = 0
+
+      smiles = str(row["SMILES"])
+      score = float(row["similarity_scores"])
+
+      mol = Chem.MolFromSmiles(smiles)
+      if mol is None:
+        continue
+
+      img_file = f"mol_{rank}.png"
+      Draw.MolToFile(mol, img_file)
+
+      x = x_left if col == 0 else x_right
+
+      pdf.set_xy(x, y)
+      pdf.set_font("Arial", "B", 9)
+      pdf.cell(0, 5, f"Rank {rank}", ln=True)
+
+      pdf.set_x(x)
+      pdf.set_font("Arial", "", 8)
+      pdf.cell(0, 5, f"Similarity : {score:.3f}", ln=True)
+
+      pdf.image(img_file, x=x, y=y+12, w=30)
+
+      pdf.set_xy(x, y+45)
+      pdf.multi_cell(80, 4, "SMILES : " + smiles[:35] + "...")
+
+      if col == 0:
+        col = 1
+      else:
+        col = 0
+        y += 60
+        
+        # ---------- Graph Function ----------
+    def add_graph(title, img_path):
+      
+      if not os.path.exists(img_path):
+        return
+
+      pdf.add_page()   # Every graph start in new page
+
+      pdf.set_font("Arial", "B", 16)
+      pdf.cell(0, 10, title, ln=True, align="C")
+      pdf.ln(10)
+
+      # Center graph
+      page_width = pdf.w
+      img_width = 170
+      x = (page_width - img_width) / 2
+
+      pdf.image(img_path, x=x, w=img_width)
+
+    # ---------- Graphs ----------
+    add_graph("Top 10 Similar Molecules","top10 similar molecules.png")
+    add_graph("Drug Like vs Non Drug Like","drug_like vs non_drug_like pie chart.png")
+    add_graph("Molecular Weight Distribution","molecular weight distribution.png")
+    add_graph("Similarity Score Distribution","similarity_scores_distribution.png")
+
+    # ---------- Conclusion ----------
+    pdf.set_font("Arial","B",14)
+    pdf.cell(0,10,"Conclusion",ln=True)
+
+    pdf.set_font("Arial","",11)
+    pdf.multi_cell(
+        0,
+        8,
+        "This workflow can be extended by integrating toxicity prediction, ADMET analysis, and machine learning models for improved drug candidate screening."
+    )
+
+    # ---------- Save PDF ----------
+    filename = input("Enter PDF file name : ")
+    pdf.output(filename + ".pdf")
+
+    # ---------- Delete Temporary Images ----------
+    for rank in range(1, len(top_df) + 1):
+      img = f"mol_{rank}.png"
+      if os.path.exists(img):
+        os.remove(img)
+
+    print("PDF Report Generated Successfully")
+
+
+# ---------- Main ----------
+choice = input("Generate PDF? (y/n): ").strip().lower()
+
+if choice == "y":
+
+    input_smiles = input("Enter Input SMILES : ")
+
+    file = input("Enter Updated CSV File Name : ")
+    df = pd.read_csv(file)
+
+    generate_pdf_report(input_smiles,df)
+
+else:
+    print("PDF generation skipped.")

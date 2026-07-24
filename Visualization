@@ -1,1 +1,8 @@
-qweert
+<----- 1.import libraries----->
+from rdkit import Chem
+from rdkit.Chem import rdFingerprintGenerator
+from rdkit import DataStructs
+from rdkit.Chem import Draw
+from rdkit.Chem import Descriptors
+import pandas as pd
+import matplotlib.pyplot as plt

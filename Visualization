@@ -1,4 +1,4 @@
-<----- 1.import libraries----->
+#<----- 1.import libraries----->
 from rdkit import Chem
 from rdkit.Chem import rdFingerprintGenerator
 from rdkit import DataStructs

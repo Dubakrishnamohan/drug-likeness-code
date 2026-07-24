@@ -10,19 +10,17 @@ import matplotlib.pyplot as plt
 #<-------2. Load Dataset------->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
-input_smiles=input("enter your smiles: ")
-input_mol=Chem.MolFromSmiles(input_smiles)
 if input_mol is None:
     print("invalid input smiles")
     exit()
-#<-------9. Add Results To Dataset------->
-filtered_df = df[
-    (df["drug_like_results"] == 1) &
-    (df["similarity_scores"] > 0)]
+
+# similarity_scores unna rows matrame
+df = df.dropna(subset=["similarity_scores"])
+
+# Top 10 similar molecules
+top10 = df.nlargest(10, "similarity_scores")
 #<-------10. Graphs(Visualization)------->
    #----->10.1. Bar Graph(top10 similar molecules)<-----
-top10=filtered_df.sort_values(by="similarity_scores",ascending=False).head(10)
-print(top10[["SMILES","similarity_scores","drug_like_results"]])
 plt.figure(figsize=(10,6))
 plt.bar(range(len(top10)),top10["similarity_scores"])
 plt.xticks(range(len(top10)),top10["SMILES"],rotation=90)
@@ -55,13 +53,3 @@ plt.xlabel("similarity_scores")
 plt.ylabel("count")
 plt.savefig("similarity_scores_distribution.png")
 plt.show()
-
-#<-------11. Save Updated Dataset------->
-filename=input("Enter file name to save upated csv: ")
-df.to_csv(filename +".csv",index=False)
-print("updated dataset saved")
-
-#<-------11. Save Updated Dataset------->
-filename=input("Enter file name to save upated csv: ")
-df.to_csv(filename +".csv",index=False)
-print("updated dataset saved")

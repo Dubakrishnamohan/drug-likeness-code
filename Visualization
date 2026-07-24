@@ -15,7 +15,10 @@ input_mol=Chem.MolFromSmiles(input_smiles)
 if input_mol is None:
     print("invalid input smiles")
     exit()
-
+#<-------9. Add Results To Dataset------->
+filtered_df = df[
+    (df["drug_like_results"] == 1) &
+    (df["similarity_scores"] > 0)]
 #<-------10. Graphs(Visualization)------->
    #----->10.1. Bar Graph(top10 similar molecules)<-----
 top10=filtered_df.sort_values(by="similarity_scores",ascending=False).head(10)

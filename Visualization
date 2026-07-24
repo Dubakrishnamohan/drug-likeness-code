@@ -15,3 +15,41 @@ input_mol=Chem.MolFromSmiles(input_smiles)
 if input_mol is None:
     print("invalid input smiles")
     exit()
+
+#<-------10. Graphs(Visualization)------->
+   #----->10.1. Bar Graph(top10 similar molecules)<-----
+top10=filtered_df.sort_values(by="similarity_scores",ascending=False).head(10)
+print(top10[["SMILES","similarity_scores","drug_like_results"]])
+plt.figure(figsize=(10,6))
+plt.bar(range(len(top10)),top10["similarity_scores"])
+plt.xticks(range(len(top10)),top10["SMILES"],rotation=90)
+plt.title("top10 similar molecules")
+plt.xlabel("SMILES")
+plt.ylabel("similarity")
+plt.tight_layout()
+plt.savefig("top10 similar molecules.png")
+plt.show()
+   #------->10.2 pie chart(drug_like vs non_drug_like)<-------
+counts=df["drug_like_results"].value_counts()
+plt.figure()
+plt.pie(counts,labels=counts.index,autopct="%1.1f%%")
+plt.title("drug_like vs non_drug_like")
+plt.savefig("drug_like vs non_drug_like pie chart.png")
+plt.show()
+   #----->10.3. histogram(molecular weight distribution)<-----
+plt.figure()
+plt.hist(df["mol_wt"].dropna(),bins=30)
+plt.title("molecular weight distribution")
+plt.xlabel("mol_wt")
+plt.ylabel("frequency")
+plt.savefig("molecular weight distribution.png")
+plt.show()
+  #----->10.4.Histogram(""similarity_scores distribution")<-----
+plt.figure()
+plt.hist(df["similarity_scores"].dropna(),bins=30)
+plt.title("similarity_scores distribution")
+plt.xlabel("similarity_scores")
+plt.ylabel("count")
+plt.savefig("similarity_scores_distribution.png")
+plt.show()
+

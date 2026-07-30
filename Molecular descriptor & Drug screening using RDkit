@@ -136,6 +136,8 @@ for index, row in df.iterrows():
    drug_like_results.append(drug_like_result)
    fingerprint_Bits.append(fp.ToBitString())
    similarity_scores.append(score)
+   toxicity_scores.append(toxicity_score)
+   toxicity_predictions.append(prediction)
 #<-------9. Add Results To Dataset------->
 df["mol_wt"]=[round(x,3) for x in molwt_list]
 df["logP"]=[round(x,3) for x in logP_list]

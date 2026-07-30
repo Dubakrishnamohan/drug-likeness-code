@@ -32,6 +32,8 @@ veber_fails=[]
 drug_like_results=[]
 fingerprint_Bits=[]
 similarity_scores=[]
+toxicity_scores=[]
+toxicity_predictions=[]
 #<-------4. Process Each Molecule------->
 for i in range(len(df)):
    Smiles=df.loc[i,"SMILES"]

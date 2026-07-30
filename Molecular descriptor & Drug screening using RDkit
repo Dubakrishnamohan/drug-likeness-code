@@ -53,6 +53,8 @@ for i in range(len(df)):
         drug_like_results.append("invalid")
         fingerprint_Bits.append(None)
         similarity_scores.append(None)
+        toxicity_score.append("invalid")
+        toxicity_prediction.append("invalid")
         continue
    fp = morgan_fp.GetFingerprint(mol)
    score = DataStructs.TanimotoSimilarity(input_fp, fp)

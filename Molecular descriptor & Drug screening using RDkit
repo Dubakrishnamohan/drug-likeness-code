@@ -157,6 +157,12 @@ filtered_df = df[
     (df["similarity_scores"] > 0)]
 df["toxicity_score"]= toxicity_scores
 df["toxicity_prediction"]= toxicity_predictions
+
+cols = list(df.columns)
+cols.remove("toxicity_prediction")
+cols.remove("toxicity_score")
+cols.extend(["toxicity_prediction", "toxicity_score"])
+df = df[cols]
 #<-------10. Graphs(Visualization)------->
    #----->10.1. Bar Graph(top10 similar molecules)<-----
 top10=filtered_df.sort_values(by="similarity_scores",ascending=False).head(10)

@@ -93,6 +93,35 @@ for i in range(len(df)):
     drug_like_result=1
    else:
     drug_like_result=0
+#<-------7. toxicity prediction ------->
+toxicity_score=0
+
+for index, row in df.iterrows():
+  toxicity_score = 0
+  
+  if row["mol_wt"] > 500:
+    toxicity_score += 1
+  if row["TPSA"] > 140:
+    toxicity_score += 1
+  if row["logP"] > 5:
+    toxicity_score += 1
+  if row["H_Donors"] > 5:
+    toxicity_score +=1
+  if row["H_Acceptors"] > 10:
+    toxicity_score += 1
+  if row["rot_bonds"] > 10:
+    toxicity_score += 1
+
+  if toxicity_score == 0:
+    prediction = "Not_toxic"
+  elif toxicity_score <= 2:
+    prediction = "low_risk"
+  elif toxicity_score <=4:
+    prediction = "moderate_risk"
+  else:
+    prediction = "high_risk"
+  df.loc[index, "toxicity_prediction"] = prediction
+
 #<-------8. store results------->
    molwt_list.append(mol_wt)
    logP_list.append(logP)

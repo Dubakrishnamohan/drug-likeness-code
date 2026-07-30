@@ -155,6 +155,8 @@ df["similarity_scores"]=similarity_scores
 filtered_df = df[
     (df["drug_like_results"] == 1) &
     (df["similarity_scores"] > 0)]
+df["toxicity_score"]= toxicity_scores
+df["toxicity_prediction"]= toxicity_predictions
 #<-------10. Graphs(Visualization)------->
    #----->10.1. Bar Graph(top10 similar molecules)<-----
 top10=filtered_df.sort_values(by="similarity_scores",ascending=False).head(10)

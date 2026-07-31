@@ -25,7 +25,7 @@ if mol is None:
   GI_scores.append(None)
   GI_predictions.append("invalid")
   Continue
-#<-------7. ADMET prediction ------->
+#<-------5. ADMET prediction ------->
 GI_score = 0
 
 for index, row in df.iterrows():
@@ -51,10 +51,10 @@ for index, row in df.iterrows():
     prediction = "Low_GI"
   df.loc[index, "GI_score"] = GI_score
   df.loc[index, "GI_prediction"] = prediction
-  #<-------7. store results------->
+#<-------6. store results------->
   GI_scores.append(GI_score)
   GI_predictions.append(prediction)
-#<-------8. Add Results To Dataset------->
+#<-------7. Add Results To Dataset------->
 df["GI_score"]= GI_scores
 df["GI_prediction"]= GI_predictions
 
@@ -64,7 +64,7 @@ cols.remove("GI_score")
 cols.extend(["GI_prediction", "GI_score"])
 df = df[cols]
 
-#<-------9. Save Updated Dataset------->
+#<-------8. Save Updated Dataset------->
 filename=input("Enter file name to save upated csv: ")
 df.to_csv(filename +".csv",index=False)
 print("updated dataset saved")

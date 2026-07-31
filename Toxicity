@@ -1,0 +1,74 @@
+#<----- 1.import libraries ----->
+from rdkit import Chem
+import pandas as pd
+from rdkit.Chem import Draw
+from rdkit import DataStructs
+from rdkit.Chem import Descriptors
+
+#<-------2. Load Dataset------->
+file=input("enter csv file name: ")
+df=pd.read_csv(file)
+'''input_smiles=input("enter your smiles: ")
+input_mol=Chem.MolFromSmiles(input_smiles)
+if input_mol is None:
+    print("invalid input smiles")
+    exit()'''
+#<-------3. Add Results To Dataset------->
+toxicity_scores=[]
+toxicity_predictions=[]
+#<-------4. Process Each Molecule------->
+for i in range(len(df)):
+   Smiles=df.loc[i,"SMILES"]
+#<-------4.1 Convert Smiles Into Molecules------->
+mol=Chem.MolFromSmiles(str(Smiles))
+   if mol is None:
+        toxicity_scores.append(None)
+        toxicity_predictions.append("invalid")
+
+        continue
+#<-------7. toxicity prediction ------->
+    toxicity_score=0
+
+for index, row in df.iterrows():
+  toxicity_score = 0
+  if row["mol_wt"] > 500:
+    toxicity_score += 1
+  if row["TPSA"] > 140:
+    toxicity_score += 1
+  if row["logP"] > 5:
+    toxicity_score += 1
+  if row["H_Donors"] > 5:
+    toxicity_score +=1
+  if row["H_Acceptors"] > 10:
+    toxicity_score += 1
+  if row["rot_bonds"] > 10:
+    toxicity_score += 1
+
+  if toxicity_score == 0:
+    prediction = "Not_toxic"
+  elif toxicity_score <= 2:
+    prediction = "low_risk"
+  elif toxicity_score <=4:
+    prediction = "moderate_risk"
+  else:
+    prediction = "high_risk"
+  df.loc[index, "toxicity_prediction"] = prediction
+#<-------7. store results------->
+  toxicity_scores.append(toxicity_score)
+  toxicity_predictions.append(prediction)
+#<-------8. Add Results To Dataset------->
+df["toxicity_score"]= toxicity_scores
+df["toxicity_prediction"]= toxicity_predictions
+
+cols = list(df.columns)
+cols.remove("toxicity_prediction")
+cols.remove("toxicity_score")
+cols.extend(["toxicity_prediction", "toxicity_score"])
+df = df[cols]
+
+#<-------9. Save Updated Dataset------->
+filename=input("Enter file name to save upated csv: ")
+df.to_csv(filename +".csv",index=False)
+print("updated dataset saved")
+
+      

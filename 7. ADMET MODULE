@@ -1,1 +1,71 @@
+#<----- 1.import libraries ----->
+from rdkit import Chem
+import pandas as pd
+from rdkit.Chem import Draw
+from rdkit import DataStructs
+from rdkit.Chem import Descriptors
+
+#<-------2. Load Dataset------->
+file=input("enter csv file name: ")
+df=pd.read_csv(file)
+'''input_smiles=input("enter your smiles: ")
+input_mol=Chem.MolFromSmiles(input_smiles)
+if input_mol is None:
+    print("invalid input smiles")
+    exit()'''
+#<-------3. Add Results To Dataset------->
+GI_scores=[]
+GI_predictions=[]
+#<-------4. Process Each Molecule------->
+'''for i in range(len(df)):
+   Smiles=df.loc[i,"SMILES"]'''
+#<-------4.1 Convert Smiles Into Molecules------->
+mol=Chem.MolFromSmiles(str(Smiles))
+if mol is None:
+  GI_scores.append(None)
+  GI_predictions.append("invalid")
+  Continue
+#<-------7. ADMET prediction ------->
+GI_score = 0
+
+for index, row in df.iterrows():
+  GI_score = 0
+  if row["mol_wt"] <= 500:
+    GI_score += 1
+  if row["TPSA"] <= 140:
+    GI_score += 1
+  if row["logP"] <= 5:
+    GI_score += 1
+  if row["H_Donors"] <= 5:
+    GI_score +=1
+  if row["H_Acceptors"] <= 10:
+    GI_score += 1
+  if row["rot_bonds"] <= 10:
+    GI_score += 1
+
+  if GI_score >= 5:
+    prediction = "High_GI"
+  elif GI_score >= 3:
+    prediction = "moderate_GI"
+  else:
+    prediction = "Low_GI"
+  df.loc[index, "GI_score"] = GI_score
+  df.loc[index, "GI_prediction"] = prediction
+  #<-------7. store results------->
+  GI_scores.append(GI_score)
+  GI_predictions.append(prediction)
+#<-------8. Add Results To Dataset------->
+df["GI_score"]= GI_scores
+df["GI_prediction"]= GI_predictions
+
+cols = list(df.columns)
+cols.remove("GI_prediction")
+cols.remove("GI_score")
+cols.extend(["GI_prediction", "GI_score"])
+df = df[cols]
+
+#<-------9. Save Updated Dataset------->
+filename=input("Enter file name to save upated csv: ")
+df.to_csv(filename +".csv",index=False)
+print("updated dataset saved")
 

@@ -8,64 +8,93 @@ from rdkit.Chem import Descriptors
 #<-------2. Load Dataset------->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
-'''input_smiles=input("enter your smiles: ")
-input_mol=Chem.MolFromSmiles(input_smiles)
-if input_mol is None:
-    print("invalid input smiles")
-    exit()'''
 #<-------3. Add Results To Dataset------->
 GI_scores=[]
 GI_predictions=[]
+BBB_scores=[]
+BBB_predictions=[]
 #<-------4. Process Each Molecule------->
-'''for i in range(len(df)):
-   Smiles=df.loc[i,"SMILES"]'''
+for i in range(len(df)):
+   Smiles=df.loc[i,"SMILES"]
 #<-------4.1 Convert Smiles Into Molecules------->
 mol=Chem.MolFromSmiles(str(Smiles))
 if mol is None:
   GI_scores.append(None)
   GI_predictions.append("invalid")
+  BBB_scores.append(None)
+  BBB_predictions.append("invalid")
   Continue
 #<-------5. ADMET prediction ------->
+   #<-------5.1. GI prediction ------->
 GI_score = 0
 
 for index, row in df.iterrows():
   GI_score = 0
-  if row["mol_wt"] <= 500:
+
+  if row["mol_wt"] <= 400:
     GI_score += 1
-  if row["TPSA"] <= 140:
+  if row["TPSA"] <= 90:
     GI_score += 1
-  if row["logP"] <= 5:
+  if row["logP"] <= 3.5:
     GI_score += 1
-  if row["H_Donors"] <= 5:
+  if row["H_Donors"] <= 3:
     GI_score +=1
-  if row["H_Acceptors"] <= 10:
+  if row["H_Acceptors"] <= 7:
     GI_score += 1
-  if row["rot_bonds"] <= 10:
+  if row["rot_bonds"] <= 8:
     GI_score += 1
 
   if GI_score >= 5:
     prediction = "High_GI"
   elif GI_score >= 3:
     prediction = "moderate_GI"
-  else:
+  else: 
     prediction = "Low_GI"
-  df.loc[index, "GI_score"] = GI_score
-  df.loc[index, "GI_prediction"] = prediction
-#<-------6. store results------->
-  GI_scores.append(GI_score)
-  GI_predictions.append(prediction)
-#<-------7. Add Results To Dataset------->
-df["GI_score"]= GI_scores
-df["GI_prediction"]= GI_predictions
 
+  gi_prediction = prediction  
+  df.loc[index, "GI_score"] = GI_score
+  df.loc[index, "GI_prediction"] =gi_prediction
+ #<-------5.2. BBB prediction ------->
+BBB_score = 0
+
+for index, row in df.iterrows():
+  BBB_score = 0
+  if row["mol_wt"] <= 400:
+    BBB_score += 1
+  if row["TPSA"] <= 90:
+    BBB_score += 1
+  if row["logP"] <= 5:
+    BBB_score += 1
+  if row["H_Donors"] <= 3:
+    BBB_score +=1
+  if row["H_Acceptors"] <= 7:
+    BBB_score += 1
+  if row["rot_bonds"] <= 8:
+    BBB_score += 1
+
+  if BBB_score >= 5:
+    prediction = "BBB+"
+  elif BBB_score >= 3:
+    prediction = "moderate_BBB"
+  else:
+    prediction = "BBB-"
+  bbb_prediction = prediction
+  df.loc[index, "BBB_score"] = BBB_score
+  df.loc[index, "BBB_prediction"] =bbb_prediction
+   
 cols = list(df.columns)
 cols.remove("GI_prediction")
 cols.remove("GI_score")
 cols.extend(["GI_prediction", "GI_score"])
 df = df[cols]
 
-#<-------8. Save Updated Dataset------->
+cols = list(df.columns)
+cols.remove("BBB_prediction")
+cols.remove("BBB_score")
+cols.extend(["BBB_prediction", "BBB_score"])
+df = df[cols]
+
+#<-------9. Save Updated Dataset------->
 filename=input("Enter file name to save upated csv: ")
 df.to_csv(filename +".csv",index=False)
 print("updated dataset saved")
-

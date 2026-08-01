@@ -15,6 +15,8 @@ BBB_scores=[]
 BBB_predictions=[]
 P_gp_scores=[]
 P_gp_predictions=[]
+Bio_scores=[]
+Bio_predictions=[]
 #<-------4. Process Each Molecule------->
 for i in range(len(df)):
    Smiles=df.loc[i,"SMILES"]
@@ -111,6 +113,34 @@ for index, row in df.iterrows():
   df.loc[index, "P_gp_score"] = P_gp_score
   df.loc[index, "P_gp_prediction"] =P_gp_prediction
 
+  #<-------5.4.Bio_Available prediction ------->
+Bio_score = 0
+
+for index, row in df.iterrows():
+  Bio_score = 0
+
+  if row["mol_wt"] <= 500:
+    Bio_score += 1
+  if row["TPSA"] <= 140:
+    Bio_score += 1
+  if row["logP"] <= 5:
+    Bio_score += 1
+  if row["H_Donors"] <= 5:
+    Bio_score +=1
+  if row["H_Acceptors"] <= 10:
+    Bio_score += 1
+
+  if Bio_score >= 5:
+    prediction = "High Bio_available"
+  elif Bio_score>=3:
+    prediction = "Moderate Bio_Available"  
+  else: 
+    prediction = "Low Bio_Available"
+
+  Bio_prediction = prediction  
+  df.loc[index, "Bio_score"] = Bio_score
+  df.loc[index, "Bio_prediction"] =Bio_prediction
+
 cols = list(df.columns)
 cols.remove("GI_prediction")
 cols.remove("GI_score")
@@ -128,6 +158,27 @@ cols.remove("P_gp_prediction")
 cols.remove("P_gp_score")
 cols.extend(["P_gp_prediction", "P_gp_score"])
 df = df[cols]
+
+cols = list(df.columns)
+cols.remove("Bio_prediction")
+cols.remove("Bio_score")
+cols.extend(["Bio_prediction", "Bio_score"])
+df = df[cols]
+
+#<------- Overall ADMET Score ------->
+df["Overall_score"] =df["toxicity_score"]+df["GI_score"] + df["BBB_score"] + df["P_gp_score"] + df["Bio_score"]
+Bio_score = 0
+
+for index, row in df.iterrows():
+  if row["Overall_score"] >= 20:
+    prediction = "Excellent"
+  elif row["Overall_score"] >= 15:
+    prediction = "Good"
+  elif row["Overall_score"] >= 10:
+    prediction = "Moderate"
+  else:
+    prediction = "Poor"
+  df.loc[index, "Overall_prediction"] = prediction
 
 #<-------9. Save Updated Dataset------->
 filename=input("Enter file name to save upated csv: ")

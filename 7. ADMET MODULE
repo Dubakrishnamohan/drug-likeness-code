@@ -13,6 +13,8 @@ GI_scores=[]
 GI_predictions=[]
 BBB_scores=[]
 BBB_predictions=[]
+P_gp_scores=[]
+P_gp_predictions=[]
 #<-------4. Process Each Molecule------->
 for i in range(len(df)):
    Smiles=df.loc[i,"SMILES"]
@@ -23,6 +25,8 @@ if mol is None:
   GI_predictions.append("invalid")
   BBB_scores.append(None)
   BBB_predictions.append("invalid")
+  P_gp_scores.append(None)
+  P_gp_predictions.append("invalid")
   Continue
 #<-------5. ADMET prediction ------->
    #<-------5.1. GI prediction ------->
@@ -81,7 +85,32 @@ for index, row in df.iterrows():
   bbb_prediction = prediction
   df.loc[index, "BBB_score"] = BBB_score
   df.loc[index, "BBB_prediction"] =bbb_prediction
-   
+ #<-------5.3. P_glycoprotein(P.gp) prediction ------->
+P_gp_score = 0
+
+for index, row in df.iterrows():
+  P_gp_score = 0
+
+  if row["mol_wt"] > 400:
+    P_gp_score += 1
+  if row["TPSA"] > 75:
+    P_gp_score += 1
+  if row["logP"] > 3:
+    P_gp_score += 1
+  if row["H_Donors"] >= 2:
+    P_gp_score +=1
+  if row["rot_bonds"] > 8:
+    P_gp_score += 1
+
+  if P_gp_score >= 3:
+    prediction = "likely P_gp substrate"
+  else: 
+    prediction = "Unlikely P_gp substrate"
+
+  P_gp_prediction = prediction  
+  df.loc[index, "P_gp_score"] = P_gp_score
+  df.loc[index, "P_gp_prediction"] =P_gp_prediction
+
 cols = list(df.columns)
 cols.remove("GI_prediction")
 cols.remove("GI_score")
@@ -92,6 +121,12 @@ cols = list(df.columns)
 cols.remove("BBB_prediction")
 cols.remove("BBB_score")
 cols.extend(["BBB_prediction", "BBB_score"])
+df = df[cols]
+
+cols = list(df.columns)
+cols.remove("P_gp_prediction")
+cols.remove("P_gp_score")
+cols.extend(["P_gp_prediction", "P_gp_score"])
 df = df[cols]
 
 #<-------9. Save Updated Dataset------->

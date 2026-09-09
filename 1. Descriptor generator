@@ -8,11 +8,6 @@ from rdkit.Chem import Descriptors
 #<----- 2.load dataset ----->
 file=input("enter csv file name: ")
 df=pd.read_csv(file)
-input_smiles=input("enter your smiles: ")
-input_mol=Chem.MolFromSmiles(input_smiles)
-if input_mol is None:
-    print("invalid input smiles")
-    exit()
 
 #<----- 3.initialize result storage ----->
 molwt_list=[]
@@ -78,17 +73,17 @@ for i in range(len(df)):
    NumValenceElectrons_list.append(NumValenceElectrons)
    
 #<----- 6.add result to dataset ----->
-df["mol_wt"]=[round(x,3) for x in molwt_list]
-df["logP"]=[round(x,3) for x in logP_list]
+df["mol_wt"]=molwt_list
+df["logP"]=logP_list
 df["H_Acceptors"]=H_Acceptors_list
 df["H_Donors"]=H_Donors_list
 df["rot_bonds"]=rot_bonds_list
-df["TPSA"]=[round(x,3) for x in tpsa_list]
-df["MolMR"]=[round(x,3) for x in MolMR_list]
-df["FractionCSP3"]=[round(x,3) for x in FractionCSP3_list]
+df["TPSA"]=tpsa_list
+df["MolMR"]=MolMR_list
+df["FractionCSP3"]=FractionCSP3_list
 df["RingCount"]=RingCount_list
 df["HeavyAtomCount"]=HeavyAtomCount_list
-df["ExactMolWt"]=[round(x,3) for x in ExactMolWt_list]
+df["ExactMolWt"]=ExactMolWt_list
 df["NumValenceElectrons"]=NumValenceElectrons_list
 
 #<----- 7.save updated dataset ----->

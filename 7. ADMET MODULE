@@ -166,7 +166,7 @@ cols.extend(["Bio_prediction", "Bio_score"])
 df = df[cols]
 
 #<------- Overall ADMET Score ------->
-df["Overall_score"] =df["toxicity_score"]+df["GI_score"] + df["BBB_score"] + df["P_gp_score"] + df["Bio_score"]
+df["Overall_score"] =df["GI_score"] + df["BBB_score"] + df["P_gp_score"] + df["Bio_score"]
 Bio_score = 0
 
 for index, row in df.iterrows():

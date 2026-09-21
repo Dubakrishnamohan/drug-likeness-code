@@ -1,7 +1,16 @@
+#<------1.Import libraries------>
+import rdkit
+import sklearn
+import pandas
+import matplotlib.pyplot
+import joblib
+
+#<------2. load dataset------>
 import pandas as pd
 df=pd.read_csv('123456.csv')
 df.head(3)
 
+#<------3.columns seperated as columns and target------>
 target='BBB_score'
 X=df[
     ['mol_wt',
@@ -24,6 +33,7 @@ y=df[target]
 print(X.shape)
 print(y.shape)
 
+#<------4.Import Train_Test_Split------>
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test=train_test_split(
     X,y,
@@ -34,6 +44,7 @@ X_train,X_test,y_train,y_test=train_test_split(
 print("Training;",X_train.shape)
 print("Testing;",X_test.shape)
 
+#<------5. Import RandomForestModel
 from sklearn.ensemble import RandomForestClassifier
 rf_model=RandomForestClassifier(
     n_estimators=100,
@@ -42,9 +53,11 @@ rf_model=RandomForestClassifier(
 )
 rf_model.fit(X_train,y_train)
 
-
+#<------6.Predict first 20 Molecules------>
 y_pred=rf_model.predict(X_test)
 print(y_pred[:20])
+
+#<------7.calculate Accuracy,Precision,Recall,F1-score,Support------>
 
 from sklearn.metrics import accuracy_score,classification_report
 accuracy=accuracy_score(y_test,y_pred)
@@ -52,6 +65,7 @@ print(accuracy)
 print()
 print(classification_report(y_test,y_pred))
 
+#<------8.Confusion Matrix------>
 from sklearn.metrics import ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 
@@ -59,7 +73,7 @@ ConfusionMatrixDisplay.from_predictions(y_test,y_pred)
 plt.title("RandomForest-BBB score Confusion Matrix")
 plt.show()
 
-
+#<------9.Importance Column------>
 importance=pd.DataFrame({
     "Features":X.columns,
     "Importance":rf_model.feature_importances_
@@ -71,8 +85,7 @@ importance.sort_values(
 )
 print(importance)
 
+#<------10.Save The Model
 import joblib
 joblib.dump(rf_model,'BBB_randomforest.pkl')
 print('BBB random forest model saved successfully')
-
-

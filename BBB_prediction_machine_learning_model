@@ -89,3 +89,47 @@ print(importance)
 import joblib
 joblib.dump(rf_model,'BBB_randomforest.pkl')
 print('BBB random forest model saved successfully')
+
+#<------11. new molecule is given as input predicts the model ------> 
+from rdkit import Chem
+from rdkit.Chem import Descriptors,Lipinski
+import joblib 
+import pandas as pd
+
+model=joblib.load('BBB_randomforest.pkl')
+
+smiles=input('enter compund smiles: ')
+mol=Chem.MolFromSmiles(smiles)
+
+if mol is None:
+  print("invalid smiles")
+else:
+  features={
+      'mol_wt': Descriptors.MolWt(mol),
+      'logP':Descriptors.MolLogP(mol),
+      'H_Acceptors':Lipinski.NumHAcceptors(mol),
+      'H_Donors':Lipinski.NumHDonors(mol),
+      'rot_bonds':Lipinski.NumRotatableBonds(mol),
+      'TPSA':Descriptors.TPSA(mol),
+      'MolMR':Descriptors.MolMR(mol),
+      'FractionCSP3':Lipinski.FractionCSP3(mol),
+      'RingCount':Descriptors.RingCount(mol),
+      'HeavyAtomCount':Descriptors.HeavyAtomCount(mol),
+      'ExactMolWt':Descriptors.ExactMolWt(mol),
+      'NumValenceElectrons':Descriptors.NumValenceElectrons(mol),
+      'lipinski_fails':Lipinski.NumAliphaticRings(mol),
+      'veber_fails':Lipinski.NumAromaticRings(mol)
+  }
+print('\n calculated descriptors')
+for name,value in features.items():
+  print(f'{name}: {value:.3f}')
+
+X_new=pd.DataFrame([features])
+
+prediction=model.predict(X_new)[0]
+print('\n Prediction:')
+
+if prediction ==1:
+  print("BBB_Pass")
+else:
+  print("BBB-Fail") 

@@ -1,0 +1,112 @@
+import pandas as pd
+df=pd.read_csv('52369.csv')
+df.head(2)
+df.shape
+df.dtypes
+df.columns
+
+target='drug_like_results'
+X=df[['mol_wt', 
+       'logP', 
+       'H_Acceptors',
+       'H_Donors', 
+       'rot_bonds', 
+       'TPSA', 
+       'MolMR', 
+       'FractionCSP3', 
+       'RingCount',
+       'HeavyAtomCount', 
+       'ExactMolWt', 
+       'NumValenceElectrons'
+]]
+y=df[target]
+print(X.shape)
+print(y.shape)
+
+from sklearn.model_selection import train_test_split
+X_train,X_test,y_train,y_test=train_test_split(
+    X,y,
+    test_size=0.2,
+    random_state=42,
+    stratify=y
+)
+print('Training:',X_train.shape)
+print('Testing:',X_test.shape)
+
+from sklearn.ensemble import RandomForestClassifier
+rf_model=RandomForestClassifier(
+    n_estimators=100,
+    random_state=42,
+    n_jobs=-1
+)
+rf_model.fit(X_train,y_train)
+
+y_pred=rf_model.predict(X_test)
+print(y_pred[:20])
+
+from sklearn.metrics import accuracy_score ,classification_report
+accuracy=accuracy_score(y_test,y_pred)
+print(accuracy)
+print()
+print(classification_report(y_test,y_pred))
+
+from sklearn.metrics import ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
+
+ConfusionMatrixDisplay.from_predictions(y_test,y_pred)
+plt.title('Rf-GI_score')
+plt.show()
+
+importance=pd.DataFrame({'features':X.columns,
+  'importance':rf_model.feature_importances_
+})
+
+importance.sort_values(by="importance",
+ascending=False,
+inplace=True)
+print(importance)
+
+import joblib
+joblib.dump(rf_model,'drug likeness.pkl',compress=3)
+print('drug likeness model saved successfully')
+
+rom rdkit import Chem
+from rdkit.Chem import Descriptors,Lipinski
+import joblib 
+import pandas as pd
+
+model=joblib.load('drug likeness.pkl')
+
+smiles=input('enter compund smiles: ')
+mol=Chem.MolFromSmiles(smiles)
+
+if mol is None:
+  print("invalid smiles")
+else:
+  features={
+      'mol_wt': Descriptors.MolWt(mol),
+      'logP':Descriptors.MolLogP(mol),
+      'H_Acceptors':Lipinski.NumHAcceptors(mol),
+      'H_Donors':Lipinski.NumHDonors(mol),
+      'rot_bonds':Lipinski.NumRotatableBonds(mol),
+      'TPSA':Descriptors.TPSA(mol),
+      'MolMR':Descriptors.MolMR(mol),
+      'FractionCSP3':Lipinski.FractionCSP3(mol),
+      'RingCount':Descriptors.RingCount(mol),
+      'HeavyAtomCount':Descriptors.HeavyAtomCount(mol),
+      'ExactMolWt':Descriptors.ExactMolWt(mol),
+      'NumValenceElectrons':Descriptors.NumValenceElectrons(mol),
+      }
+print('\n calculated descriptors')
+for name,value in features.items():
+  print(f'{name}: {value:.3f}')
+
+X_new=pd.DataFrame([features])
+
+prediction=model.predict(X_new)[0]
+print('\n Prediction:')
+
+if prediction ==1:
+  print("Pass")
+else:
+  print("Fail") 

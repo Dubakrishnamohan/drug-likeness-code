@@ -1,3 +1,4 @@
+#import libraries
 import pandas as pd
 df=pd.read_csv('123456.csv')
 df.head(2)
@@ -5,6 +6,7 @@ df.shape
 df.dtypes
 df.columns
 
+# select the descriptors and target columns
 target='GI_score'
 X=df[['mol_wt', 
        'logP', 
@@ -25,6 +27,7 @@ y=df[target]
 print(X.shape)
 print(y.shape)
 
+# Run the train_test_split module
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test=train_test_split(
     X,y,
@@ -35,6 +38,7 @@ X_train,X_test,y_train,y_test=train_test_split(
 print('Training:',X_train.shape)
 print('Testing:',X_test.shape)
 
+#import random forest model
 from sklearn.ensemble import RandomForestClassifier
 rf_model=RandomForestClassifier(
     n_estimators=100,
@@ -43,15 +47,18 @@ rf_model=RandomForestClassifier(
 )
 rf_model.fit(X_train,y_train)
 
+#prediction
 y_pred=rf_model.predict(X_test)
 print(y_pred[:20])
 
+#calculate the accuracy and classification scores
 from sklearn.metrics import accuracy_score ,classification_report
 accuracy=accuracy_score(y_test,y_pred)
 print(accuracy)
 print()
 print(classification_report(y_test,y_pred))
 
+#confusion matrix
 from sklearn.metrics import ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 
@@ -59,6 +66,7 @@ ConfusionMatrixDisplay.from_predictions(y_test,y_pred)
 plt.title('Rf-GI_score')
 plt.show()
 
+#find important column 
 importance=pd.DataFrame({'features':X.columns,
   'importance':rf_model.feature_importances_
 })
@@ -68,6 +76,7 @@ ascending=False,
 inplace=True)
 print(importance)
 
+#save the model
 import joblib
 joblib.dump(rf_model,'GI_score.pkl')
 print('GI_score model saved successfully')

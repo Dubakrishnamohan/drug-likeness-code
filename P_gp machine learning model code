@@ -1,0 +1,131 @@
+#<------1.Import libraries------>
+import rdkit
+import sklearn
+import pandas
+import matplotlib.pyplot
+import joblib
+
+#<------2. load dataset------>
+import pandas as pd
+df=pd.read_csv('52963.csv')
+df.head(3)
+
+#<------3.columns seperated as columns and target------>
+target='P_gp_score'
+X=df[
+    ['mol_wt',
+     'logP',
+     'H_Acceptors',
+     'H_Donors',
+     'rot_bonds',
+     'TPSA',
+     'MolMR',
+     'FractionCSP3',
+     'RingCount',
+     'HeavyAtomCount',
+     'ExactMolWt',
+     'NumValenceElectrons'
+    ]
+]
+y=df[target]
+print(X.shape)
+print(y.shape)
+
+#<------4.Import Train_Test_Split------>
+from sklearn.model_selection import train_test_split
+X_train,X_test,y_train,y_test=train_test_split(
+    X,y,
+    test_size=0.2,
+    random_state=42,
+    stratify=y
+)
+print("Training;",X_train.shape)
+print("Testing;",X_test.shape)
+
+#<------5. Import RandomForestModel
+from sklearn.ensemble import RandomForestClassifier
+rf_model=RandomForestClassifier(
+    n_estimators=100,
+    random_state=42,
+    n_jobs=-1
+)
+rf_model.fit(X_train,y_train)
+
+#<------6.Predict first 20 Molecules------>
+y_pred=rf_model.predict(X_test)
+print(y_pred[:20])
+
+#<------7.calculate Accuracy,Precision,Recall,F1-score,Support------>
+
+from sklearn.metrics import accuracy_score,classification_report
+accuracy=accuracy_score(y_test,y_pred)
+print(accuracy)
+print()
+print(classification_report(y_test,y_pred))
+
+#<------8.Confusion Matrix------>
+from sklearn.metrics import ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
+
+ConfusionMatrixDisplay.from_predictions(y_test,y_pred)
+plt.title("RandomForest_p_gp Confusion Matrix")
+plt.show()
+
+#<------9.Importance Column------>
+importance=pd.DataFrame({
+    "Features":X.columns,
+    "Importance":rf_model.feature_importances_
+})
+importance.sort_values(
+    by="Importance",
+    ascending=False,
+    inplace=True
+)
+print(importance)
+
+#<------10.Save The Model
+import joblib
+joblib.dump(rf_model,'P_gp_score_randomforest.pkl',compress=3)
+print('P_gp_random forest model saved successfully')
+
+#<------11. new molecule is given as input predicts the model ------>
+from rdkit import Chem
+from rdkit.Chem import Descriptors,Lipinski
+import joblib
+import pandas as pd
+
+model=joblib.load('P_gp_score_randomforest.pkl')
+
+smiles=input('enter compund smiles: ')
+mol=Chem.MolFromSmiles(smiles)
+
+if mol is None:
+  print("invalid smiles")
+else:
+  features={
+      'mol_wt': Descriptors.MolWt(mol),
+      'logP':Descriptors.MolLogP(mol),
+      'H_Acceptors':Lipinski.NumHAcceptors(mol),
+      'H_Donors':Lipinski.NumHDonors(mol),
+      'rot_bonds':Lipinski.NumRotatableBonds(mol),
+      'TPSA':Descriptors.TPSA(mol),
+      'MolMR':Descriptors.MolMR(mol),
+      'FractionCSP3':Lipinski.FractionCSP3(mol),
+      'RingCount':Descriptors.RingCount(mol),
+      'HeavyAtomCount':Descriptors.HeavyAtomCount(mol),
+      'ExactMolWt':Descriptors.ExactMolWt(mol),
+      'NumValenceElectrons':Descriptors.NumValenceElectrons(mol)
+  }
+print('\n calculated descriptors')
+for name,value in features.items():
+  print(f'{name}: {value:.3f}')
+
+X_new=pd.DataFrame([features])
+
+prediction=model.predict(X_new)[0]
+print('\n Prediction:')
+
+if prediction <=3 :
+  print("P_gp_Pass")
+else:
+  print("P_gp_Fail")

@@ -1,3 +1,4 @@
+#Import libraries
 import pandas as pd
 df=pd.read_csv('52369.csv')
 df.head(2)
@@ -5,6 +6,7 @@ df.shape
 df.dtypes
 df.columns
 
+#Select features and target column 
 target='drug_like_results'
 X=df[['mol_wt', 
        'logP', 
@@ -23,6 +25,7 @@ y=df[target]
 print(X.shape)
 print(y.shape)
 
+#Split the data to training and testing 
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test=train_test_split(
     X,y,
@@ -33,6 +36,7 @@ X_train,X_test,y_train,y_test=train_test_split(
 print('Training:',X_train.shape)
 print('Testing:',X_test.shape)
 
+#Import random forest model from sklearn
 from sklearn.ensemble import RandomForestClassifier
 rf_model=RandomForestClassifier(
     n_estimators=100,
@@ -41,15 +45,18 @@ rf_model=RandomForestClassifier(
 )
 rf_model.fit(X_train,y_train)
 
+#Prediction of first 20 molecules
 y_pred=rf_model.predict(X_test)
 print(y_pred[:20])
 
+#Calculation of accuracy precission
 from sklearn.metrics import accuracy_score ,classification_report
 accuracy=accuracy_score(y_test,y_pred)
 print(accuracy)
 print()
 print(classification_report(y_test,y_pred))
 
+#Confusion matrix
 from sklearn.metrics import ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 
@@ -57,27 +64,31 @@ ConfusionMatrixDisplay.from_predictions(y_test,y_pred)
 plt.title('Rf-GI_score')
 plt.show()
 
+#Important column 
 importance=pd.DataFrame({'features':X.columns,
   'importance':rf_model.feature_importances_
-})
+})(#to find important column to contribute the prediction)
 
 importance.sort_values(by="importance",
 ascending=False,
 inplace=True)
 print(importance)
 
+#To save the model
 import joblib
 joblib.dump(rf_model,'drug likeness.pkl',compress=3)
 print('drug likeness model saved successfully')
 
-rom rdkit import Chem
+#import libraries
+from rdkit import Chem
 from rdkit.Chem import Descriptors,Lipinski
 import joblib 
 import pandas as pd
 
+#load drug likeness model
 model=joblib.load('drug likeness.pkl')
 
-smiles=input('enter compund smiles: ')
+smiles=input('enter compund smiles: ')(#input smiles)
 mol=Chem.MolFromSmiles(smiles)
 
 if mol is None:
@@ -97,16 +108,19 @@ else:
       'ExactMolWt':Descriptors.ExactMolWt(mol),
       'NumValenceElectrons':Descriptors.NumValenceElectrons(mol),
       }
+
 print('\n calculated descriptors')
 for name,value in features.items():
   print(f'{name}: {value:.3f}')
 
 X_new=pd.DataFrame([features])
 
+#prediction 
 prediction=model.predict(X_new)[0]
 print('\n Prediction:')
 
+
 if prediction ==1:
-  print("Pass")
+  print("drug_likeness is Pass")
 else:
-  print("Fail") 
+  print("drug_likeness is Fail") 

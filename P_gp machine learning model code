@@ -123,9 +123,16 @@ for name,value in features.items():
 X_new=pd.DataFrame([features])
 
 prediction=model.predict(X_new)[0]
-print('\n Prediction:')
 
-if prediction <=3 :
-  print("P_gp_Pass")
-else:
-  print("P_gp_Fail")
+class_names={
+    0: 'P_gp Class 0',
+    1: 'P_gp Class 1',
+    2: 'P_gp Class 2',
+    3: 'P_gp Class 3',
+    4: 'P_gp Class 4',
+    5: 'P_gp Class 5',
+    6: 'P_gp Class 6',
+}
+print('\n Prediction:')
+print(f'Predicted Class:{class_names[prediction]}')
+

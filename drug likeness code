@@ -91,6 +91,7 @@ model=joblib.load('drug likeness.pkl')
 smiles=input('enter compund smiles: ')(#input smiles)
 mol=Chem.MolFromSmiles(smiles)
 
+#calculate molecular descriptors
 if mol is None:
   print("invalid smiles")
 else:

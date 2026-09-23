@@ -7,7 +7,7 @@ import joblib
 
 #<------2. load dataset------>
 import pandas as pd
-df=pd.read_csv('123456.csv')
+df=pd.read_csv('.csv')
 df.head(3)
 
 #<------3.columns seperated as columns and target------>

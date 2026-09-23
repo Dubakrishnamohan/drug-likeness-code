@@ -129,7 +129,7 @@ X_new=pd.DataFrame([features])
 prediction=model.predict(X_new)[0]
 print('\n Prediction:')
 
-if prediction ==1:
+if prediction <=5:
   print("BBB_Pass")
 else:
   print("BBB-Fail") 

@@ -140,4 +140,7 @@ class_names={
 print('\n Prediction:')
 print(f'Predicted Class:{class_names[prediction]}')
 
-
+if prediction <=3:
+  print('Pass')
+else:
+  print('fail')

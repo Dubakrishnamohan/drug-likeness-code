@@ -83,7 +83,7 @@ importance.sort_values(
 )
 print(importance)
 
-#<------10.Save The Model
+#<------10.Save The Model----->
 import joblib
 joblib.dump(rf_model,'P_gp_score_randomforest.pkl',compress=3)
 print('P_gp_random forest model saved successfully')
@@ -94,11 +94,13 @@ from rdkit.Chem import Descriptors,Lipinski
 import joblib
 import pandas as pd
 
+#<----- import model----->
 model=joblib.load('P_gp_score_randomforest.pkl')
 
 smiles=input('enter compund smiles: ')
 mol=Chem.MolFromSmiles(smiles)
 
+#<---- Calculate molecular Descriptors----->
 if mol is None:
   print("invalid smiles")
 else:
@@ -122,6 +124,7 @@ for name,value in features.items():
 
 X_new=pd.DataFrame([features])
 
+#<----prediction----->
 prediction=model.predict(X_new)[0]
 
 class_names={

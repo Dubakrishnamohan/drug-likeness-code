@@ -1,4 +1,4 @@
-#import libraries
+#<----import libraries---->
 import pandas as pd
 df=pd.read_csv('.csv')
 df.head(2)
@@ -6,7 +6,7 @@ df.shape
 df.dtypes
 df.columns
 
-# select the descriptors and target columns
+#<----select the descriptors and target columns---->
 target='GI_score'
 X=df[['mol_wt', 
        'logP', 
@@ -20,14 +20,12 @@ X=df[['mol_wt',
        'HeavyAtomCount', 
        'ExactMolWt', 
        'NumValenceElectrons', 
-       'lipinski_fails',
-       'veber_fails'
 ]]
 y=df[target]
 print(X.shape)
 print(y.shape)
 
-# Run the train_test_split module
+#<----Run the train_test_split module---->
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test=train_test_split(
     X,y,
@@ -38,7 +36,7 @@ X_train,X_test,y_train,y_test=train_test_split(
 print('Training:',X_train.shape)
 print('Testing:',X_test.shape)
 
-#import random forest model
+#<----import random forest model---->
 from sklearn.ensemble import RandomForestClassifier
 rf_model=RandomForestClassifier(
     n_estimators=100,
@@ -47,18 +45,18 @@ rf_model=RandomForestClassifier(
 )
 rf_model.fit(X_train,y_train)
 
-#prediction
+#<----prediction---->
 y_pred=rf_model.predict(X_test)
 print(y_pred[:20])
 
-#calculate the accuracy and classification scores
+#<----calculate the accuracy and classification scores---->
 from sklearn.metrics import accuracy_score ,classification_report
 accuracy=accuracy_score(y_test,y_pred)
 print(accuracy)
 print()
 print(classification_report(y_test,y_pred))
 
-#confusion matrix
+#<----confusion matrix---->
 from sklearn.metrics import ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 
@@ -66,7 +64,7 @@ ConfusionMatrixDisplay.from_predictions(y_test,y_pred)
 plt.title('Rf-GI_score')
 plt.show()
 
-#find important column 
+#<----find important column----> 
 importance=pd.DataFrame({'features':X.columns,
   'importance':rf_model.feature_importances_
 })
@@ -76,7 +74,7 @@ ascending=False,
 inplace=True)
 print(importance)
 
-#save the model
+#<----save the model---->
 import joblib
 joblib.dump(rf_model,'GI_score.pkl')
 print('GI_score model saved successfully')
@@ -87,11 +85,13 @@ from rdkit.Chem import Descriptors,Lipinski
 import joblib 
 import pandas as pd
 
+#<---- 12. load the model---->
 model=joblib.load('BBB_randomforest.pkl')
 
 smiles=input('enter compund smiles: ')
 mol=Chem.MolFromSmiles(smiles)
 
+#<----13.Calculate molecular Descriptors---->
 if mol is None:
   print("invalid smiles")
 else:
@@ -108,15 +108,15 @@ else:
       'HeavyAtomCount':Descriptors.HeavyAtomCount(mol),
       'ExactMolWt':Descriptors.ExactMolWt(mol),
       'NumValenceElectrons':Descriptors.NumValenceElectrons(mol),
-      'lipinski_fails':Lipinski.NumAliphaticRings(mol),
-      'veber_fails':Lipinski.NumAromaticRings(mol)
   }
 print('\n calculated descriptors')
+
 for name,value in features.items():
   print(f'{name}: {value:.3f}')
 
 X_new=pd.DataFrame([features])
 
+#<---- prediction---->
 prediction=model.predict(X_new)[0]
 
 class_names={

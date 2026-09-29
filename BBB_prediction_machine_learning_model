@@ -25,8 +25,6 @@ X=df[
      'HeavyAtomCount',
      'ExactMolWt',
      'NumValenceElectrons',
-     'lipinski_fails',
-     'veber_fails'
     ]
 ]
 y=df[target]
@@ -117,8 +115,6 @@ else:
       'HeavyAtomCount':Descriptors.HeavyAtomCount(mol),
       'ExactMolWt':Descriptors.ExactMolWt(mol),
       'NumValenceElectrons':Descriptors.NumValenceElectrons(mol),
-      'lipinski_fails':Lipinski.NumAliphaticRings(mol),
-      'veber_fails':Lipinski.NumAromaticRings(mol)
   }
 print('\n calculated descriptors')
 for name,value in features.items():
